@@ -1,0 +1,8 @@
+H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit\wwwroot\jquery.validate.unobtrusive.min.js
+H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit\wwwroot\StyleSheet.css
+H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit\wwwroot\jquery.validate.min.js
+H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit\wwwroot\jquery.min.js
+wwwroot\jquery.min.js
+wwwroot\jquery.validate.min.js
+wwwroot\jquery.validate.unobtrusive.min.js
+wwwroot\StyleSheet.css

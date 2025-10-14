@@ -1,0 +1,15 @@
+H:\.NET\4. ASP.NET Core\n12xUnit\ServiceContracts\bin\Debug\net9.0\ServiceContracts.deps.json
+H:\.NET\4. ASP.NET Core\n12xUnit\ServiceContracts\bin\Debug\net9.0\ServiceContracts.dll
+H:\.NET\4. ASP.NET Core\n12xUnit\ServiceContracts\bin\Debug\net9.0\ServiceContracts.pdb
+H:\.NET\4. ASP.NET Core\n12xUnit\ServiceContracts\bin\Debug\net9.0\Entities.dll
+H:\.NET\4. ASP.NET Core\n12xUnit\ServiceContracts\bin\Debug\net9.0\Entities.pdb
+H:\.NET\4. ASP.NET Core\n12xUnit\ServiceContracts\obj\Debug\net9.0\ServiceContracts.csproj.AssemblyReference.cache
+H:\.NET\4. ASP.NET Core\n12xUnit\ServiceContracts\obj\Debug\net9.0\ServiceContracts.GeneratedMSBuildEditorConfig.editorconfig
+H:\.NET\4. ASP.NET Core\n12xUnit\ServiceContracts\obj\Debug\net9.0\ServiceContracts.AssemblyInfoInputs.cache
+H:\.NET\4. ASP.NET Core\n12xUnit\ServiceContracts\obj\Debug\net9.0\ServiceContracts.AssemblyInfo.cs
+H:\.NET\4. ASP.NET Core\n12xUnit\ServiceContracts\obj\Debug\net9.0\ServiceContracts.csproj.CoreCompileInputs.cache
+H:\.NET\4. ASP.NET Core\n12xUnit\ServiceContracts\obj\Debug\net9.0\ServiceC.04662A29.Up2Date
+H:\.NET\4. ASP.NET Core\n12xUnit\ServiceContracts\obj\Debug\net9.0\ServiceContracts.dll
+H:\.NET\4. ASP.NET Core\n12xUnit\ServiceContracts\obj\Debug\net9.0\refint\ServiceContracts.dll
+H:\.NET\4. ASP.NET Core\n12xUnit\ServiceContracts\obj\Debug\net9.0\ServiceContracts.pdb
+H:\.NET\4. ASP.NET Core\n12xUnit\ServiceContracts\obj\Debug\net9.0\ref\ServiceContracts.dll

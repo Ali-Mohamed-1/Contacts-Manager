@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\n12xUnit.props" />
+</Project>
