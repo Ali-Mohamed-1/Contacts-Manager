@@ -24,7 +24,7 @@ namespace Services
             return personResponse;
         }
 
-        public PersonsService(IPersonsRepository personRepo, ICountryService countryService)
+        public PersonsService(IPersonsRepository personRepo)
         {
             _personRepo = personRepo;
         }

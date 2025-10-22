@@ -3,23 +3,12 @@
   "WorkspaceRootPath": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BFC6F233-8D8B-4D43-B8FE-10079CF7CD7E}|Services\\Services.csproj|h:\\.net\\4. asp.net core\\n12xunit\\services\\personsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFC6F233-8D8B-4D43-B8FE-10079CF7CD7E}|Services\\Services.csproj|solutionrelative:services\\personsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{142D2132-7939-4D0B-B03B-42B5C278263E}|CRUDtest\\CRUDtest.csproj|h:\\.net\\4. asp.net core\\n12xunit\\crudtest\\countriesservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{142D2132-7939-4D0B-B03B-42B5C278263E}|CRUDtest\\CRUDtest.csproj|solutionrelative:crudtest\\countriesservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Persons/True/SqlTable/dbo.Countries.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{142D2132-7939-4D0B-B03B-42B5C278263E}|CRUDtest\\CRUDtest.csproj|h:\\.net\\4. asp.net core\\n12xunit\\crudtest\\personsservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{142D2132-7939-4D0B-B03B-42B5C278263E}|CRUDtest\\CRUDtest.csproj|solutionrelative:crudtest\\personsservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5723B9EF-70AE-4D5D-9829-FB125D61369B}|n12xUnit\\n12xUnit.csproj|h:\\.net\\4. asp.net core\\n12xunit\\n12xunit\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5723B9EF-70AE-4D5D-9829-FB125D61369B}|n12xUnit\\n12xUnit.csproj|solutionrelative:n12xunit\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C8FFD7A7-1D67-424E-B070-62DA5594A4AF}|Repositories\\Repositories.csproj|h:\\.net\\4. asp.net core\\n12xunit\\repositories\\personsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C8FFD7A7-1D67-424E-B070-62DA5594A4AF}|Repositories\\Repositories.csproj|solutionrelative:repositories\\personsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BFC6F233-8D8B-4D43-B8FE-10079CF7CD7E}|Services\\Services.csproj|h:\\.net\\4. asp.net core\\n12xunit\\services\\countriesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFC6F233-8D8B-4D43-B8FE-10079CF7CD7E}|Services\\Services.csproj|solutionrelative:services\\countriesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -49,64 +38,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "dbo.Countries [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Persons/True/SqlTable/dbo.Countries.sql",
-              "ToolTip": "dbo.Countries [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-10-22T05:35:22.741Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\n12xUnit\\Program.cs",
-              "RelativeDocumentMoniker": "n12xUnit\\Program.cs",
-              "ToolTip": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\n12xUnit\\Program.cs",
-              "RelativeToolTip": "n12xUnit\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T05:22:56.228Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PersonsServiceTest.cs",
-              "DocumentMoniker": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\CRUDtest\\PersonsServiceTest.cs",
-              "RelativeDocumentMoniker": "CRUDtest\\PersonsServiceTest.cs",
-              "ToolTip": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\CRUDtest\\PersonsServiceTest.cs",
-              "RelativeToolTip": "CRUDtest\\PersonsServiceTest.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAwB8AAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T05:21:15.542Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PersonsService.cs",
-              "DocumentMoniker": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\Services\\PersonsService.cs",
-              "RelativeDocumentMoniker": "Services\\PersonsService.cs",
-              "ToolTip": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\Services\\PersonsService.cs",
-              "RelativeToolTip": "Services\\PersonsService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAcwBMAAABFAAAAAAAAAA==",
+              "Title": "CountriesServiceTest.cs",
+              "DocumentMoniker": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\CRUDtest\\CountriesServiceTest.cs",
+              "RelativeDocumentMoniker": "CRUDtest\\CountriesServiceTest.cs",
+              "ToolTip": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\CRUDtest\\CountriesServiceTest.cs",
+              "RelativeToolTip": "CRUDtest\\CountriesServiceTest.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAQwGsAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T04:40:54.094Z",
+              "WhenOpened": "2025-10-22T07:45:34.797Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PersonsRepo.cs",
-              "DocumentMoniker": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\Repositories\\PersonsRepo.cs",
-              "RelativeDocumentMoniker": "Repositories\\PersonsRepo.cs",
-              "ToolTip": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\Repositories\\PersonsRepo.cs",
-              "RelativeToolTip": "Repositories\\PersonsRepo.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAYwCYAAAA1AAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "CountriesService.cs",
+              "DocumentMoniker": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\Services\\CountriesService.cs",
+              "RelativeDocumentMoniker": "Services\\CountriesService.cs",
+              "ToolTip": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\Services\\CountriesService.cs",
+              "RelativeToolTip": "Services\\CountriesService.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T18:42:46.258Z",
+              "WhenOpened": "2025-10-22T07:49:03.395Z",
               "EditorCaption": ""
             }
           ]

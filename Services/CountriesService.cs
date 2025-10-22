@@ -25,7 +25,8 @@ namespace Services
 			if (string.IsNullOrWhiteSpace(countryAddRequest.CountryName))
 				throw new ArgumentException("CountryName is required", nameof(countryAddRequest));
 
-			if (_countriesRepo.GetCountryByName(countryAddRequest.CountryName) != null)
+			var existingCountry = await _countriesRepo.GetCountryByName(countryAddRequest.CountryName);
+			if (existingCountry != null)
 				throw new ArgumentException("Country name already exists", nameof(countryAddRequest));
 
 			Country country = countryAddRequest.ToCountry();
