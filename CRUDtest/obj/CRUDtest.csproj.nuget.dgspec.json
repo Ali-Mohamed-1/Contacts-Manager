@@ -63,9 +63,17 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "AutoFixture": {
+              "target": "Package",
+              "version": "[4.18.1, )"
+            },
             "EntityFrameworkCoreMock.Moq": {
               "target": "Package",
               "version": "[2.4.0, )"
+            },
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[8.7.1, )"
             },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
@@ -279,6 +287,75 @@
         }
       }
     },
+    "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\RepositoryContracts\\RepositoryContracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\RepositoryContracts\\RepositoryContracts.csproj",
+        "projectName": "RepositoryContracts",
+        "projectPath": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\RepositoryContracts\\RepositoryContracts.csproj",
+        "packagesPath": "C:\\Users\\CM\\.nuget\\packages\\",
+        "outputPath": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\RepositoryContracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\CM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\Entities\\Entities.csproj": {
+                "projectPath": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\Entities\\Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\ServiceContracts\\ServiceContracts.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -376,6 +453,9 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
+              "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\RepositoryContracts\\RepositoryContracts.csproj": {
+                "projectPath": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\RepositoryContracts\\RepositoryContracts.csproj"
+              },
               "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\ServiceContracts\\ServiceContracts.csproj": {
                 "projectPath": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\ServiceContracts\\ServiceContracts.csproj"
               }

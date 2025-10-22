@@ -1,0 +1,16 @@
+H:\.NET\4. ASP.NET Core\n12xUnit\RepositoryContracts\bin\Debug\net9.0\RepositoryContracts.deps.json
+H:\.NET\4. ASP.NET Core\n12xUnit\RepositoryContracts\bin\Debug\net9.0\RepositoryContracts.dll
+H:\.NET\4. ASP.NET Core\n12xUnit\RepositoryContracts\bin\Debug\net9.0\RepositoryContracts.pdb
+H:\.NET\4. ASP.NET Core\n12xUnit\RepositoryContracts\bin\Debug\net9.0\Entities.dll
+H:\.NET\4. ASP.NET Core\n12xUnit\RepositoryContracts\bin\Debug\net9.0\Entities.pdb
+H:\.NET\4. ASP.NET Core\n12xUnit\RepositoryContracts\obj\Debug\net9.0\RepositoryContracts.csproj.AssemblyReference.cache
+H:\.NET\4. ASP.NET Core\n12xUnit\RepositoryContracts\obj\Debug\net9.0\RepositoryContracts.GeneratedMSBuildEditorConfig.editorconfig
+H:\.NET\4. ASP.NET Core\n12xUnit\RepositoryContracts\obj\Debug\net9.0\RepositoryContracts.AssemblyInfoInputs.cache
+H:\.NET\4. ASP.NET Core\n12xUnit\RepositoryContracts\obj\Debug\net9.0\RepositoryContracts.AssemblyInfo.cs
+H:\.NET\4. ASP.NET Core\n12xUnit\RepositoryContracts\obj\Debug\net9.0\RepositoryContracts.csproj.CoreCompileInputs.cache
+H:\.NET\4. ASP.NET Core\n12xUnit\RepositoryContracts\obj\Debug\net9.0\RepositoryContracts.sourcelink.json
+H:\.NET\4. ASP.NET Core\n12xUnit\RepositoryContracts\obj\Debug\net9.0\Reposito.28D4BA81.Up2Date
+H:\.NET\4. ASP.NET Core\n12xUnit\RepositoryContracts\obj\Debug\net9.0\RepositoryContracts.dll
+H:\.NET\4. ASP.NET Core\n12xUnit\RepositoryContracts\obj\Debug\net9.0\refint\RepositoryContracts.dll
+H:\.NET\4. ASP.NET Core\n12xUnit\RepositoryContracts\obj\Debug\net9.0\RepositoryContracts.pdb
+H:\.NET\4. ASP.NET Core\n12xUnit\RepositoryContracts\obj\Debug\net9.0\ref\RepositoryContracts.dll

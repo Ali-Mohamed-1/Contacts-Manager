@@ -169,3 +169,9 @@ H:\.NET\4. ASP.NET Core\n12xUnit\CRUDtest\bin\Debug\net9.0\Castle.Core.dll
 H:\.NET\4. ASP.NET Core\n12xUnit\CRUDtest\bin\Debug\net9.0\EntityFrameworkCoreMock.Moq.dll
 H:\.NET\4. ASP.NET Core\n12xUnit\CRUDtest\bin\Debug\net9.0\EntityFrameworkCoreMock.Shared.dll
 H:\.NET\4. ASP.NET Core\n12xUnit\CRUDtest\bin\Debug\net9.0\Moq.dll
+H:\.NET\4. ASP.NET Core\n12xUnit\CRUDtest\bin\Debug\net9.0\AutoFixture.dll
+H:\.NET\4. ASP.NET Core\n12xUnit\CRUDtest\bin\Debug\net9.0\Fare.dll
+H:\.NET\4. ASP.NET Core\n12xUnit\CRUDtest\obj\Debug\net9.0\CRUDtest.sourcelink.json
+H:\.NET\4. ASP.NET Core\n12xUnit\CRUDtest\bin\Debug\net9.0\FluentAssertions.dll
+H:\.NET\4. ASP.NET Core\n12xUnit\CRUDtest\bin\Debug\net9.0\RepositoryContracts.dll
+H:\.NET\4. ASP.NET Core\n12xUnit\CRUDtest\bin\Debug\net9.0\RepositoryContracts.pdb

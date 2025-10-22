@@ -12,3 +12,4 @@ H:\.NET\4. ASP.NET Core\n12xUnit\Entities\obj\Debug\net9.0\ref\Entities.dll
 H:\.NET\4. ASP.NET Core\n12xUnit\Entities\obj\Debug\net9.0\Entities.csproj.AssemblyReference.cache
 H:\.NET\4. ASP.NET Core\n12xUnit\Entities\bin\Debug\net9.0\Entities.runtimeconfig.json
 H:\.NET\4. ASP.NET Core\n12xUnit\Entities\obj\Debug\net9.0\Entities.genruntimeconfig.cache
+H:\.NET\4. ASP.NET Core\n12xUnit\Entities\obj\Debug\net9.0\Entities.sourcelink.json

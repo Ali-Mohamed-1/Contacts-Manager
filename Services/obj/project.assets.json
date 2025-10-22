@@ -1016,6 +1016,19 @@
           "bin/placeholder/Entities.dll": {}
         }
       },
+      "RepositoryContracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/RepositoryContracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RepositoryContracts.dll": {}
+        }
+      },
       "ServiceContracts/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -2801,6 +2814,11 @@
       "path": "../Entities/Entities.csproj",
       "msbuildProject": "../Entities/Entities.csproj"
     },
+    "RepositoryContracts/1.0.0": {
+      "type": "project",
+      "path": "../RepositoryContracts/RepositoryContracts.csproj",
+      "msbuildProject": "../RepositoryContracts/RepositoryContracts.csproj"
+    },
     "ServiceContracts/1.0.0": {
       "type": "project",
       "path": "../ServiceContracts/ServiceContracts.csproj",
@@ -2809,6 +2827,7 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "RepositoryContracts >= 1.0.0",
       "ServiceContracts >= 1.0.0",
       "xunit.abstractions >= 2.0.3"
     ]
@@ -2845,6 +2864,9 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
+            "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\RepositoryContracts\\RepositoryContracts.csproj": {
+              "projectPath": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\RepositoryContracts\\RepositoryContracts.csproj"
+            },
             "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\ServiceContracts\\ServiceContracts.csproj": {
               "projectPath": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\ServiceContracts\\ServiceContracts.csproj"
             }

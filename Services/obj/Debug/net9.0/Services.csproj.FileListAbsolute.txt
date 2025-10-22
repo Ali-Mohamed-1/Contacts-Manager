@@ -15,3 +15,6 @@ H:\.NET\4. ASP.NET Core\n12xUnit\Services\obj\Debug\net9.0\Services.dll
 H:\.NET\4. ASP.NET Core\n12xUnit\Services\obj\Debug\net9.0\refint\Services.dll
 H:\.NET\4. ASP.NET Core\n12xUnit\Services\obj\Debug\net9.0\Services.pdb
 H:\.NET\4. ASP.NET Core\n12xUnit\Services\obj\Debug\net9.0\ref\Services.dll
+H:\.NET\4. ASP.NET Core\n12xUnit\Services\obj\Debug\net9.0\Services.sourcelink.json
+H:\.NET\4. ASP.NET Core\n12xUnit\Services\bin\Debug\net9.0\RepositoryContracts.dll
+H:\.NET\4. ASP.NET Core\n12xUnit\Services\bin\Debug\net9.0\RepositoryContracts.pdb
