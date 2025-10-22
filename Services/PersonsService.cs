@@ -7,28 +7,26 @@ using System;
 using System.ComponentModel.DataAnnotations;
 using Entities.Data;
 using Microsoft.EntityFrameworkCore;
+using RepositoryContracts;
 
 namespace Services
 {
     public class PersonsService : IPersonsService
     {
-        private readonly AppDbContext _db;
-        private readonly ICountryService _countryService;
-
+        private readonly IPersonsRepository _personRepo;
 
         private async Task<PersonResponse> PersonToPersonResponseAsync(Person person)
         {
             PersonResponse personResponse = person.ToPersonResponse();
-            var country = await _countryService.GetCountryByID(person.CountryID);
-            personResponse.CountryName = country?.CountryName;
+
+            personResponse.CountryName = person.Country?.CountryName;
 
             return personResponse;
         }
 
-        public PersonsService(AppDbContext personsDbContext, ICountryService countryService)
+        public PersonsService(IPersonsRepository personRepo, ICountryService countryService)
         {
-            _countryService = countryService;
-            _db = personsDbContext;
+            _personRepo = personRepo;
         }
 
         public async Task<PersonResponse> AddPerson(PersonAddRequest? personAddRequest)
@@ -42,21 +40,16 @@ namespace Services
 
             person.PersonID = Guid.NewGuid();
 
-            _db.Persons.Add(person);
-            await _db.SaveChangesAsync();
+            await _personRepo.AddPerson(person);
 
             return await PersonToPersonResponseAsync(person);
         }
 
         public async Task<List<PersonResponse>> GetAllPersons()
         {
-            var persons = await _db.Persons.ToListAsync();
-            var responses = new List<PersonResponse>(persons.Count);
-            foreach (var person in persons)
-            {
-                responses.Add(await PersonToPersonResponseAsync(person));
-            }
-            return responses;
+            var persons = await _personRepo.GetAllPersons();
+
+            return persons.Select(person => person.ToPersonResponse()).ToList();
         }
 
         public async Task<PersonResponse?> GetPersonByID(Guid? personID)
@@ -64,7 +57,7 @@ namespace Services
             if (personID == null)
                 return null;
 
-            Person? person = await _db.Persons.FirstOrDefaultAsync(p => p.PersonID == personID);
+            Person? person = await _personRepo.GetPersonById(personID.Value);
             if (person == null)
                 return null;
 
@@ -73,61 +66,33 @@ namespace Services
 
         public async Task<List<PersonResponse>> GetFilteredPersons(string searchBy, string? searchString)
         {
-            var persons = await _db.Persons.ToListAsync();
-            var allPersons = new List<PersonResponse>(persons.Count);
-            foreach (var person in persons)
+            List<Person> persons = searchBy switch
             {
-                allPersons.Add(await PersonToPersonResponseAsync(person));
-            }
-            List<PersonResponse> matchingPersons = allPersons;
+                nameof(PersonResponse.Name) =>
+                    await _personRepo.GetFilteredPersons(person =>
+                        person.Name.Contains(searchString)),
 
-            if (string.IsNullOrEmpty(searchBy) || string.IsNullOrEmpty(searchString))
-                return matchingPersons;
+                nameof(PersonResponse.Email) =>
+                    await _personRepo.GetFilteredPersons(person =>
+                        person.Email.Contains(searchString)),
 
-            switch (searchBy)
-            {
-                case nameof(PersonResponse.Name):
-                    matchingPersons = allPersons.Where(person =>
-                        !string.IsNullOrEmpty(person.Name)
-                        && person.Name.Contains(searchString, StringComparison.OrdinalIgnoreCase)).ToList();
-                    break;
+                nameof(PersonResponse.Address) =>
+                    await _personRepo.GetFilteredPersons(person =>
+                        person.Address.Contains(searchString)),
 
-                case nameof(PersonResponse.Email):
-                    matchingPersons = allPersons.Where(person =>
-                        !string.IsNullOrEmpty(person.Email)
-                        && person.Email.Contains(searchString, StringComparison.OrdinalIgnoreCase)).ToList();
-                    break;
+                nameof(PersonResponse.Gender) =>
+                    await _personRepo.GetFilteredPersons(person =>
+                        person.Gender.Equals(searchString)),
 
-                case nameof(PersonResponse.Address):
-                    matchingPersons = allPersons.Where(person =>
-                        !string.IsNullOrEmpty(person.Address)
-                        && person.Address.Contains(searchString, StringComparison.OrdinalIgnoreCase)).ToList();
-                    break;
+                nameof(PersonResponse.CountryName) =>
+                        await _personRepo.GetFilteredPersons(person =>
+                            !string.IsNullOrEmpty(person.Country.CountryName) &&
+                            person.Country.CountryName.Contains(searchString)),
 
-                case nameof(PersonResponse.Gender):
-                    matchingPersons = allPersons.Where(person =>
-                        !string.IsNullOrEmpty(person.Gender)
-                        && person.Gender.Equals(searchString, StringComparison.OrdinalIgnoreCase)).ToList();
-                    break;
+                _ => await _personRepo.GetAllPersons()
+            };
 
-                case nameof(PersonResponse.CountryName):
-                    if (!string.IsNullOrEmpty(searchString))
-                    {
-                        matchingPersons = allPersons.Where(person =>
-                            !string.IsNullOrEmpty(person.CountryName) &&
-                            person.CountryName.Contains(searchString, StringComparison.OrdinalIgnoreCase)).ToList();
-                    }
-                    else
-                    {
-                        matchingPersons = new List<PersonResponse>();
-                    }
-                    break;
-
-                default:
-                    throw new ArgumentException($"Invalid search criteria: {searchBy}");
-            }
-
-            return matchingPersons;
+            return persons.Select(person => person.ToPersonResponse()).ToList();
         }
 
         public Task<List<PersonResponse>> GetSortedPersons(List<PersonResponse> allPersons, string sortBy, bool isAscending)
@@ -192,7 +157,8 @@ namespace Services
 
             ValidationHelper.ModelValidation(personUpdateRequest);
 
-            Person? existingPerson = await _db.Persons.FirstOrDefaultAsync(p => p.PersonID == personUpdateRequest.PersonID);
+            Person? existingPerson = await _personRepo.GetPersonById(personUpdateRequest.PersonID);
+
             if (existingPerson == null)
                 throw new ArgumentException($"Person with ID {personUpdateRequest.PersonID} not found");
 
@@ -204,7 +170,7 @@ namespace Services
             existingPerson.DateOfBirth = personUpdateRequest.DateOfBirth;
             existingPerson.ReceiveNewsLetters = personUpdateRequest.ReceiveNewsLetters;
 
-            await _db.SaveChangesAsync();
+            await _personRepo.UpdatePerson(existingPerson);
 
             return await PersonToPersonResponseAsync(existingPerson);
         }
@@ -214,12 +180,11 @@ namespace Services
             if(personID == null)
                 return false;
 
-            Person? person = await _db.Persons.FirstOrDefaultAsync(p => p.PersonID == personID);
+            Person? person = await _personRepo.GetPersonById(personID.Value);
             if (person == null)
                 return false;
 
-            _db.Persons.Remove(person);
-            await _db.SaveChangesAsync();
+            await _personRepo.DeletePersonByID(personID.Value);
 
             return true;
         }

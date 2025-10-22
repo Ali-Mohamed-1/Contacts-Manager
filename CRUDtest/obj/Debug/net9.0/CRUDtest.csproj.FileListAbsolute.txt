@@ -175,3 +175,5 @@ H:\.NET\4. ASP.NET Core\n12xUnit\CRUDtest\obj\Debug\net9.0\CRUDtest.sourcelink.j
 H:\.NET\4. ASP.NET Core\n12xUnit\CRUDtest\bin\Debug\net9.0\FluentAssertions.dll
 H:\.NET\4. ASP.NET Core\n12xUnit\CRUDtest\bin\Debug\net9.0\RepositoryContracts.dll
 H:\.NET\4. ASP.NET Core\n12xUnit\CRUDtest\bin\Debug\net9.0\RepositoryContracts.pdb
+H:\.NET\4. ASP.NET Core\n12xUnit\CRUDtest\bin\Debug\net9.0\Repositories.dll
+H:\.NET\4. ASP.NET Core\n12xUnit\CRUDtest\bin\Debug\net9.0\Repositories.pdb

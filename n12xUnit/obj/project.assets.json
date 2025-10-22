@@ -1620,6 +1620,20 @@
           "bin/placeholder/Entities.dll": {}
         }
       },
+      "Repositories/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Entities": "1.0.0",
+          "RepositoryContracts": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Repositories.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Repositories.dll": {}
+        }
+      },
       "RepositoryContracts/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -4761,6 +4775,11 @@
       "path": "../Entities/Entities.csproj",
       "msbuildProject": "../Entities/Entities.csproj"
     },
+    "Repositories/1.0.0": {
+      "type": "project",
+      "path": "../Repositories/Repositories.csproj",
+      "msbuildProject": "../Repositories/Repositories.csproj"
+    },
     "RepositoryContracts/1.0.0": {
       "type": "project",
       "path": "../RepositoryContracts/RepositoryContracts.csproj",
@@ -4782,6 +4801,8 @@
       "Entities >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.9",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.9",
+      "Repositories >= 1.0.0",
+      "RepositoryContracts >= 1.0.0",
       "ServiceContracts >= 1.0.0",
       "Services >= 1.0.0"
     ]
@@ -4820,6 +4841,12 @@
           "projectReferences": {
             "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\Entities\\Entities.csproj": {
               "projectPath": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\Entities\\Entities.csproj"
+            },
+            "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\Repositories\\Repositories.csproj": {
+              "projectPath": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\Repositories\\Repositories.csproj"
+            },
+            "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\RepositoryContracts\\RepositoryContracts.csproj": {
+              "projectPath": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\RepositoryContracts\\RepositoryContracts.csproj"
             },
             "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\ServiceContracts\\ServiceContracts.csproj": {
               "projectPath": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\ServiceContracts\\ServiceContracts.csproj"

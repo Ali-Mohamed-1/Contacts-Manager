@@ -2,6 +2,8 @@ using ServiceContracts;
 using Services;
 using Microsoft.EntityFrameworkCore;
 using Entities.Data;
+using RepositoryContracts;
+using Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +11,9 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<ICountryService, CountriesService>();
 builder.Services.AddScoped<IPersonsService, PersonsService>();
+
+builder.Services.AddScoped<ICountriesRepository, CountriesRepo>();
+builder.Services.AddScoped<IPersonsRepository, PersonsRepo>();
 
 
 builder.Services.AddDbContext<AppDbContext>(options =>
