@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{142D2132-7939-4D0B-B03B-42B5C278263E}|CRUDtest\\CRUDtest.csproj|h:\\.net\\4. asp.net core\\n12xunit\\crudtest\\countriesservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{142D2132-7939-4D0B-B03B-42B5C278263E}|CRUDtest\\CRUDtest.csproj|solutionrelative:crudtest\\countriesservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{142D2132-7939-4D0B-B03B-42B5C278263E}|CRUDtest\\CRUDtest.csproj|h:\\.net\\4. asp.net core\\n12xunit\\crudtest\\personcontrollerintegrationtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{142D2132-7939-4D0B-B03B-42B5C278263E}|CRUDtest\\CRUDtest.csproj|solutionrelative:crudtest\\personcontrollerintegrationtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BFC6F233-8D8B-4D43-B8FE-10079CF7CD7E}|Services\\Services.csproj|h:\\.net\\4. asp.net core\\n12xunit\\services\\countriesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFC6F233-8D8B-4D43-B8FE-10079CF7CD7E}|Services\\Services.csproj|solutionrelative:services\\countriesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5723B9EF-70AE-4D5D-9829-FB125D61369B}|n12xUnit\\n12xUnit.csproj|h:\\.net\\4. asp.net core\\n12xunit\\n12xunit\\views\\persons\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5723B9EF-70AE-4D5D-9829-FB125D61369B}|n12xUnit\\n12xUnit.csproj|solutionrelative:n12xunit\\views\\persons\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{142D2132-7939-4D0B-B03B-42B5C278263E}|CRUDtest\\CRUDtest.csproj|h:\\.net\\4. asp.net core\\n12xunit\\crudtest\\customewebapplicationfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{142D2132-7939-4D0B-B03B-42B5C278263E}|CRUDtest\\CRUDtest.csproj|solutionrelative:crudtest\\customewebapplicationfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +22,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\n12xUnit\\Views\\Persons\\Index.cshtml",
+              "RelativeDocumentMoniker": "n12xUnit\\Views\\Persons\\Index.cshtml",
+              "ToolTip": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\n12xUnit\\Views\\Persons\\Index.cshtml",
+              "RelativeToolTip": "n12xUnit\\Views\\Persons\\Index.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACMAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-23T07:10:15.362Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
@@ -38,28 +55,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CountriesServiceTest.cs",
-              "DocumentMoniker": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\CRUDtest\\CountriesServiceTest.cs",
-              "RelativeDocumentMoniker": "CRUDtest\\CountriesServiceTest.cs",
-              "ToolTip": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\CRUDtest\\CountriesServiceTest.cs",
-              "RelativeToolTip": "CRUDtest\\CountriesServiceTest.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAQwGsAAAA+AAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "CustomeWebApplicationFactory.cs",
+              "DocumentMoniker": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\CRUDtest\\CustomeWebApplicationFactory.cs",
+              "RelativeDocumentMoniker": "CRUDtest\\CustomeWebApplicationFactory.cs",
+              "ToolTip": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\CRUDtest\\CustomeWebApplicationFactory.cs",
+              "RelativeToolTip": "CRUDtest\\CustomeWebApplicationFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T07:45:34.797Z",
+              "WhenOpened": "2025-10-23T06:06:55.83Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CountriesService.cs",
-              "DocumentMoniker": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\Services\\CountriesService.cs",
-              "RelativeDocumentMoniker": "Services\\CountriesService.cs",
-              "ToolTip": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\Services\\CountriesService.cs",
-              "RelativeToolTip": "Services\\CountriesService.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "PersonControllerIntegrationTest.cs",
+              "DocumentMoniker": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\CRUDtest\\PersonControllerIntegrationTest.cs",
+              "RelativeDocumentMoniker": "CRUDtest\\PersonControllerIntegrationTest.cs",
+              "ToolTip": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\CRUDtest\\PersonControllerIntegrationTest.cs",
+              "RelativeToolTip": "CRUDtest\\PersonControllerIntegrationTest.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAxwB8AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T07:49:03.395Z",
+              "WhenOpened": "2025-10-23T05:58:55.504Z",
               "EditorCaption": ""
             }
           ]

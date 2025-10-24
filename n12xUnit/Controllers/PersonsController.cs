@@ -68,7 +68,7 @@ namespace n12xUnit.Controllers
 
                 ViewBag.Errors = ModelState.Values.SelectMany(v => v.Errors).Select(msg => msg.ErrorMessage).ToList();
 
-                return View();
+                return View(personAddRequest);
             }
 
             await _personsService.AddPerson(personAddRequest);

@@ -1,0 +1,8 @@
+{
+  "Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\Entities",
+  "n12xUnit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\n12xUnit",
+  "Repositories, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\Repositories",
+  "RepositoryContracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\RepositoryContracts",
+  "ServiceContracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\ServiceContracts",
+  "Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\Services"
+}

@@ -15,12 +15,21 @@ builder.Services.AddScoped<IPersonsService, PersonsService>();
 builder.Services.AddScoped<ICountriesRepository, CountriesRepo>();
 builder.Services.AddScoped<IPersonsRepository, PersonsRepo>();
 
-
-builder.Services.AddDbContext<AppDbContext>(options =>
+// Conditionally register database provider based on environment
+if (builder.Environment.IsEnvironment("Test"))
 {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("connectionString"));
-});
-
+    builder.Services.AddDbContext<AppDbContext>(options =>
+    {
+        options.UseInMemoryDatabase("TestingDB");
+    });
+}
+else
+{
+    builder.Services.AddDbContext<AppDbContext>(options =>
+    {
+        options.UseSqlServer(builder.Configuration.GetConnectionString("connectionString"));
+    });
+}
 
 var app = builder.Build();
 
@@ -29,3 +38,10 @@ app.UseRouting();
 app.MapControllers();
 
 app.Run();
+
+public partial class Program { }
+// this for making the Program class public for testing purposes
+// and to do so we need to add it in our project file:
+// <ItemGroup>
+//       < InternalsVisibleTo Include = "CRUDtest" />
+//  </ ItemGroup >

@@ -8,9 +8,9 @@ H:\.NET\4. ASP.NET Core\n12xUnit\ServiceContracts\obj\Debug\net9.0\ServiceContra
 H:\.NET\4. ASP.NET Core\n12xUnit\ServiceContracts\obj\Debug\net9.0\ServiceContracts.AssemblyInfoInputs.cache
 H:\.NET\4. ASP.NET Core\n12xUnit\ServiceContracts\obj\Debug\net9.0\ServiceContracts.AssemblyInfo.cs
 H:\.NET\4. ASP.NET Core\n12xUnit\ServiceContracts\obj\Debug\net9.0\ServiceContracts.csproj.CoreCompileInputs.cache
+H:\.NET\4. ASP.NET Core\n12xUnit\ServiceContracts\obj\Debug\net9.0\ServiceContracts.sourcelink.json
 H:\.NET\4. ASP.NET Core\n12xUnit\ServiceContracts\obj\Debug\net9.0\ServiceC.04662A29.Up2Date
 H:\.NET\4. ASP.NET Core\n12xUnit\ServiceContracts\obj\Debug\net9.0\ServiceContracts.dll
 H:\.NET\4. ASP.NET Core\n12xUnit\ServiceContracts\obj\Debug\net9.0\refint\ServiceContracts.dll
 H:\.NET\4. ASP.NET Core\n12xUnit\ServiceContracts\obj\Debug\net9.0\ServiceContracts.pdb
 H:\.NET\4. ASP.NET Core\n12xUnit\ServiceContracts\obj\Debug\net9.0\ref\ServiceContracts.dll
-H:\.NET\4. ASP.NET Core\n12xUnit\ServiceContracts\obj\Debug\net9.0\ServiceContracts.sourcelink.json
