@@ -1,6 +1,7 @@
 ﻿using Entities;
 using Entities.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using RepositoryContracts;
 using System;
 using System.Collections.Generic;
@@ -14,14 +15,18 @@ namespace Repositories
     public class PersonsRepo : IPersonsRepository
     {
         private readonly AppDbContext _db;
+        private readonly ILogger<PersonsRepo> _logger;
 
-        public PersonsRepo(AppDbContext db)
+        public PersonsRepo(AppDbContext db, ILogger<PersonsRepo> logger)
         {
             _db = db;
+            _logger = logger;
         }
 
         public async Task<Person> AddPerson(Person person)
         {
+            _logger.LogInformation("AddPerson method called in PersonsRepo");
+
             _db.Persons.Add(person);
             await _db.SaveChangesAsync();
 
@@ -30,6 +35,8 @@ namespace Repositories
 
         public async Task<bool> DeletePersonByID(Guid personID)
         {
+            _logger.LogInformation("DeletePersonByID method called in PersonsRepo");
+
             _db.Persons.RemoveRange(_db.Persons.Where(temp => temp.PersonID == personID));
             int rowsDeleted = await _db.SaveChangesAsync();
 
@@ -38,11 +45,15 @@ namespace Repositories
 
         public async Task<List<Person>> GetAllPersons()
         {
+            _logger.LogInformation("GetAllPersons method called in PersonsRepo");
+
             return await _db.Persons.Include("Country").ToListAsync();
         }
 
         public async Task<List<Person>> GetFilteredPersons(Expression<Func<Person, bool>> predicate)
         {
+            _logger.LogInformation("GetFilteredPersons method called in PersonsRepo");
+
             return await _db.Persons.Include("Country")
              .Where(predicate)
              .ToListAsync();
@@ -50,12 +61,16 @@ namespace Repositories
 
         public async Task<Person?> GetPersonById(Guid PersonId)
         {
+            _logger.LogInformation("GetPersonById method called in PersonsRepo");
+
             return await _db.Persons.Include("Country")
              .FirstOrDefaultAsync(temp => temp.PersonID == PersonId);
         }
 
         public async Task<Person> UpdatePerson(Person person)
         {
+            _logger.LogInformation("UpdatePerson method called in PersonsRepo");
+
             Person? matchingPerson = await _db.Persons.FirstOrDefaultAsync(temp => temp.PersonID == person.PersonID);
 
             if (matchingPerson == null)

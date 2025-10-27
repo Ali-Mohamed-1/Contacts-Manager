@@ -7,6 +7,15 @@ using Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Logging
+builder.Host.ConfigureLogging(provider =>
+{
+    provider.ClearProviders();
+    provider.AddConsole(); // log messages are only shown in the console
+    provider.AddDebug();
+    provider.AddEventLog();
+});
+
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<ICountryService, CountriesService>();
