@@ -3,6 +3,7 @@ using System.Linq;
 using Entities;
 using Entities.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using RepositoryContracts;
 using ServiceContracts;
 using ServiceContracts.DTOs.CountryDTOs;
@@ -12,13 +13,18 @@ namespace Services
 	public class CountriesService : ICountryService
 	{
 		private readonly ICountriesRepository _countriesRepo;
-		public CountriesService(ICountriesRepository countriesRepo)
+		private readonly ILogger<CountriesService> _logger;
+
+		public CountriesService(ICountriesRepository countriesRepo, ILogger<CountriesService> logger)
 		{
 			_countriesRepo = countriesRepo;
+			_logger = logger;
 		}
 
 		public async Task<CountryResponse> AddCountry(CountryAddRequest? countryAddRequest)
 		{
+			_logger.LogInformation("AddCountry method called in CountriesService");
+
 			if (countryAddRequest == null)
 				throw new ArgumentNullException(nameof(countryAddRequest));
 
@@ -39,12 +45,16 @@ namespace Services
 
         public async Task<List<CountryResponse>> GetAllCountries()
         {
+			_logger.LogInformation("GetAllCountries method called in CountriesService");
+
 			return (await _countriesRepo.GetAllCountries())
                 .Select(country => country.ToCountryResponse()).ToList();
         }
 
 		public async Task<CountryResponse>? GetCountryByID(Guid? countryID)
 		{
+			_logger.LogInformation("GetCountryByID method called in CountriesService");
+
 			if (countryID == null)
 				return null;
 

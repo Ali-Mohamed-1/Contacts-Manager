@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{142D2132-7939-4D0B-B03B-42B5C278263E}|CRUDtest\\CRUDtest.csproj|h:\\.net\\4. asp.net core\\n12xunit\\crudtest\\personcontrollerintegrationtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{142D2132-7939-4D0B-B03B-42B5C278263E}|CRUDtest\\CRUDtest.csproj|solutionrelative:crudtest\\personcontrollerintegrationtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5723B9EF-70AE-4D5D-9829-FB125D61369B}|n12xUnit\\n12xUnit.csproj|h:\\.net\\4. asp.net core\\n12xunit\\n12xunit\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5723B9EF-70AE-4D5D-9829-FB125D61369B}|n12xUnit\\n12xUnit.csproj|solutionrelative:n12xunit\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5723B9EF-70AE-4D5D-9829-FB125D61369B}|n12xUnit\\n12xUnit.csproj|h:\\.net\\4. asp.net core\\n12xunit\\n12xunit\\views\\persons\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5723B9EF-70AE-4D5D-9829-FB125D61369B}|n12xUnit\\n12xUnit.csproj|solutionrelative:n12xunit\\views\\persons\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5723B9EF-70AE-4D5D-9829-FB125D61369B}|n12xUnit\\n12xUnit.csproj|h:\\.net\\4. asp.net core\\n12xunit\\n12xunit\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5723B9EF-70AE-4D5D-9829-FB125D61369B}|n12xUnit\\n12xUnit.csproj|solutionrelative:n12xunit\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{142D2132-7939-4D0B-B03B-42B5C278263E}|CRUDtest\\CRUDtest.csproj|h:\\.net\\4. asp.net core\\n12xunit\\crudtest\\customewebapplicationfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{142D2132-7939-4D0B-B03B-42B5C278263E}|CRUDtest\\CRUDtest.csproj|solutionrelative:crudtest\\customewebapplicationfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BFC6F233-8D8B-4D43-B8FE-10079CF7CD7E}|Services\\Services.csproj|h:\\.net\\4. asp.net core\\n12xunit\\services\\personsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFC6F233-8D8B-4D43-B8FE-10079CF7CD7E}|Services\\Services.csproj|solutionrelative:services\\personsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8FFD7A7-1D67-424E-B070-62DA5594A4AF}|Repositories\\Repositories.csproj|h:\\.net\\4. asp.net core\\n12xunit\\repositories\\personsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8FFD7A7-1D67-424E-B070-62DA5594A4AF}|Repositories\\Repositories.csproj|solutionrelative:repositories\\personsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5723B9EF-70AE-4D5D-9829-FB125D61369B}|n12xUnit\\n12xUnit.csproj|h:\\.net\\4. asp.net core\\n12xunit\\n12xunit\\controllers\\personscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5723B9EF-70AE-4D5D-9829-FB125D61369B}|n12xUnit\\n12xUnit.csproj|solutionrelative:n12xunit\\controllers\\personscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,21 +30,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\n12xUnit\\Views\\Persons\\Index.cshtml",
-              "RelativeDocumentMoniker": "n12xUnit\\Views\\Persons\\Index.cshtml",
-              "ToolTip": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\n12xUnit\\Views\\Persons\\Index.cshtml",
-              "RelativeToolTip": "n12xUnit\\Views\\Persons\\Index.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACMAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-23T07:10:15.362Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
@@ -55,28 +50,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CustomeWebApplicationFactory.cs",
-              "DocumentMoniker": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\CRUDtest\\CustomeWebApplicationFactory.cs",
-              "RelativeDocumentMoniker": "CRUDtest\\CustomeWebApplicationFactory.cs",
-              "ToolTip": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\CRUDtest\\CustomeWebApplicationFactory.cs",
-              "RelativeToolTip": "CRUDtest\\CustomeWebApplicationFactory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T06:06:55.83Z",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\n12xUnit\\appsettings.json",
+              "RelativeDocumentMoniker": "n12xUnit\\appsettings.json",
+              "ToolTip": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\n12xUnit\\appsettings.json",
+              "RelativeToolTip": "n12xUnit\\appsettings.json",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-28T04:48:44.933Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PersonControllerIntegrationTest.cs",
-              "DocumentMoniker": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\CRUDtest\\PersonControllerIntegrationTest.cs",
-              "RelativeDocumentMoniker": "CRUDtest\\PersonControllerIntegrationTest.cs",
-              "ToolTip": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\CRUDtest\\PersonControllerIntegrationTest.cs",
-              "RelativeToolTip": "CRUDtest\\PersonControllerIntegrationTest.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAxwB8AAAAVAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\n12xUnit\\Program.cs",
+              "RelativeDocumentMoniker": "n12xUnit\\Program.cs",
+              "ToolTip": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\n12xUnit\\Program.cs",
+              "RelativeToolTip": "n12xUnit\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T05:58:55.504Z",
+              "WhenOpened": "2025-10-28T04:47:47.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PersonsRepo.cs",
+              "DocumentMoniker": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\Repositories\\PersonsRepo.cs",
+              "RelativeDocumentMoniker": "Repositories\\PersonsRepo.cs",
+              "ToolTip": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\Repositories\\PersonsRepo.cs",
+              "RelativeToolTip": "Repositories\\PersonsRepo.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBZwEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T04:59:40.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PersonsService.cs",
+              "DocumentMoniker": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\Services\\PersonsService.cs",
+              "RelativeDocumentMoniker": "Services\\PersonsService.cs",
+              "ToolTip": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\Services\\PersonsService.cs",
+              "RelativeToolTip": "Services\\PersonsService.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAuwB8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T04:56:11.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PersonsController.cs",
+              "DocumentMoniker": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\n12xUnit\\Controllers\\PersonsController.cs",
+              "RelativeDocumentMoniker": "n12xUnit\\Controllers\\PersonsController.cs",
+              "ToolTip": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\n12xUnit\\Controllers\\PersonsController.cs",
+              "RelativeToolTip": "n12xUnit\\Controllers\\PersonsController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCkAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T04:52:26.6Z",
               "EditorCaption": ""
             }
           ]

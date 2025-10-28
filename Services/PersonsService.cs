@@ -8,15 +8,19 @@ using System.ComponentModel.DataAnnotations;
 using Entities.Data;
 using Microsoft.EntityFrameworkCore;
 using RepositoryContracts;
+using Microsoft.Extensions.Logging;
 
 namespace Services
 {
     public class PersonsService : IPersonsService
     {
         private readonly IPersonsRepository _personRepo;
+        private readonly ILogger<PersonsService> _logger;
 
         private async Task<PersonResponse> PersonToPersonResponseAsync(Person person)
         {
+            _logger.LogInformation("PersonToPersonResponseAsync method called in PersonsService");
+
             PersonResponse personResponse = person.ToPersonResponse();
 
             personResponse.CountryName = person.Country?.CountryName;
@@ -24,13 +28,16 @@ namespace Services
             return personResponse;
         }
 
-        public PersonsService(IPersonsRepository personRepo)
+        public PersonsService(IPersonsRepository personRepo, ILogger<PersonsService> logger)
         {
             _personRepo = personRepo;
+            _logger = logger;
         }
 
         public async Task<PersonResponse> AddPerson(PersonAddRequest? personAddRequest)
         {
+            _logger.LogInformation("AddPerson method called in PersonsService");
+
             if (personAddRequest == null)
                 throw new ArgumentNullException(nameof(personAddRequest), "PersonAddRequest cannot be null");
 
@@ -47,6 +54,8 @@ namespace Services
 
         public async Task<List<PersonResponse>> GetAllPersons()
         {
+            _logger.LogInformation("GetAllPersons method called in PersonsService");
+
             var persons = await _personRepo.GetAllPersons();
 
             return persons.Select(person => person.ToPersonResponse()).ToList();
@@ -54,6 +63,8 @@ namespace Services
 
         public async Task<PersonResponse?> GetPersonByID(Guid? personID)
         {
+            _logger.LogInformation("GetPersonByID method called in PersonsService");
+
             if (personID == null)
                 return null;
 
@@ -66,6 +77,8 @@ namespace Services
 
         public async Task<List<PersonResponse>> GetFilteredPersons(string searchBy, string? searchString)
         {
+            _logger.LogInformation("GetFilteredPersons method called in PersonsService");
+
             List<Person> persons = searchBy switch
             {
                 nameof(PersonResponse.Name) =>
@@ -97,6 +110,8 @@ namespace Services
 
         public Task<List<PersonResponse>> GetSortedPersons(List<PersonResponse> allPersons, string sortBy, bool isAscending)
         {
+            _logger.LogInformation("GetSortedPersons method called in PersonsService");
+
             List<PersonResponse> matchingPersons = allPersons;
 
             switch (sortBy)
@@ -152,6 +167,8 @@ namespace Services
 
         public async Task<PersonResponse> UpdatePerson(PersonUpdateRequest? personUpdateRequest)
         {
+            _logger.LogInformation("UpdatePerson method called in PersonsService");
+
             if (personUpdateRequest == null)
                 throw new ArgumentNullException(nameof(personUpdateRequest), "PersonUpdateRequest cannot be null");
 
@@ -177,7 +194,9 @@ namespace Services
 
         public async Task<bool> DeletePerson(Guid? personID)
         {
-            if(personID == null)
+            _logger.LogInformation("DeletePerson method called in PersonsService");
+
+            if (personID == null)
                 return false;
 
             Person? person = await _personRepo.GetPersonById(personID.Value);

@@ -4,8 +4,17 @@ using Microsoft.EntityFrameworkCore;
 using Entities.Data;
 using RepositoryContracts;
 using Repositories;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Logging with Serilog
+builder.Host.UseSerilog((HostBuilderContext context, IServiceProvider services, LoggerConfiguration loggerConfig) =>
+{
+    loggerConfig
+        .ReadFrom.Configuration(context.Configuration)
+        .ReadFrom.Services(services);
+});
 
 builder.Services.AddControllersWithViews();
 
@@ -14,6 +23,8 @@ builder.Services.AddScoped<IPersonsService, PersonsService>();
 
 builder.Services.AddScoped<ICountriesRepository, CountriesRepo>();
 builder.Services.AddScoped<IPersonsRepository, PersonsRepo>();
+
+builder.Services.AddHttpLogging();
 
 // Conditionally register database provider based on environment
 if (builder.Environment.IsEnvironment("Test"))
@@ -32,6 +43,8 @@ else
 }
 
 var app = builder.Build();
+
+app.UseHttpLogging();
 
 app.UseStaticFiles();
 app.UseRouting();
