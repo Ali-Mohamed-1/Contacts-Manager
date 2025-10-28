@@ -4,16 +4,16 @@ using Microsoft.EntityFrameworkCore;
 using Entities.Data;
 using RepositoryContracts;
 using Repositories;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Logging
-builder.Host.ConfigureLogging(provider =>
+// Logging with Serilog
+builder.Host.UseSerilog((HostBuilderContext context, IServiceProvider services, LoggerConfiguration loggerConfig) =>
 {
-    provider.ClearProviders();
-    provider.AddConsole(); // log messages are only shown in the console
-    provider.AddDebug();
-    provider.AddEventLog();
+    loggerConfig
+        .ReadFrom.Configuration(context.Configuration)
+        .ReadFrom.Services(services);
 });
 
 builder.Services.AddControllersWithViews();

@@ -183,3 +183,12 @@ H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit\obj\Debug\net9.0\n12xUnit.pdb
 H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit\obj\Debug\net9.0\n12xUnit.genruntimeconfig.cache
 H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit\obj\Debug\net9.0\ref\n12xUnit.dll
 H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit\bin\Debug\net9.0\Serilog.dll
+H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit\bin\Debug\net9.0\Serilog.AspNetCore.dll
+H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit\bin\Debug\net9.0\Serilog.Extensions.Hosting.dll
+H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit\bin\Debug\net9.0\Serilog.Extensions.Logging.dll
+H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit\bin\Debug\net9.0\Serilog.Formatting.Compact.dll
+H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit\bin\Debug\net9.0\Serilog.Settings.Configuration.dll
+H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit\bin\Debug\net9.0\Serilog.Sinks.Console.dll
+H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit\bin\Debug\net9.0\Serilog.Sinks.Debug.dll
+H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit\bin\Debug\net9.0\Serilog.Sinks.File.dll

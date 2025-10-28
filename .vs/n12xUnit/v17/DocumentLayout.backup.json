@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5723B9EF-70AE-4D5D-9829-FB125D61369B}|n12xUnit\\n12xUnit.csproj|h:\\.net\\4. asp.net core\\n12xunit\\n12xunit\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5723B9EF-70AE-4D5D-9829-FB125D61369B}|n12xUnit\\n12xUnit.csproj|solutionrelative:n12xunit\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5723B9EF-70AE-4D5D-9829-FB125D61369B}|n12xUnit\\n12xUnit.csproj|h:\\.net\\4. asp.net core\\n12xunit\\n12xunit\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{5723B9EF-70AE-4D5D-9829-FB125D61369B}|n12xUnit\\n12xUnit.csproj|solutionrelative:n12xunit\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5723B9EF-70AE-4D5D-9829-FB125D61369B}|n12xUnit\\n12xUnit.csproj|h:\\.net\\4. asp.net core\\n12xunit\\n12xunit\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{5723B9EF-70AE-4D5D-9829-FB125D61369B}|n12xUnit\\n12xUnit.csproj|solutionrelative:n12xunit\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5723B9EF-70AE-4D5D-9829-FB125D61369B}|n12xUnit\\n12xUnit.csproj|h:\\.net\\4. asp.net core\\n12xunit\\n12xunit\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5723B9EF-70AE-4D5D-9829-FB125D61369B}|n12xUnit\\n12xUnit.csproj|solutionrelative:n12xunit\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BFC6F233-8D8B-4D43-B8FE-10079CF7CD7E}|Services\\Services.csproj|h:\\.net\\4. asp.net core\\n12xunit\\services\\personsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,13 +50,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "appsettings.json",
               "DocumentMoniker": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\n12xUnit\\appsettings.json",
               "RelativeDocumentMoniker": "n12xUnit\\appsettings.json",
               "ToolTip": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\n12xUnit\\appsettings.json",
               "RelativeToolTip": "n12xUnit\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-10-28T04:48:44.933Z",
               "EditorCaption": ""
@@ -68,44 +64,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\n12xUnit\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "n12xUnit\\appsettings.Development.json",
-              "ToolTip": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\n12xUnit\\appsettings.Development.json",
-              "RelativeToolTip": "n12xUnit\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-28T04:48:26.53Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\n12xUnit\\Program.cs",
               "RelativeDocumentMoniker": "n12xUnit\\Program.cs",
               "ToolTip": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\n12xUnit\\Program.cs",
               "RelativeToolTip": "n12xUnit\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-28T04:47:47.546Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "PersonsRepo.cs",
               "DocumentMoniker": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\Repositories\\PersonsRepo.cs",
               "RelativeDocumentMoniker": "Repositories\\PersonsRepo.cs",
               "ToolTip": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\Repositories\\PersonsRepo.cs",
               "RelativeToolTip": "Repositories\\PersonsRepo.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAEgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAIBJwEgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T04:59:40.953Z"
+              "WhenOpened": "2025-10-27T04:59:40.953Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "PersonsService.cs",
               "DocumentMoniker": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\Services\\PersonsService.cs",
               "RelativeDocumentMoniker": "Services\\PersonsService.cs",
@@ -118,7 +102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "PersonsController.cs",
               "DocumentMoniker": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\n12xUnit\\Controllers\\PersonsController.cs",
               "RelativeDocumentMoniker": "n12xUnit\\Controllers\\PersonsController.cs",
@@ -126,7 +110,8 @@
               "RelativeToolTip": "n12xUnit\\Controllers\\PersonsController.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAQwCkAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T04:52:26.6Z"
+              "WhenOpened": "2025-10-27T04:52:26.6Z",
+              "EditorCaption": ""
             }
           ]
         }

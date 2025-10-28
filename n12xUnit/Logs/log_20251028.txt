@@ -1,0 +1,504 @@
+2025-10-28 09:13:35.943 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/Add.cshtml'.
+2025-10-28 09:13:35.981 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/Delete.cshtml'.
+2025-10-28 09:13:35.982 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/Edit.cshtml'.
+2025-10-28 09:13:35.983 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/Index.cshtml'.
+2025-10-28 09:13:35.984 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_Layout.cshtml'.
+2025-10-28 09:13:35.984 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewImports.cshtml'.
+2025-10-28 09:13:35.986 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewStart.cshtml'.
+2025-10-28 09:13:35.996 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-10-28 09:13:36.068 +03:00 [DBG] Hosting starting
+2025-10-28 09:13:36.107 +03:00 [INF] User profile is available. Using 'C:\Users\CM\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-28 09:13:36.121 +03:00 [DBG] Reading data from file 'C:\Users\CM\AppData\Local\ASP.NET\DataProtection-Keys\key-4f174ec2-b436-486c-ab24-0e114a66c3e7.xml'.
+2025-10-28 09:13:36.127 +03:00 [DBG] Reading data from file 'C:\Users\CM\AppData\Local\ASP.NET\DataProtection-Keys\key-61c3a87e-9953-4ebf-8606-160c6bf36198.xml'.
+2025-10-28 09:13:36.128 +03:00 [DBG] Reading data from file 'C:\Users\CM\AppData\Local\ASP.NET\DataProtection-Keys\key-bf68aded-6641-48a6-b9ac-55ca0b659162.xml'.
+2025-10-28 09:13:36.132 +03:00 [DBG] Found key {4f174ec2-b436-486c-ab24-0e114a66c3e7}.
+2025-10-28 09:13:36.137 +03:00 [DBG] Found key {61c3a87e-9953-4ebf-8606-160c6bf36198}.
+2025-10-28 09:13:36.149 +03:00 [DBG] Found key {bf68aded-6641-48a6-b9ac-55ca0b659162}.
+2025-10-28 09:13:36.158 +03:00 [DBG] Considering key {bf68aded-6641-48a6-b9ac-55ca0b659162} with expiration date 2025-11-25 10:56:52Z as default key.
+2025-10-28 09:13:36.163 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-10-28 09:13:36.168 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2025-10-28 09:13:36.170 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-10-28 09:13:36.174 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-10-28 09:13:36.175 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-10-28 09:13:36.177 +03:00 [DBG] Using key {bf68aded-6641-48a6-b9ac-55ca0b659162} as the default key.
+2025-10-28 09:13:36.178 +03:00 [DBG] Key ring with default key {bf68aded-6641-48a6-b9ac-55ca0b659162} was loaded during application startup.
+2025-10-28 09:13:36.189 +03:00 [DBG] Middleware loaded
+2025-10-28 09:13:36.191 +03:00 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16501 B).
+2025-10-28 09:13:36.193 +03:00 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2025-10-28 09:13:36.253 +03:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-10-28 09:13:36.255 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-10-28 09:13:36.267 +03:00 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2025-10-28 09:13:36.399 +03:00 [INF] Now listening on: http://localhost:5022
+2025-10-28 09:13:36.401 +03:00 [DBG] Loaded hosting startup assembly n12xUnit
+2025-10-28 09:13:36.404 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-10-28 09:13:36.406 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-10-28 09:13:36.409 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-10-28 09:13:36.418 +03:00 [DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-10-28 09:13:36.420 +03:00 [DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-10-28 09:13:36.473 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-28 09:13:36.475 +03:00 [INF] Hosting environment: Development
+2025-10-28 09:13:36.476 +03:00 [INF] Content root path: H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit
+2025-10-28 09:13:36.477 +03:00 [DBG] Hosting started
+2025-10-28 09:13:36.490 +03:00 [DBG] Connection id "0HNGLT4GM674D" accepted.
+2025-10-28 09:13:36.490 +03:00 [DBG] Connection id "0HNGLT4GM674C" accepted.
+2025-10-28 09:13:36.492 +03:00 [DBG] Connection id "0HNGLT4GM674D" started.
+2025-10-28 09:13:36.493 +03:00 [DBG] Connection id "0HNGLT4GM674C" started.
+2025-10-28 09:13:36.505 +03:00 [DBG] Connection id "0HNGLT4GM674C" received FIN.
+2025-10-28 09:13:36.505 +03:00 [DBG] Connection id "0HNGLT4GM674D" received FIN.
+2025-10-28 09:13:36.546 +03:00 [DBG] Connection id "0HNGLT4GM674D" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-10-28 09:13:36.546 +03:00 [DBG] Connection id "0HNGLT4GM674C" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-10-28 09:13:36.581 +03:00 [DBG] Connection id "0HNGLT4GM674D" disconnecting.
+2025-10-28 09:13:36.582 +03:00 [DBG] Connection id "0HNGLT4GM674C" disconnecting.
+2025-10-28 09:13:36.584 +03:00 [DBG] Connection id "0HNGLT4GM674C" stopped.
+2025-10-28 09:13:36.584 +03:00 [DBG] Connection id "0HNGLT4GM674D" stopped.
+2025-10-28 09:13:37.133 +03:00 [DBG] Connection id "0HNGLT4GM674E" accepted.
+2025-10-28 09:13:37.134 +03:00 [DBG] Connection id "0HNGLT4GM674E" started.
+2025-10-28 09:13:37.169 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/ - null null
+2025-10-28 09:13:37.279 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5022
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-28 09:13:37.283 +03:00 [DBG] The request path / does not match a supported file type
+2025-10-28 09:13:37.304 +03:00 [DBG] 1 candidate(s) found for the request path '/'
+2025-10-28 09:13:37.305 +03:00 [DBG] Endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)' with route pattern '' is valid for the request path '/'
+2025-10-28 09:13:37.308 +03:00 [DBG] Request matched endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-10-28 09:13:37.312 +03:00 [INF] Executing endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-10-28 09:13:37.357 +03:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, Boolean) on controller n12xUnit.Controllers.PersonsController (n12xUnit).
+2025-10-28 09:13:37.361 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-10-28 09:13:37.362 +03:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2025-10-28 09:13:37.364 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2025-10-28 09:13:37.366 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-10-28 09:13:37.368 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2025-10-28 09:13:37.371 +03:00 [DBG] Executing controller factory for controller n12xUnit.Controllers.PersonsController (n12xUnit)
+2025-10-28 09:13:37.468 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-10-28 09:13:37.486 +03:00 [DBG] Executed controller factory for controller n12xUnit.Controllers.PersonsController (n12xUnit)
+2025-10-28 09:13:37.496 +03:00 [DBG] Attempting to bind parameter 'searchBy' of type 'System.String' ...
+2025-10-28 09:13:37.500 +03:00 [DBG] Attempting to bind parameter 'searchBy' of type 'System.String' using the name '' in request data ...
+2025-10-28 09:13:37.502 +03:00 [DBG] Could not find a value in the request with name '' for binding parameter 'searchBy' of type 'System.String'.
+2025-10-28 09:13:37.504 +03:00 [DBG] Done attempting to bind parameter 'searchBy' of type 'System.String'.
+2025-10-28 09:13:37.505 +03:00 [DBG] Done attempting to bind parameter 'searchBy' of type 'System.String'.
+2025-10-28 09:13:37.507 +03:00 [DBG] Attempting to validate the bound parameter 'searchBy' of type 'System.String' ...
+2025-10-28 09:13:37.513 +03:00 [DBG] Done attempting to validate the bound parameter 'searchBy' of type 'System.String'.
+2025-10-28 09:13:37.516 +03:00 [DBG] Attempting to bind parameter 'searchString' of type 'System.String' ...
+2025-10-28 09:13:37.518 +03:00 [DBG] Attempting to bind parameter 'searchString' of type 'System.String' using the name '' in request data ...
+2025-10-28 09:13:37.519 +03:00 [DBG] Could not find a value in the request with name '' for binding parameter 'searchString' of type 'System.String'.
+2025-10-28 09:13:37.520 +03:00 [DBG] Done attempting to bind parameter 'searchString' of type 'System.String'.
+2025-10-28 09:13:37.521 +03:00 [DBG] Done attempting to bind parameter 'searchString' of type 'System.String'.
+2025-10-28 09:13:37.522 +03:00 [DBG] Attempting to validate the bound parameter 'searchString' of type 'System.String' ...
+2025-10-28 09:13:37.524 +03:00 [DBG] Done attempting to validate the bound parameter 'searchString' of type 'System.String'.
+2025-10-28 09:13:37.525 +03:00 [DBG] Attempting to bind parameter 'sortBy' of type 'System.String' ...
+2025-10-28 09:13:37.527 +03:00 [DBG] Attempting to bind parameter 'sortBy' of type 'System.String' using the name '' in request data ...
+2025-10-28 09:13:37.528 +03:00 [DBG] Could not find a value in the request with name '' for binding parameter 'sortBy' of type 'System.String'.
+2025-10-28 09:13:37.530 +03:00 [DBG] Done attempting to bind parameter 'sortBy' of type 'System.String'.
+2025-10-28 09:13:37.531 +03:00 [DBG] Done attempting to bind parameter 'sortBy' of type 'System.String'.
+2025-10-28 09:13:37.533 +03:00 [DBG] Attempting to validate the bound parameter 'sortBy' of type 'System.String' ...
+2025-10-28 09:13:37.534 +03:00 [DBG] Done attempting to validate the bound parameter 'sortBy' of type 'System.String'.
+2025-10-28 09:13:37.535 +03:00 [DBG] Attempting to bind parameter 'isAscending' of type 'System.Boolean' ...
+2025-10-28 09:13:37.536 +03:00 [DBG] Attempting to bind parameter 'isAscending' of type 'System.Boolean' using the name '' in request data ...
+2025-10-28 09:13:37.538 +03:00 [DBG] Could not find a value in the request with name '' for binding parameter 'isAscending' of type 'System.Boolean'.
+2025-10-28 09:13:37.539 +03:00 [DBG] Done attempting to bind parameter 'isAscending' of type 'System.Boolean'.
+2025-10-28 09:13:37.541 +03:00 [DBG] Done attempting to bind parameter 'isAscending' of type 'System.Boolean'.
+2025-10-28 09:13:37.542 +03:00 [DBG] Attempting to validate the bound parameter 'isAscending' of type 'System.Boolean' ...
+2025-10-28 09:13:37.543 +03:00 [DBG] Done attempting to validate the bound parameter 'isAscending' of type 'System.Boolean'.
+2025-10-28 09:13:37.552 +03:00 [INF] Index action method of PersonsController called
+2025-10-28 09:13:37.553 +03:00 [DBG] SearchBy: , SearchString: , SortBy: Name, IsAscending: True
+2025-10-28 09:13:37.582 +03:00 [INF] GetFilteredPersons method called in PersonsService
+2025-10-28 09:13:37.583 +03:00 [INF] GetAllPersons method called in PersonsRepo
+2025-10-28 09:13:38.087 +03:00 [DBG] Entity Framework Core 9.0.9 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.9' with options: EngineType=SqlServer 
+2025-10-28 09:13:38.134 +03:00 [DBG] Compiling query expression: 
+'DbSet<Person>()
+    .Include("Country")'
+2025-10-28 09:13:38.210 +03:00 [DBG] Including navigation: 'Person.Country'.
+2025-10-28 09:13:38.433 +03:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<Person>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: Person.PersonID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Person.Address (string) MaxLength(200), 1], [Property: Person.CountryID (Guid?) FK Index, 2], [Property: Person.DateOfBirth (DateTime) Required, 3], [Property: Person.Email (string) MaxLength(40), 4], [Property: Person.Gender (string) MaxLength(10), 5], [Property: Person.Name (string) MaxLength(40), 6], [Property: Person.ReceiveNewsLetters (bool) Required, 7] }
+            1 -> Dictionary<IProperty, int> { [Property: Country.CountryID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 8], [Property: Country.CountryName (string) MaxLength(60), 9] }
+        SELECT p.PersonID, p.Address, p.CountryID, p.DateOfBirth, p.Email, p.Gender, p.Name, p.ReceiveNewsLetters, c.CountryID, c.CountryName
+        FROM Persons AS p
+        LEFT JOIN Countries AS c ON p.CountryID == c.CountryID) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: Person.PersonID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Person.Address (string) MaxLength(200), 1], [Property: Person.CountryID (Guid?) FK Index, 2], [Property: Person.DateOfBirth (DateTime) Required, 3], [Property: Person.Email (string) MaxLength(40), 4], [Property: Person.Gender (string) MaxLength(10), 5], [Property: Person.Name (string) MaxLength(40), 6], [Property: Person.ReceiveNewsLetters (bool) Required, 7] }
+            1 -> Dictionary<IProperty, int> { [Property: Country.CountryID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 8], [Property: Country.CountryName (string) MaxLength(60), 9] }
+        SELECT p.PersonID, p.Address, p.CountryID, p.DateOfBirth, p.Email, p.Gender, p.Name, p.ReceiveNewsLetters, c.CountryID, c.CountryName
+        FROM Persons AS p
+        LEFT JOIN Countries AS c ON p.CountryID == c.CountryID, 
+        False, 
+        new HashSet<string>(
+            new string[]{ }, 
+            StringComparer.Ordinal
+        )
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        Person entity;
+        Country entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            Person instance1;
+            InternalEntityEntry entry1;
+            bool hasNullKey1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(Person);
+            entry1 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: Person.PersonID PK | Resolver: c => c.Dependencies.Model.FindEntityType("Entities.Person").FindPrimaryKey()], 
+                keyValues: new object[]{ (object)dataReader.GetGuid(0) }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey1);
+            !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+            {
+                entityType1 = entry1.EntityType;
+                return instance1 = (Person)entry1.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: Person | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("Entities.Person")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: Person | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("Entities.Person")]: 
+                        {
+                            return 
+                            {
+                                Person instance;
+                                instance = new Person();
+                                instance.<PersonID>k__BackingField = dataReader.GetGuid(0);
+                                instance.<Address>k__BackingField = dataReader.IsDBNull(1) ? default(string) : dataReader.GetString(1);
+                                instance.<CountryID>k__BackingField = dataReader.IsDBNull(2) ? default(Guid?) : (Guid?)dataReader.GetGuid(2);
+                                instance.<DateOfBirth>k__BackingField = dataReader.GetDateTime(3);
+                                instance.<Email>k__BackingField = dataReader.IsDBNull(4) ? default(string) : dataReader.GetString(4);
+                                instance.<Gender>k__BackingField = dataReader.IsDBNull(5) ? default(string) : dataReader.GetString(5);
+                                instance.<Name>k__BackingField = dataReader.IsDBNull(6) ? default(string) : dataReader.GetString(6);
+                                instance.<ReceiveNewsLetters>k__BackingField = dataReader.GetBoolean(7);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: Person | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("Entities.Person")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(Person)
+                }
+                ;
+                entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType1, 
+                    entity: instance1, 
+                    snapshot: shadowSnapshot1);
+                return instance1;
+            } : default(void);
+            return instance1;
+        };
+        entity = 
+        {
+            MaterializationContext materializationContext2;
+            IEntityType entityType2;
+            Country instance2;
+            InternalEntityEntry entry2;
+            bool hasNullKey2;
+            materializationContext2 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance2 = default(Country);
+            entry2 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: Country.CountryID PK | Resolver: c => c.Dependencies.Model.FindEntityType("Entities.Country").FindPrimaryKey()], 
+                keyValues: new object[]{ dataReader.IsDBNull(8) ? default(object) : (object)dataReader.GetGuid(8) }, 
+                throwOnNullKey: False, 
+                hasNullKey: hasNullKey2);
+            !(hasNullKey2) ? entry2 != default(InternalEntityEntry) ? 
+            {
+                entityType2 = entry2.EntityType;
+                return instance2 = (Country)entry2.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot2;
+                shadowSnapshot2 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType2 = [LIFTABLE Constant: EntityType: Country | Resolver: namelessParameter{3} => namelessParameter{3}.Dependencies.Model.FindEntityType("Entities.Country")];
+                instance2 = switch (entityType2)
+                {
+                    case [LIFTABLE Constant: EntityType: Country | Resolver: namelessParameter{4} => namelessParameter{4}.Dependencies.Model.FindEntityType("Entities.Country")]: 
+                        {
+                            return 
+                            {
+                                Country instance;
+                                instance = new Country();
+                                instance.<CountryID>k__BackingField = dataReader.IsDBNull(8) ? default(Guid) : dataReader.GetGuid(8);
+                                instance.<CountryName>k__BackingField = dataReader.IsDBNull(9) ? default(string) : dataReader.GetString(9);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext2.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: Country | Resolver: namelessParameter{5} => namelessParameter{5}.Dependencies.Model.FindEntityType("Entities.Country")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(Country)
+                }
+                ;
+                entry2 = entityType2 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType2, 
+                    entity: instance2, 
+                    snapshot: shadowSnapshot2);
+                return instance2;
+            } : default(void);
+            return instance2;
+        };
+        ShaperProcessingExpressionVisitor.IncludeReference<Person, Person, Country>(
+            queryContext: queryContext, 
+            entity: entity, 
+            relatedEntity: entity, 
+            navigation: [LIFTABLE Constant: Navigation: Person.Country (Country) ToPrincipal Country | Resolver: namelessParameter{6} => namelessParameter{6}.Dependencies.Model.FindEntityType("Entities.Person").FindNavigation("Country")], 
+            inverseNavigation: default(INavigation), 
+            fixup: (namelessParameter{7}, namelessParameter{8}) => 
+            {
+                return namelessParameter{7}.<Country>k__BackingField = namelessParameter{8};
+            }, 
+            trackingQuery: True);
+        return entity;
+    }, 
+    contextType: Entities.Data.AppDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)'
+2025-10-28 09:13:38.473 +03:00 [DBG] Creating DbConnection.
+2025-10-28 09:13:38.493 +03:00 [DBG] Created DbConnection. (16ms).
+2025-10-28 09:13:38.499 +03:00 [DBG] Opening connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2025-10-28 09:13:39.379 +03:00 [DBG] Opened connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2025-10-28 09:13:39.384 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-10-28 09:13:39.389 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (3ms).
+2025-10-28 09:13:39.392 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (8ms).
+2025-10-28 09:13:39.397 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[Name], [p].[ReceiveNewsLetters], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-10-28 09:13:39.475 +03:00 [INF] Executed DbCommand (75ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[Name], [p].[ReceiveNewsLetters], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-10-28 09:13:39.504 +03:00 [DBG] Context 'AppDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-10-28 09:13:39.565 +03:00 [DBG] The navigation 'Person.Country' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-10-28 09:13:39.569 +03:00 [DBG] Context 'AppDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-10-28 09:13:39.575 +03:00 [DBG] Context 'AppDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-10-28 09:13:39.576 +03:00 [DBG] The navigation 'Person.Country' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-10-28 09:13:39.577 +03:00 [DBG] Context 'AppDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-10-28 09:13:39.578 +03:00 [DBG] Context 'AppDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-10-28 09:13:39.579 +03:00 [DBG] Context 'AppDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-10-28 09:13:39.581 +03:00 [DBG] The navigation 'Person.Country' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-10-28 09:13:39.582 +03:00 [DBG] Context 'AppDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-10-28 09:13:39.584 +03:00 [DBG] Context 'AppDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-10-28 09:13:39.585 +03:00 [DBG] The navigation 'Person.Country' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-10-28 09:13:39.586 +03:00 [DBG] Context 'AppDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-10-28 09:13:39.587 +03:00 [DBG] Context 'AppDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-10-28 09:13:39.588 +03:00 [DBG] Context 'AppDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-10-28 09:13:39.589 +03:00 [DBG] Context 'AppDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-10-28 09:13:39.592 +03:00 [DBG] Context 'AppDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-10-28 09:13:39.594 +03:00 [DBG] Context 'AppDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-10-28 09:13:39.595 +03:00 [DBG] The navigation 'Person.Country' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-10-28 09:13:39.596 +03:00 [DBG] Context 'AppDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-10-28 09:13:39.598 +03:00 [DBG] Context 'AppDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-10-28 09:13:39.599 +03:00 [DBG] Context 'AppDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-10-28 09:13:39.604 +03:00 [DBG] Context 'AppDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-10-28 09:13:39.606 +03:00 [DBG] Context 'AppDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-10-28 09:13:39.608 +03:00 [DBG] Context 'AppDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-10-28 09:13:39.609 +03:00 [DBG] Context 'AppDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-10-28 09:13:39.614 +03:00 [DBG] Closing data reader to 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2025-10-28 09:13:39.621 +03:00 [DBG] A data reader for 'Persons' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 138ms reading results.
+2025-10-28 09:13:39.625 +03:00 [DBG] Closing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2025-10-28 09:13:39.630 +03:00 [DBG] Closed connection to database 'Persons' on server '(localdb)\MSSQLLocalDB' (4ms).
+2025-10-28 09:13:39.635 +03:00 [INF] GetSortedPersons method called in PersonsService
+2025-10-28 09:13:39.653 +03:00 [DBG] View lookup cache miss for view 'Index' in controller 'Persons'.
+2025-10-28 09:13:39.658 +03:00 [INF] Executing ViewResult, running view Index.
+2025-10-28 09:13:39.662 +03:00 [DBG] The view path '/Views/Persons/Index.cshtml' was found in 6.8809ms.
+2025-10-28 09:13:39.704 +03:00 [DBG] Found the endpoints ["n12xUnit.Controllers.PersonsController.Index (n12xUnit)","n12xUnit.Controllers.PersonsController.Index (n12xUnit)"] for address (action=[Index],controller=[Persons])
+2025-10-28 09:13:39.708 +03:00 [DBG] Successfully processed template persons/Index for n12xUnit.Controllers.PersonsController.Index (n12xUnit) resulting in /persons/Index and 
+2025-10-28 09:13:39.710 +03:00 [DBG] Link generation succeeded for endpoints ["n12xUnit.Controllers.PersonsController.Index (n12xUnit)","n12xUnit.Controllers.PersonsController.Index (n12xUnit)"] with result /persons/Index
+2025-10-28 09:13:39.760 +03:00 [DBG] Found the endpoints ["n12xUnit.Controllers.PersonsController.Index (n12xUnit)","n12xUnit.Controllers.PersonsController.Index (n12xUnit)"] for address (action=[Index],controller=[Persons])
+2025-10-28 09:13:39.761 +03:00 [DBG] Successfully processed template persons/Index for n12xUnit.Controllers.PersonsController.Index (n12xUnit) resulting in /persons/Index and 
+2025-10-28 09:13:39.763 +03:00 [DBG] Link generation succeeded for endpoints ["n12xUnit.Controllers.PersonsController.Index (n12xUnit)","n12xUnit.Controllers.PersonsController.Index (n12xUnit)"] with result /persons/Index
+2025-10-28 09:13:39.801 +03:00 [DBG] Found the endpoints ["n12xUnit.Controllers.PersonsController.Edit (n12xUnit)","n12xUnit.Controllers.PersonsController.Edit (n12xUnit)"] for address (personID=[42cf5d4c-6d3e-42fd-b18d-62e3884d1cdc],action=[Edit],controller=[Persons])
+2025-10-28 09:13:39.804 +03:00 [DBG] Successfully processed template persons/Edit/{personID} for n12xUnit.Controllers.PersonsController.Edit (n12xUnit) resulting in /persons/Edit/42cf5d4c-6d3e-42fd-b18d-62e3884d1cdc and 
+2025-10-28 09:13:39.805 +03:00 [DBG] Link generation succeeded for endpoints ["n12xUnit.Controllers.PersonsController.Edit (n12xUnit)","n12xUnit.Controllers.PersonsController.Edit (n12xUnit)"] with result /persons/Edit/42cf5d4c-6d3e-42fd-b18d-62e3884d1cdc
+2025-10-28 09:13:39.807 +03:00 [DBG] Found the endpoints ["n12xUnit.Controllers.PersonsController.Delete (n12xUnit)","n12xUnit.Controllers.PersonsController.Delete (n12xUnit)"] for address (personID=[42cf5d4c-6d3e-42fd-b18d-62e3884d1cdc],action=[Delete],controller=[Persons])
+2025-10-28 09:13:39.809 +03:00 [DBG] Successfully processed template persons/Delete/{personID} for n12xUnit.Controllers.PersonsController.Delete (n12xUnit) resulting in /persons/Delete/42cf5d4c-6d3e-42fd-b18d-62e3884d1cdc and 
+2025-10-28 09:13:39.811 +03:00 [DBG] Link generation succeeded for endpoints ["n12xUnit.Controllers.PersonsController.Delete (n12xUnit)","n12xUnit.Controllers.PersonsController.Delete (n12xUnit)"] with result /persons/Delete/42cf5d4c-6d3e-42fd-b18d-62e3884d1cdc
+2025-10-28 09:13:39.812 +03:00 [DBG] Found the endpoints ["n12xUnit.Controllers.PersonsController.Edit (n12xUnit)","n12xUnit.Controllers.PersonsController.Edit (n12xUnit)"] for address (personID=[d15c6d9f-70b4-48c5-afd3-e71261f1a9be],action=[Edit],controller=[Persons])
+2025-10-28 09:13:39.815 +03:00 [DBG] Successfully processed template persons/Edit/{personID} for n12xUnit.Controllers.PersonsController.Edit (n12xUnit) resulting in /persons/Edit/d15c6d9f-70b4-48c5-afd3-e71261f1a9be and 
+2025-10-28 09:13:39.816 +03:00 [DBG] Link generation succeeded for endpoints ["n12xUnit.Controllers.PersonsController.Edit (n12xUnit)","n12xUnit.Controllers.PersonsController.Edit (n12xUnit)"] with result /persons/Edit/d15c6d9f-70b4-48c5-afd3-e71261f1a9be
+2025-10-28 09:13:39.818 +03:00 [DBG] Found the endpoints ["n12xUnit.Controllers.PersonsController.Delete (n12xUnit)","n12xUnit.Controllers.PersonsController.Delete (n12xUnit)"] for address (personID=[d15c6d9f-70b4-48c5-afd3-e71261f1a9be],action=[Delete],controller=[Persons])
+2025-10-28 09:13:39.820 +03:00 [DBG] Successfully processed template persons/Delete/{personID} for n12xUnit.Controllers.PersonsController.Delete (n12xUnit) resulting in /persons/Delete/d15c6d9f-70b4-48c5-afd3-e71261f1a9be and 
+2025-10-28 09:13:39.821 +03:00 [DBG] Link generation succeeded for endpoints ["n12xUnit.Controllers.PersonsController.Delete (n12xUnit)","n12xUnit.Controllers.PersonsController.Delete (n12xUnit)"] with result /persons/Delete/d15c6d9f-70b4-48c5-afd3-e71261f1a9be
+2025-10-28 09:13:39.823 +03:00 [DBG] Found the endpoints ["n12xUnit.Controllers.PersonsController.Edit (n12xUnit)","n12xUnit.Controllers.PersonsController.Edit (n12xUnit)"] for address (personID=[c6d50a47-f7e6-4482-8be0-4ddfc057fa6e],action=[Edit],controller=[Persons])
+2025-10-28 09:13:39.825 +03:00 [DBG] Successfully processed template persons/Edit/{personID} for n12xUnit.Controllers.PersonsController.Edit (n12xUnit) resulting in /persons/Edit/c6d50a47-f7e6-4482-8be0-4ddfc057fa6e and 
+2025-10-28 09:13:39.826 +03:00 [DBG] Link generation succeeded for endpoints ["n12xUnit.Controllers.PersonsController.Edit (n12xUnit)","n12xUnit.Controllers.PersonsController.Edit (n12xUnit)"] with result /persons/Edit/c6d50a47-f7e6-4482-8be0-4ddfc057fa6e
+2025-10-28 09:13:39.828 +03:00 [DBG] Found the endpoints ["n12xUnit.Controllers.PersonsController.Delete (n12xUnit)","n12xUnit.Controllers.PersonsController.Delete (n12xUnit)"] for address (personID=[c6d50a47-f7e6-4482-8be0-4ddfc057fa6e],action=[Delete],controller=[Persons])
+2025-10-28 09:13:39.830 +03:00 [DBG] Successfully processed template persons/Delete/{personID} for n12xUnit.Controllers.PersonsController.Delete (n12xUnit) resulting in /persons/Delete/c6d50a47-f7e6-4482-8be0-4ddfc057fa6e and 
+2025-10-28 09:13:39.831 +03:00 [DBG] Link generation succeeded for endpoints ["n12xUnit.Controllers.PersonsController.Delete (n12xUnit)","n12xUnit.Controllers.PersonsController.Delete (n12xUnit)"] with result /persons/Delete/c6d50a47-f7e6-4482-8be0-4ddfc057fa6e
+2025-10-28 09:13:39.833 +03:00 [DBG] Found the endpoints ["n12xUnit.Controllers.PersonsController.Edit (n12xUnit)","n12xUnit.Controllers.PersonsController.Edit (n12xUnit)"] for address (personID=[012107df-862f-4f16-ba94-e5c16886f005],action=[Edit],controller=[Persons])
+2025-10-28 09:13:39.835 +03:00 [DBG] Successfully processed template persons/Edit/{personID} for n12xUnit.Controllers.PersonsController.Edit (n12xUnit) resulting in /persons/Edit/012107df-862f-4f16-ba94-e5c16886f005 and 
+2025-10-28 09:13:39.836 +03:00 [DBG] Link generation succeeded for endpoints ["n12xUnit.Controllers.PersonsController.Edit (n12xUnit)","n12xUnit.Controllers.PersonsController.Edit (n12xUnit)"] with result /persons/Edit/012107df-862f-4f16-ba94-e5c16886f005
+2025-10-28 09:13:39.839 +03:00 [DBG] Found the endpoints ["n12xUnit.Controllers.PersonsController.Delete (n12xUnit)","n12xUnit.Controllers.PersonsController.Delete (n12xUnit)"] for address (personID=[012107df-862f-4f16-ba94-e5c16886f005],action=[Delete],controller=[Persons])
+2025-10-28 09:13:39.841 +03:00 [DBG] Successfully processed template persons/Delete/{personID} for n12xUnit.Controllers.PersonsController.Delete (n12xUnit) resulting in /persons/Delete/012107df-862f-4f16-ba94-e5c16886f005 and 
+2025-10-28 09:13:39.842 +03:00 [DBG] Link generation succeeded for endpoints ["n12xUnit.Controllers.PersonsController.Delete (n12xUnit)","n12xUnit.Controllers.PersonsController.Delete (n12xUnit)"] with result /persons/Delete/012107df-862f-4f16-ba94-e5c16886f005
+2025-10-28 09:13:39.844 +03:00 [DBG] Found the endpoints ["n12xUnit.Controllers.PersonsController.Edit (n12xUnit)","n12xUnit.Controllers.PersonsController.Edit (n12xUnit)"] for address (personID=[cb035f22-e7cf-4907-bd07-91cfee5240f3],action=[Edit],controller=[Persons])
+2025-10-28 09:13:39.845 +03:00 [DBG] Successfully processed template persons/Edit/{personID} for n12xUnit.Controllers.PersonsController.Edit (n12xUnit) resulting in /persons/Edit/cb035f22-e7cf-4907-bd07-91cfee5240f3 and 
+2025-10-28 09:13:39.846 +03:00 [DBG] Link generation succeeded for endpoints ["n12xUnit.Controllers.PersonsController.Edit (n12xUnit)","n12xUnit.Controllers.PersonsController.Edit (n12xUnit)"] with result /persons/Edit/cb035f22-e7cf-4907-bd07-91cfee5240f3
+2025-10-28 09:13:39.848 +03:00 [DBG] Found the endpoints ["n12xUnit.Controllers.PersonsController.Delete (n12xUnit)","n12xUnit.Controllers.PersonsController.Delete (n12xUnit)"] for address (personID=[cb035f22-e7cf-4907-bd07-91cfee5240f3],action=[Delete],controller=[Persons])
+2025-10-28 09:13:39.850 +03:00 [DBG] Successfully processed template persons/Delete/{personID} for n12xUnit.Controllers.PersonsController.Delete (n12xUnit) resulting in /persons/Delete/cb035f22-e7cf-4907-bd07-91cfee5240f3 and 
+2025-10-28 09:13:39.851 +03:00 [DBG] Link generation succeeded for endpoints ["n12xUnit.Controllers.PersonsController.Delete (n12xUnit)","n12xUnit.Controllers.PersonsController.Delete (n12xUnit)"] with result /persons/Delete/cb035f22-e7cf-4907-bd07-91cfee5240f3
+2025-10-28 09:13:39.853 +03:00 [DBG] Found the endpoints ["n12xUnit.Controllers.PersonsController.Edit (n12xUnit)","n12xUnit.Controllers.PersonsController.Edit (n12xUnit)"] for address (personID=[29339209-63f5-492f-8459-754943c74abf],action=[Edit],controller=[Persons])
+2025-10-28 09:13:39.854 +03:00 [DBG] Successfully processed template persons/Edit/{personID} for n12xUnit.Controllers.PersonsController.Edit (n12xUnit) resulting in /persons/Edit/29339209-63f5-492f-8459-754943c74abf and 
+2025-10-28 09:13:39.856 +03:00 [DBG] Link generation succeeded for endpoints ["n12xUnit.Controllers.PersonsController.Edit (n12xUnit)","n12xUnit.Controllers.PersonsController.Edit (n12xUnit)"] with result /persons/Edit/29339209-63f5-492f-8459-754943c74abf
+2025-10-28 09:13:39.858 +03:00 [DBG] Found the endpoints ["n12xUnit.Controllers.PersonsController.Delete (n12xUnit)","n12xUnit.Controllers.PersonsController.Delete (n12xUnit)"] for address (personID=[29339209-63f5-492f-8459-754943c74abf],action=[Delete],controller=[Persons])
+2025-10-28 09:13:39.859 +03:00 [DBG] Successfully processed template persons/Delete/{personID} for n12xUnit.Controllers.PersonsController.Delete (n12xUnit) resulting in /persons/Delete/29339209-63f5-492f-8459-754943c74abf and 
+2025-10-28 09:13:39.861 +03:00 [DBG] Link generation succeeded for endpoints ["n12xUnit.Controllers.PersonsController.Delete (n12xUnit)","n12xUnit.Controllers.PersonsController.Delete (n12xUnit)"] with result /persons/Delete/29339209-63f5-492f-8459-754943c74abf
+2025-10-28 09:13:39.863 +03:00 [DBG] Found the endpoints ["n12xUnit.Controllers.PersonsController.Edit (n12xUnit)","n12xUnit.Controllers.PersonsController.Edit (n12xUnit)"] for address (personID=[c03bbe45-9aeb-4d24-99e0-4743016ffce9],action=[Edit],controller=[Persons])
+2025-10-28 09:13:39.864 +03:00 [DBG] Successfully processed template persons/Edit/{personID} for n12xUnit.Controllers.PersonsController.Edit (n12xUnit) resulting in /persons/Edit/c03bbe45-9aeb-4d24-99e0-4743016ffce9 and 
+2025-10-28 09:13:39.866 +03:00 [DBG] Link generation succeeded for endpoints ["n12xUnit.Controllers.PersonsController.Edit (n12xUnit)","n12xUnit.Controllers.PersonsController.Edit (n12xUnit)"] with result /persons/Edit/c03bbe45-9aeb-4d24-99e0-4743016ffce9
+2025-10-28 09:13:39.867 +03:00 [DBG] Found the endpoints ["n12xUnit.Controllers.PersonsController.Delete (n12xUnit)","n12xUnit.Controllers.PersonsController.Delete (n12xUnit)"] for address (personID=[c03bbe45-9aeb-4d24-99e0-4743016ffce9],action=[Delete],controller=[Persons])
+2025-10-28 09:13:39.869 +03:00 [DBG] Successfully processed template persons/Delete/{personID} for n12xUnit.Controllers.PersonsController.Delete (n12xUnit) resulting in /persons/Delete/c03bbe45-9aeb-4d24-99e0-4743016ffce9 and 
+2025-10-28 09:13:39.870 +03:00 [DBG] Link generation succeeded for endpoints ["n12xUnit.Controllers.PersonsController.Delete (n12xUnit)","n12xUnit.Controllers.PersonsController.Delete (n12xUnit)"] with result /persons/Delete/c03bbe45-9aeb-4d24-99e0-4743016ffce9
+2025-10-28 09:13:39.872 +03:00 [DBG] Found the endpoints ["n12xUnit.Controllers.PersonsController.Edit (n12xUnit)","n12xUnit.Controllers.PersonsController.Edit (n12xUnit)"] for address (personID=[82d17e9a-aacc-4913-8304-132bb4997144],action=[Edit],controller=[Persons])
+2025-10-28 09:13:39.874 +03:00 [DBG] Successfully processed template persons/Edit/{personID} for n12xUnit.Controllers.PersonsController.Edit (n12xUnit) resulting in /persons/Edit/82d17e9a-aacc-4913-8304-132bb4997144 and 
+2025-10-28 09:13:39.876 +03:00 [DBG] Link generation succeeded for endpoints ["n12xUnit.Controllers.PersonsController.Edit (n12xUnit)","n12xUnit.Controllers.PersonsController.Edit (n12xUnit)"] with result /persons/Edit/82d17e9a-aacc-4913-8304-132bb4997144
+2025-10-28 09:13:39.877 +03:00 [DBG] Found the endpoints ["n12xUnit.Controllers.PersonsController.Delete (n12xUnit)","n12xUnit.Controllers.PersonsController.Delete (n12xUnit)"] for address (personID=[82d17e9a-aacc-4913-8304-132bb4997144],action=[Delete],controller=[Persons])
+2025-10-28 09:13:39.879 +03:00 [DBG] Successfully processed template persons/Delete/{personID} for n12xUnit.Controllers.PersonsController.Delete (n12xUnit) resulting in /persons/Delete/82d17e9a-aacc-4913-8304-132bb4997144 and 
+2025-10-28 09:13:39.880 +03:00 [DBG] Link generation succeeded for endpoints ["n12xUnit.Controllers.PersonsController.Delete (n12xUnit)","n12xUnit.Controllers.PersonsController.Delete (n12xUnit)"] with result /persons/Delete/82d17e9a-aacc-4913-8304-132bb4997144
+2025-10-28 09:13:39.882 +03:00 [DBG] Found the endpoints ["n12xUnit.Controllers.PersonsController.Edit (n12xUnit)","n12xUnit.Controllers.PersonsController.Edit (n12xUnit)"] for address (personID=[28d11936-9466-4a4b-b9c5-2f0a8e0cbde9],action=[Edit],controller=[Persons])
+2025-10-28 09:13:39.884 +03:00 [DBG] Successfully processed template persons/Edit/{personID} for n12xUnit.Controllers.PersonsController.Edit (n12xUnit) resulting in /persons/Edit/28d11936-9466-4a4b-b9c5-2f0a8e0cbde9 and 
+2025-10-28 09:13:39.886 +03:00 [DBG] Link generation succeeded for endpoints ["n12xUnit.Controllers.PersonsController.Edit (n12xUnit)","n12xUnit.Controllers.PersonsController.Edit (n12xUnit)"] with result /persons/Edit/28d11936-9466-4a4b-b9c5-2f0a8e0cbde9
+2025-10-28 09:13:39.888 +03:00 [DBG] Found the endpoints ["n12xUnit.Controllers.PersonsController.Delete (n12xUnit)","n12xUnit.Controllers.PersonsController.Delete (n12xUnit)"] for address (personID=[28d11936-9466-4a4b-b9c5-2f0a8e0cbde9],action=[Delete],controller=[Persons])
+2025-10-28 09:13:39.890 +03:00 [DBG] Successfully processed template persons/Delete/{personID} for n12xUnit.Controllers.PersonsController.Delete (n12xUnit) resulting in /persons/Delete/28d11936-9466-4a4b-b9c5-2f0a8e0cbde9 and 
+2025-10-28 09:13:39.891 +03:00 [DBG] Link generation succeeded for endpoints ["n12xUnit.Controllers.PersonsController.Delete (n12xUnit)","n12xUnit.Controllers.PersonsController.Delete (n12xUnit)"] with result /persons/Delete/28d11936-9466-4a4b-b9c5-2f0a8e0cbde9
+2025-10-28 09:13:39.893 +03:00 [DBG] Found the endpoints ["n12xUnit.Controllers.PersonsController.Edit (n12xUnit)","n12xUnit.Controllers.PersonsController.Edit (n12xUnit)"] for address (personID=[2a6d3738-9def-43ac-9279-0310edc7ceca],action=[Edit],controller=[Persons])
+2025-10-28 09:13:39.894 +03:00 [DBG] Successfully processed template persons/Edit/{personID} for n12xUnit.Controllers.PersonsController.Edit (n12xUnit) resulting in /persons/Edit/2a6d3738-9def-43ac-9279-0310edc7ceca and 
+2025-10-28 09:13:39.896 +03:00 [DBG] Link generation succeeded for endpoints ["n12xUnit.Controllers.PersonsController.Edit (n12xUnit)","n12xUnit.Controllers.PersonsController.Edit (n12xUnit)"] with result /persons/Edit/2a6d3738-9def-43ac-9279-0310edc7ceca
+2025-10-28 09:13:39.897 +03:00 [DBG] Found the endpoints ["n12xUnit.Controllers.PersonsController.Delete (n12xUnit)","n12xUnit.Controllers.PersonsController.Delete (n12xUnit)"] for address (personID=[2a6d3738-9def-43ac-9279-0310edc7ceca],action=[Delete],controller=[Persons])
+2025-10-28 09:13:39.899 +03:00 [DBG] Successfully processed template persons/Delete/{personID} for n12xUnit.Controllers.PersonsController.Delete (n12xUnit) resulting in /persons/Delete/2a6d3738-9def-43ac-9279-0310edc7ceca and 
+2025-10-28 09:13:39.901 +03:00 [DBG] Link generation succeeded for endpoints ["n12xUnit.Controllers.PersonsController.Delete (n12xUnit)","n12xUnit.Controllers.PersonsController.Delete (n12xUnit)"] with result /persons/Delete/2a6d3738-9def-43ac-9279-0310edc7ceca
+2025-10-28 09:13:39.902 +03:00 [DBG] Found the endpoints ["n12xUnit.Controllers.PersonsController.Edit (n12xUnit)","n12xUnit.Controllers.PersonsController.Edit (n12xUnit)"] for address (personID=[a3090585-9921-49c5-869e-aefa288c3faa],action=[Edit],controller=[Persons])
+2025-10-28 09:13:39.904 +03:00 [DBG] Successfully processed template persons/Edit/{personID} for n12xUnit.Controllers.PersonsController.Edit (n12xUnit) resulting in /persons/Edit/a3090585-9921-49c5-869e-aefa288c3faa and 
+2025-10-28 09:13:39.905 +03:00 [DBG] Link generation succeeded for endpoints ["n12xUnit.Controllers.PersonsController.Edit (n12xUnit)","n12xUnit.Controllers.PersonsController.Edit (n12xUnit)"] with result /persons/Edit/a3090585-9921-49c5-869e-aefa288c3faa
+2025-10-28 09:13:39.907 +03:00 [DBG] Found the endpoints ["n12xUnit.Controllers.PersonsController.Delete (n12xUnit)","n12xUnit.Controllers.PersonsController.Delete (n12xUnit)"] for address (personID=[a3090585-9921-49c5-869e-aefa288c3faa],action=[Delete],controller=[Persons])
+2025-10-28 09:13:39.909 +03:00 [DBG] Successfully processed template persons/Delete/{personID} for n12xUnit.Controllers.PersonsController.Delete (n12xUnit) resulting in /persons/Delete/a3090585-9921-49c5-869e-aefa288c3faa and 
+2025-10-28 09:13:39.910 +03:00 [DBG] Link generation succeeded for endpoints ["n12xUnit.Controllers.PersonsController.Delete (n12xUnit)","n12xUnit.Controllers.PersonsController.Delete (n12xUnit)"] with result /persons/Delete/a3090585-9921-49c5-869e-aefa288c3faa
+2025-10-28 09:13:39.911 +03:00 [DBG] Found the endpoints ["n12xUnit.Controllers.PersonsController.Edit (n12xUnit)","n12xUnit.Controllers.PersonsController.Edit (n12xUnit)"] for address (personID=[ac660a73-b0b7-4340-abc1-a914257a6189],action=[Edit],controller=[Persons])
+2025-10-28 09:13:39.913 +03:00 [DBG] Successfully processed template persons/Edit/{personID} for n12xUnit.Controllers.PersonsController.Edit (n12xUnit) resulting in /persons/Edit/ac660a73-b0b7-4340-abc1-a914257a6189 and 
+2025-10-28 09:13:39.915 +03:00 [DBG] Link generation succeeded for endpoints ["n12xUnit.Controllers.PersonsController.Edit (n12xUnit)","n12xUnit.Controllers.PersonsController.Edit (n12xUnit)"] with result /persons/Edit/ac660a73-b0b7-4340-abc1-a914257a6189
+2025-10-28 09:13:39.917 +03:00 [DBG] Found the endpoints ["n12xUnit.Controllers.PersonsController.Delete (n12xUnit)","n12xUnit.Controllers.PersonsController.Delete (n12xUnit)"] for address (personID=[ac660a73-b0b7-4340-abc1-a914257a6189],action=[Delete],controller=[Persons])
+2025-10-28 09:13:39.918 +03:00 [DBG] Successfully processed template persons/Delete/{personID} for n12xUnit.Controllers.PersonsController.Delete (n12xUnit) resulting in /persons/Delete/ac660a73-b0b7-4340-abc1-a914257a6189 and 
+2025-10-28 09:13:39.920 +03:00 [DBG] Link generation succeeded for endpoints ["n12xUnit.Controllers.PersonsController.Delete (n12xUnit)","n12xUnit.Controllers.PersonsController.Delete (n12xUnit)"] with result /persons/Delete/ac660a73-b0b7-4340-abc1-a914257a6189
+2025-10-28 09:13:39.921 +03:00 [DBG] Found the endpoints ["n12xUnit.Controllers.PersonsController.Edit (n12xUnit)","n12xUnit.Controllers.PersonsController.Edit (n12xUnit)"] for address (personID=[d092f729-32cd-45ac-bcb8-533d875a22f7],action=[Edit],controller=[Persons])
+2025-10-28 09:13:39.924 +03:00 [DBG] Successfully processed template persons/Edit/{personID} for n12xUnit.Controllers.PersonsController.Edit (n12xUnit) resulting in /persons/Edit/d092f729-32cd-45ac-bcb8-533d875a22f7 and 
+2025-10-28 09:13:39.925 +03:00 [DBG] Link generation succeeded for endpoints ["n12xUnit.Controllers.PersonsController.Edit (n12xUnit)","n12xUnit.Controllers.PersonsController.Edit (n12xUnit)"] with result /persons/Edit/d092f729-32cd-45ac-bcb8-533d875a22f7
+2025-10-28 09:13:39.926 +03:00 [DBG] Found the endpoints ["n12xUnit.Controllers.PersonsController.Delete (n12xUnit)","n12xUnit.Controllers.PersonsController.Delete (n12xUnit)"] for address (personID=[d092f729-32cd-45ac-bcb8-533d875a22f7],action=[Delete],controller=[Persons])
+2025-10-28 09:13:39.928 +03:00 [DBG] Successfully processed template persons/Delete/{personID} for n12xUnit.Controllers.PersonsController.Delete (n12xUnit) resulting in /persons/Delete/d092f729-32cd-45ac-bcb8-533d875a22f7 and 
+2025-10-28 09:13:39.930 +03:00 [DBG] Link generation succeeded for endpoints ["n12xUnit.Controllers.PersonsController.Delete (n12xUnit)","n12xUnit.Controllers.PersonsController.Delete (n12xUnit)"] with result /persons/Delete/d092f729-32cd-45ac-bcb8-533d875a22f7
+2025-10-28 09:13:39.932 +03:00 [DBG] Found the endpoints ["n12xUnit.Controllers.PersonsController.Edit (n12xUnit)","n12xUnit.Controllers.PersonsController.Edit (n12xUnit)"] for address (personID=[89e5f445-d89f-4e12-94e0-5ad5b235d704],action=[Edit],controller=[Persons])
+2025-10-28 09:13:39.934 +03:00 [DBG] Successfully processed template persons/Edit/{personID} for n12xUnit.Controllers.PersonsController.Edit (n12xUnit) resulting in /persons/Edit/89e5f445-d89f-4e12-94e0-5ad5b235d704 and 
+2025-10-28 09:13:39.935 +03:00 [DBG] Link generation succeeded for endpoints ["n12xUnit.Controllers.PersonsController.Edit (n12xUnit)","n12xUnit.Controllers.PersonsController.Edit (n12xUnit)"] with result /persons/Edit/89e5f445-d89f-4e12-94e0-5ad5b235d704
+2025-10-28 09:13:39.937 +03:00 [DBG] Found the endpoints ["n12xUnit.Controllers.PersonsController.Delete (n12xUnit)","n12xUnit.Controllers.PersonsController.Delete (n12xUnit)"] for address (personID=[89e5f445-d89f-4e12-94e0-5ad5b235d704],action=[Delete],controller=[Persons])
+2025-10-28 09:13:39.938 +03:00 [DBG] Successfully processed template persons/Delete/{personID} for n12xUnit.Controllers.PersonsController.Delete (n12xUnit) resulting in /persons/Delete/89e5f445-d89f-4e12-94e0-5ad5b235d704 and 
+2025-10-28 09:13:39.940 +03:00 [DBG] Link generation succeeded for endpoints ["n12xUnit.Controllers.PersonsController.Delete (n12xUnit)","n12xUnit.Controllers.PersonsController.Delete (n12xUnit)"] with result /persons/Delete/89e5f445-d89f-4e12-94e0-5ad5b235d704
+2025-10-28 09:13:39.941 +03:00 [DBG] Found the endpoints ["n12xUnit.Controllers.PersonsController.Edit (n12xUnit)","n12xUnit.Controllers.PersonsController.Edit (n12xUnit)"] for address (personID=[c3abddbd-cf50-41d2-b6c4-cc7d5a750928],action=[Edit],controller=[Persons])
+2025-10-28 09:13:39.943 +03:00 [DBG] Successfully processed template persons/Edit/{personID} for n12xUnit.Controllers.PersonsController.Edit (n12xUnit) resulting in /persons/Edit/c3abddbd-cf50-41d2-b6c4-cc7d5a750928 and 
+2025-10-28 09:13:39.944 +03:00 [DBG] Link generation succeeded for endpoints ["n12xUnit.Controllers.PersonsController.Edit (n12xUnit)","n12xUnit.Controllers.PersonsController.Edit (n12xUnit)"] with result /persons/Edit/c3abddbd-cf50-41d2-b6c4-cc7d5a750928
+2025-10-28 09:13:39.946 +03:00 [DBG] Found the endpoints ["n12xUnit.Controllers.PersonsController.Delete (n12xUnit)","n12xUnit.Controllers.PersonsController.Delete (n12xUnit)"] for address (personID=[c3abddbd-cf50-41d2-b6c4-cc7d5a750928],action=[Delete],controller=[Persons])
+2025-10-28 09:13:39.948 +03:00 [DBG] Successfully processed template persons/Delete/{personID} for n12xUnit.Controllers.PersonsController.Delete (n12xUnit) resulting in /persons/Delete/c3abddbd-cf50-41d2-b6c4-cc7d5a750928 and 
+2025-10-28 09:13:39.950 +03:00 [DBG] Link generation succeeded for endpoints ["n12xUnit.Controllers.PersonsController.Delete (n12xUnit)","n12xUnit.Controllers.PersonsController.Delete (n12xUnit)"] with result /persons/Delete/c3abddbd-cf50-41d2-b6c4-cc7d5a750928
+2025-10-28 09:13:39.951 +03:00 [DBG] Found the endpoints ["n12xUnit.Controllers.PersonsController.Edit (n12xUnit)","n12xUnit.Controllers.PersonsController.Edit (n12xUnit)"] for address (personID=[a3b9833b-8a4d-43e9-8690-61e08df81a9a],action=[Edit],controller=[Persons])
+2025-10-28 09:13:39.953 +03:00 [DBG] Successfully processed template persons/Edit/{personID} for n12xUnit.Controllers.PersonsController.Edit (n12xUnit) resulting in /persons/Edit/a3b9833b-8a4d-43e9-8690-61e08df81a9a and 
+2025-10-28 09:13:39.954 +03:00 [DBG] Link generation succeeded for endpoints ["n12xUnit.Controllers.PersonsController.Edit (n12xUnit)","n12xUnit.Controllers.PersonsController.Edit (n12xUnit)"] with result /persons/Edit/a3b9833b-8a4d-43e9-8690-61e08df81a9a
+2025-10-28 09:13:39.956 +03:00 [DBG] Found the endpoints ["n12xUnit.Controllers.PersonsController.Delete (n12xUnit)","n12xUnit.Controllers.PersonsController.Delete (n12xUnit)"] for address (personID=[a3b9833b-8a4d-43e9-8690-61e08df81a9a],action=[Delete],controller=[Persons])
+2025-10-28 09:13:39.957 +03:00 [DBG] Successfully processed template persons/Delete/{personID} for n12xUnit.Controllers.PersonsController.Delete (n12xUnit) resulting in /persons/Delete/a3b9833b-8a4d-43e9-8690-61e08df81a9a and 
+2025-10-28 09:13:39.958 +03:00 [DBG] Link generation succeeded for endpoints ["n12xUnit.Controllers.PersonsController.Delete (n12xUnit)","n12xUnit.Controllers.PersonsController.Delete (n12xUnit)"] with result /persons/Delete/a3b9833b-8a4d-43e9-8690-61e08df81a9a
+2025-10-28 09:13:39.972 +03:00 [DBG] Found the endpoints ["n12xUnit.Controllers.PersonsController.Index (n12xUnit)","n12xUnit.Controllers.PersonsController.Index (n12xUnit)"] for address (action=[Index],controller=[Persons])
+2025-10-28 09:13:39.974 +03:00 [DBG] Successfully processed template persons/Index for n12xUnit.Controllers.PersonsController.Index (n12xUnit) resulting in /persons/Index and 
+2025-10-28 09:13:39.975 +03:00 [DBG] Link generation succeeded for endpoints ["n12xUnit.Controllers.PersonsController.Index (n12xUnit)","n12xUnit.Controllers.PersonsController.Index (n12xUnit)"] with result /persons/Index
+2025-10-28 09:13:39.978 +03:00 [DBG] Found the endpoints ["n12xUnit.Controllers.PersonsController.Add (n12xUnit)","n12xUnit.Controllers.PersonsController.Add (n12xUnit)"] for address (action=[Add],controller=[Persons])
+2025-10-28 09:13:39.979 +03:00 [DBG] Successfully processed template persons/add for n12xUnit.Controllers.PersonsController.Add (n12xUnit) resulting in /persons/add and 
+2025-10-28 09:13:39.980 +03:00 [DBG] Link generation succeeded for endpoints ["n12xUnit.Controllers.PersonsController.Add (n12xUnit)","n12xUnit.Controllers.PersonsController.Add (n12xUnit)"] with result /persons/add
+2025-10-28 09:13:39.987 +03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2025-10-28 09:13:39.990 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-10-28 09:13:39.997 +03:00 [INF] Executed ViewResult - view Index executed in 343.9042ms.
+2025-10-28 09:13:39.999 +03:00 [INF] Executed action n12xUnit.Controllers.PersonsController.Index (n12xUnit) in 2630.2151ms
+2025-10-28 09:13:40.001 +03:00 [INF] Executed endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-10-28 09:13:40.003 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Tue, 28 Oct 2025 06:13:39 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+2025-10-28 09:13:40.004 +03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2025-10-28 09:13:40.005 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2025-10-28 09:13:40.006 +03:00 [DBG] Connection id "0HNGLT4GM674E" completed keep alive response.
+2025-10-28 09:13:40.012 +03:00 [DBG] 'AppDbContext' disposed.
+2025-10-28 09:13:40.017 +03:00 [DBG] Disposing connection to database 'Persons' on server '(localdb)\MSSQLLocalDB'.
+2025-10-28 09:13:40.019 +03:00 [DBG] Disposed connection to database '' on server '' (2ms).
+2025-10-28 09:13:40.022 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/ - 200 null text/html; charset=utf-8 2859.6848ms
+2025-10-28 09:13:40.035 +03:00 [DBG] Connection id "0HNGLT4GM674F" accepted.
+2025-10-28 09:13:40.035 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-28 09:13:40.036 +03:00 [DBG] Connection id "0HNGLT4GM674F" started.
+2025-10-28 09:13:40.039 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_vs/browserLink - null null
+2025-10-28 09:13:40.040 +03:00 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2025-10-28 09:13:40.043 +03:00 [DBG] Connection id "0HNGLT4GM674E" completed keep alive response.
+2025-10-28 09:13:40.045 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 9.3588ms
+2025-10-28 09:13:40.077 +03:00 [DBG] Connection id "0HNGLT4GM674F" completed keep alive response.
+2025-10-28 09:13:40.078 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_vs/browserLink - 200 null text/javascript; charset=UTF-8 39.1792ms
+2025-10-28 09:13:40.359 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/favicon.ico - null null
+2025-10-28 09:13:40.361 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /favicon.ico
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5022
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-28 09:13:40.364 +03:00 [DBG] The request path /favicon.ico does not match an existing file
+2025-10-28 09:13:40.365 +03:00 [DBG] No candidates found for the request path '/favicon.ico'
+2025-10-28 09:13:40.366 +03:00 [DBG] Request did not match any endpoints
+2025-10-28 09:13:40.368 +03:00 [INF] Response:
+StatusCode: 404
+2025-10-28 09:13:40.369 +03:00 [DBG] Connection id "0HNGLT4GM674F" completed keep alive response.
+2025-10-28 09:13:40.370 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/favicon.ico - 404 0 null 11.0656ms
+2025-10-28 09:13:40.374 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5022/favicon.ico, Response status code: 404
