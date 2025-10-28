@@ -24,6 +24,8 @@ builder.Services.AddScoped<IPersonsService, PersonsService>();
 builder.Services.AddScoped<ICountriesRepository, CountriesRepo>();
 builder.Services.AddScoped<IPersonsRepository, PersonsRepo>();
 
+builder.Services.AddHttpLogging();
+
 // Conditionally register database provider based on environment
 if (builder.Environment.IsEnvironment("Test"))
 {
@@ -41,6 +43,8 @@ else
 }
 
 var app = builder.Build();
+
+app.UseHttpLogging();
 
 app.UseStaticFiles();
 app.UseRouting();
