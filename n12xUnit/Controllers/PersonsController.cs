@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using n12xUnit.Filters.ActionFilters;
 using ServiceContracts;
 using ServiceContracts.DTOs.CountryDTOs;
 using ServiceContracts.DTOs.PersonDTOs;
@@ -22,6 +23,7 @@ namespace n12xUnit.Controllers
         [Route("/")]
         // [Route("index")]
         [Route("[action]")]
+        [TypeFilter(typeof(PersonsListActionFilter))]
         public async Task<IActionResult> Index(string searchBy, string? searchString, 
             string sortBy = nameof(PersonResponse.Name), bool isAscending = true)
         {
