@@ -48,7 +48,7 @@
               "RelativeDocumentMoniker": "n12xUnit\\Filters\\ActionFilters\\PersonsListActionFilter.cs",
               "ToolTip": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\n12xUnit\\Filters\\ActionFilters\\PersonsListActionFilter.cs",
               "RelativeToolTip": "n12xUnit\\Filters\\ActionFilters\\PersonsListActionFilter.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAywBgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwA8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-14T08:21:49.416Z",
               "EditorCaption": ""
@@ -75,8 +75,7 @@
               "RelativeToolTip": "n12xUnit\\Controllers\\PersonsController.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAwBgAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T04:52:26.6Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-27T04:52:26.6Z"
             }
           ]
         }
