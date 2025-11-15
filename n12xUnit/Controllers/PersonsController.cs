@@ -21,9 +21,10 @@ namespace n12xUnit.Controllers
         }
 
         [Route("/")]
-        // [Route("index")]
-        [Route("[action]")]
+        [Route("[action]")] // [Route("index")]
         [TypeFilter(typeof(PersonsListActionFilter))]
+        [TypeFilter(typeof(ResponseHeaderActionFilter), 
+            Arguments = new object[] { "X-Custome-Key", "Custome-Value" })]
         public async Task<IActionResult> Index(string searchBy, string? searchString, 
             string sortBy = nameof(PersonResponse.Name), bool isAscending = true)
         {
@@ -43,8 +44,6 @@ namespace n12xUnit.Controllers
             };
             List<PersonResponse> persons = await _personsService.GetFilteredPersons(searchBy, searchString);
 
-
-
             // sorting
             List<PersonResponse> sortedPersons = await _personsService.GetSortedPersons(persons, sortBy, isAscending);
             
@@ -55,6 +54,8 @@ namespace n12xUnit.Controllers
 
         [Route("add")]
         [HttpGet]
+        [TypeFilter(typeof(ResponseHeaderActionFilter),
+            Arguments = new object[] { "my-key", "my-value" })]
         public async Task<IActionResult> Add()
         {
             _logger.LogInformation("Add (GET) action method of PersonsController called");

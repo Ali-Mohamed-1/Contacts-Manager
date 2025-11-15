@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5723B9EF-70AE-4D5D-9829-FB125D61369B}|n12xUnit\\n12xUnit.csproj|h:\\.net\\4. asp.net core\\n12xunit\\n12xunit\\views\\persons\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5723B9EF-70AE-4D5D-9829-FB125D61369B}|n12xUnit\\n12xUnit.csproj|solutionrelative:n12xunit\\views\\persons\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5723B9EF-70AE-4D5D-9829-FB125D61369B}|n12xUnit\\n12xUnit.csproj|h:\\.net\\4. asp.net core\\n12xunit\\n12xunit\\controllers\\personscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5723B9EF-70AE-4D5D-9829-FB125D61369B}|n12xUnit\\n12xUnit.csproj|solutionrelative:n12xunit\\controllers\\personscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5723B9EF-70AE-4D5D-9829-FB125D61369B}|n12xUnit\\n12xUnit.csproj|h:\\.net\\4. asp.net core\\n12xunit\\n12xunit\\filters\\actionfilters\\responseheaderactionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5723B9EF-70AE-4D5D-9829-FB125D61369B}|n12xUnit\\n12xUnit.csproj|solutionrelative:n12xunit\\filters\\actionfilters\\responseheaderactionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5723B9EF-70AE-4D5D-9829-FB125D61369B}|n12xUnit\\n12xUnit.csproj|h:\\.net\\4. asp.net core\\n12xunit\\n12xunit\\filters\\actionfilters\\personslistactionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5723B9EF-70AE-4D5D-9829-FB125D61369B}|n12xUnit\\n12xUnit.csproj|solutionrelative:n12xunit\\filters\\actionfilters\\personslistactionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5723B9EF-70AE-4D5D-9829-FB125D61369B}|n12xUnit\\n12xUnit.csproj|h:\\.net\\4. asp.net core\\n12xunit\\n12xunit\\controllers\\personscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5723B9EF-70AE-4D5D-9829-FB125D61369B}|n12xUnit\\n12xUnit.csproj|solutionrelative:n12xunit\\controllers\\personscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,21 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\n12xUnit\\Views\\Persons\\Index.cshtml",
-              "RelativeDocumentMoniker": "n12xUnit\\Views\\Persons\\Index.cshtml",
-              "ToolTip": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\n12xUnit\\Views\\Persons\\Index.cshtml",
-              "RelativeToolTip": "n12xUnit\\Views\\Persons\\Index.cshtml",
-              "ViewState": "AgIAADoAAAAAAAAAAAAAAE4AAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-14T12:32:48.518Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
@@ -56,6 +43,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ResponseHeaderActionFilter.cs",
+              "DocumentMoniker": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\n12xUnit\\Filters\\ActionFilters\\ResponseHeaderActionFilter.cs",
+              "RelativeDocumentMoniker": "n12xUnit\\Filters\\ActionFilters\\ResponseHeaderActionFilter.cs",
+              "ToolTip": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\n12xUnit\\Filters\\ActionFilters\\ResponseHeaderActionFilter.cs",
+              "RelativeToolTip": "n12xUnit\\Filters\\ActionFilters\\ResponseHeaderActionFilter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T07:43:06.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "PersonsListActionFilter.cs",
               "DocumentMoniker": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\n12xUnit\\Filters\\ActionFilters\\PersonsListActionFilter.cs",
               "RelativeDocumentMoniker": "n12xUnit\\Filters\\ActionFilters\\PersonsListActionFilter.cs",
@@ -63,18 +63,17 @@
               "RelativeToolTip": "n12xUnit\\Filters\\ActionFilters\\PersonsListActionFilter.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAwCEAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T08:21:49.416Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-14T08:21:49.416Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "PersonsController.cs",
               "DocumentMoniker": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\n12xUnit\\Controllers\\PersonsController.cs",
               "RelativeDocumentMoniker": "n12xUnit\\Controllers\\PersonsController.cs",
               "ToolTip": "H:\\.NET\\4. ASP.NET Core\\n12xUnit\\n12xUnit\\Controllers\\PersonsController.cs",
               "RelativeToolTip": "n12xUnit\\Controllers\\PersonsController.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAkwCQAAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAmwA8AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-27T04:52:26.6Z",
               "EditorCaption": ""
