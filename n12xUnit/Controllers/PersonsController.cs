@@ -47,10 +47,8 @@ namespace n12xUnit.Controllers
 
             // sorting
             List<PersonResponse> sortedPersons = await _personsService.GetSortedPersons(persons, sortBy, isAscending);
-            ViewBag.SortBy = sortBy;
-
-            ViewBag.SearchBy = searchBy;
-            ViewBag.SearchString = searchString;
+            
+            // ViewBag parameters are moved to ActionFilter
 
             return View(sortedPersons);
         }
