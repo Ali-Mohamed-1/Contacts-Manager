@@ -2,7 +2,7 @@
 
 namespace n12xUnit.Filters.ActionFilters
 {
-    public class ResponseHeaderActionFilter : IActionFilter
+    public class ResponseHeaderActionFilter : IAsyncActionFilter
     {
         private readonly ILogger<ResponseHeaderActionFilter> _logger;
         private readonly string _key;
@@ -14,14 +14,15 @@ namespace n12xUnit.Filters.ActionFilters
             _value = value;
         }
 
-        public void OnActionExecuted(ActionExecutedContext context)
+        public async Task OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
         {
-            _logger.LogInformation("{filterName}.{methodName} method", nameof(ResponseHeaderActionFilter), nameof(OnActionExecuted));
-        }
+            // before logic
+            _logger.LogInformation("{filterName}.OnActionExecutionAsync method", nameof(ResponseHeaderActionFilter));
 
-        public void OnActionExecuting(ActionExecutingContext context)
-        {
-            _logger.LogInformation("{filterName}.{methodName} method", nameof(ResponseHeaderActionFilter), nameof(OnActionExecuting));
+            await next();
+
+            // after logic
+            _logger.LogInformation("{filterName}.OnActionExecutionAsync method", nameof(ResponseHeaderActionFilter));
             context.HttpContext.Response.Headers[_key] = _value;
         }
     }
