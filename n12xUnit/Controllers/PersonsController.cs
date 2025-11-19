@@ -68,7 +68,8 @@ namespace n12xUnit.Controllers
 
         [Route("add")]
         [HttpPost]
-        public async Task<IActionResult> Add(PersonAddRequest personAddRequest)
+        [TypeFilter(typeof(PersonCreateEditPOST))]
+        public async Task<IActionResult> Add(PersonAddRequest personRequest)
         {
             _logger.LogInformation("Add (POST) action method of PersonsController called");
 
@@ -81,10 +82,10 @@ namespace n12xUnit.Controllers
 
                 ViewBag.Errors = ModelState.Values.SelectMany(v => v.Errors).Select(msg => msg.ErrorMessage).ToList();
 
-                return View(personAddRequest);
+                return View(personRequest);
             }
 
-            await _personsService.AddPerson(personAddRequest);
+            await _personsService.AddPerson(personRequest);
             return RedirectToAction("Index", "Persons");
         }
 
@@ -111,14 +112,15 @@ namespace n12xUnit.Controllers
 
         [HttpPost]
         [Route("[action]/{personID}")]
-        public async Task<IActionResult> Edit(PersonUpdateRequest personUpdateRequest)
+        [TypeFilter(typeof(PersonCreateEditPOST))]
+        public async Task<IActionResult> Edit(PersonUpdateRequest personRequest)
         {
             _logger.LogInformation($"Edit (POST) action method of PersonsController called for PersonID: {personUpdateRequest.PersonID}");
 
-            PersonResponse? personResponse = await _personsService.GetPersonByID(personUpdateRequest.PersonID);
+            PersonResponse? personResponse = await _personsService.GetPersonByID(personRequest.PersonID);
             if (personResponse == null)
             {
-                _logger.LogWarning($"Person with ID {personUpdateRequest.PersonID} not found in Edit (POST)");
+                _logger.LogWarning($"Person with ID {personRequest.PersonID} not found in Edit (POST)");
                 return RedirectToAction("Index");
             }
 
@@ -133,7 +135,7 @@ namespace n12xUnit.Controllers
                 return View(personResponse.ToUpdateRequest());
             }
 
-            await _personsService.UpdatePerson(personUpdateRequest);
+            await _personsService.UpdatePerson(personRequest);
 
             return RedirectToAction("Index");
         }
