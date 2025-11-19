@@ -152,7 +152,6 @@ H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit\obj\Debug\net9.0\scopedcss\bundle\n12x
 H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit\obj\Debug\net9.0\compressed\oev5mnhz7e-dd6z7egasc.gz
 H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit\obj\Debug\net9.0\compressed\9gq3p4u7fo-ag7o75518u.gz
 H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit\obj\Debug\net9.0\compressed\3t69hqbpwd-48y08845bh.gz
-H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit\obj\Debug\net9.0\compressed\9dnfzjwjf9-zsgxx0ffs5.gz
 H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit\obj\Debug\net9.0\staticwebassets.build.json
 H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit\obj\Debug\net9.0\staticwebassets.development.json
 H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit\obj\Debug\net9.0\staticwebassets.build.endpoints.json
@@ -168,7 +167,6 @@ H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit\obj\Debug\net9.0\refint\n12xUnit.dll
 H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit\obj\Debug\net9.0\n12xUnit.pdb
 H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit\obj\Debug\net9.0\n12xUnit.genruntimeconfig.cache
 H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit\obj\Debug\net9.0\ref\n12xUnit.dll
-H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit\bin\Debug\net9.0\Serilog.dll
 H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit\bin\Debug\net9.0\Serilog.AspNetCore.dll
 H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit\bin\Debug\net9.0\Serilog.Extensions.Hosting.dll
@@ -199,3 +197,5 @@ H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit\bin\Debug\net9.0\runtimes\unix\lib\net
 H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit\bin\Debug\net9.0\runtimes\win\lib\net9.0\Microsoft.Data.SqlClient.dll
 H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit\bin\Debug\net9.0\runtimes\win\lib\net9.0\System.Diagnostics.EventLog.dll
 H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit\bin\Debug\net9.0\runtimes\win\lib\net9.0\System.Security.Cryptography.Pkcs.dll
+H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit\obj\Debug\net9.0\compressed\9dnfzjwjf9-0k2innbhx0.gz

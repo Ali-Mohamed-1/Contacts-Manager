@@ -65,10 +65,8 @@ namespace n12xUnit.Filters.ActionFilters
                     {
                         nameof(PersonResponse.Name),
                         nameof(PersonResponse.Email),
-                        nameof(PersonResponse.DateOfBirth),
-                        nameof(PersonResponse.Gender),
-                        nameof(PersonResponse.CountryID),
-                        nameof(PersonResponse.Address)
+                        nameof(PersonResponse.Address),
+                        nameof(PersonResponse.CountryName)
                     };
 
                     if(searchByOptions.Any(temp => temp == searchBy) == false)

@@ -3,115 +3,98 @@
     ViewBag.Title = "Add Person";
 }
 
-<h2>Add Person</h2>
+<section class="page-header card-panel">
+    <div>
+        <h1 class="page-title">Add a new person</h1>
+    </div>
+</section>
 
-<div class="w-50">
-    <form asp-controller="Persons" asp-action="Create" method="post">
-
-        @* PersonName *@
-        <div class="form-field flex">
-            <div class="w-25">
-                <label asp-for="Name" class="form-label pt"></label>
-            </div>
-            <div class="flex-1">
+<div class="form-card card-panel">
+    <form asp-controller="Persons" asp-action="Create" method="post" class="responsive-form">
+        <div class="form-field">
+            <label asp-for="Name" class="form-label"></label>
+            <div>
                 <input asp-for="Name" class="form-input" />
-                <span asp-validation-for="Name" class="text-red"></span>
+                <span asp-validation-for="Name" class="validation-message"></span>
             </div>
         </div>
 
-        @* Email *@
-        <div class="form-field flex">
-            <div class="w-25">
-                <label asp-for="Email" class="form-label pt"></label>
-            </div>
-            <div class="flex-1">
+        <div class="form-field">
+            <label asp-for="Email" class="form-label"></label>
+            <div>
                 <input asp-for="Email" type="email" class="form-input" />
-                <span asp-validation-for="Email" class="text-red"></span>
+                <span asp-validation-for="Email" class="validation-message"></span>
             </div>
         </div>
 
-        @* DateOfBirth *@
-        <div class="form-field flex">
-            <div class="w-25">
-                <label asp-for="DateOfBirth" class="form-label pt">Date Of Birth</label>
-            </div>
-            <div class="flex-1">
+        <div class="form-field">
+            <label asp-for="DateOfBirth" class="form-label">Date of birth</label>
+            <div>
                 <input asp-for="DateOfBirth" type="date" class="form-input" />
-                <span asp-validation-for="DateOfBirth" class="text-red"></span>
+                <span asp-validation-for="DateOfBirth" class="validation-message"></span>
             </div>
         </div>
 
-        @* Gender *@
-        <div class="form-field flex">
-            <div class="w-25">
-                <label asp-for="Gender" class="form-label"></label>
-            </div>
-            <div class="flex-1">
-                <input asp-for="Gender" type="radio" value="Male" />
-                <label for="Gender">Male</label>
-
-                <input asp-for="Gender" type="radio" value="Female" class="ml" />
-                <label for="Gender">Female</label>
-
-                <span asp-validation-for="Gender" class="text-red"></span>
+        <div class="form-field">
+            <label asp-for="Gender" class="form-label"></label>
+            <div class="option-chips">
+                <label>
+                    <input asp-for="Gender" type="radio" value="Male" />
+                    <span>Male</span>
+                </label>
+                <label>
+                    <input asp-for="Gender" type="radio" value="Female" />
+                    <span>Female</span>
+                </label>
+                <span asp-validation-for="Gender" class="validation-message"></span>
             </div>
         </div>
 
-        @* Country *@
-        <div class="form-field flex">
-            <div class="w-25">
-                <label asp-for="CountryID" class="form-label">Country Name</label>
-            </div>
-            <div class="flex-1">
+        <div class="form-field">
+            <label asp-for="CountryID" class="form-label">Country</label>
+            <div>
                 <select asp-for="CountryID" class="form-input"
                         asp-items="@(new SelectList(ViewBag.Countries, "CountryID", "CountryName"))">
-                    <option value="">Please Select</option>
+                    <option value="">Please select</option>
                 </select>
-                <span asp-validation-for="CountryID" class="text-red"></span>
+                <span asp-validation-for="CountryID" class="validation-message"></span>
             </div>
         </div>
 
-        @* Address *@
-        <div class="form-field flex">
-            <div class="w-25">
-                <label asp-for="Address" class="form-label pt"></label>
-            </div>
-            <div class="flex-1">
-                <textarea asp-for="Address" class="form-input"></textarea>
-                <span asp-validation-for="Address" class="text-red"></span>
+        <div class="form-field">
+            <label asp-for="Address" class="form-label"></label>
+            <div>
+                <textarea asp-for="Address" class="form-input" rows="3"></textarea>
+                <span asp-validation-for="Address" class="validation-message"></span>
             </div>
         </div>
 
-        @* ReceiveNewsLetters *@
-        <div class="form-field flex">
-            <div class="w-25"></div>
-            <div class="flex-1">
-                <input asp-for="ReceiveNewsLetters" type="checkbox" />
-                <label asp-for="ReceiveNewsLetters" class="form-label">Receive News Letters</label>
-                <span asp-validation-for="ReceiveNewsLetters" class="text-red"></span>
+        <div class="form-field checkbox-field">
+            <div>
+                <label class="checkbox">
+                    <input asp-for="ReceiveNewsLetters" type="checkbox" />
+                    <span>Receive newsletters</span>
+                </label>
+                <span asp-validation-for="ReceiveNewsLetters" class="validation-message"></span>
             </div>
         </div>
 
-        @* Submit *@
-        <div class="form-field flex">
-            <div class="w-25"></div>
-            <div class="flex-1">
-                <button class="button button-green-back">Submit</button>
-
-                @if (ViewBag.Errors != null)
-                {
-                    <div class="text-red ml">
-                        <ul>
-                            @foreach (string error in ViewBag.Errors)
-                            {
-                                <li class="ml">@error</li>
-                            }
-                        </ul>
-                    </div>
-                }
-            </div>
+        <div class="form-actions">
+            <button class="btn primary" type="submit">Save person</button>
+            <a asp-controller="Persons" asp-action="Index" class="btn ghost">Cancel</a>
         </div>
 
+        @if (ViewBag.Errors != null)
+        {
+            <div class="form-errors">
+                <ul>
+                    @foreach (string error in ViewBag.Errors)
+                    {
+                        <li>@error</li>
+                    }
+                </ul>
+            </div>
+        }
     </form>
 </div>
 

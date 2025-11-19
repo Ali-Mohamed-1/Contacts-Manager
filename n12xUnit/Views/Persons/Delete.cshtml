@@ -3,32 +3,27 @@
     ViewBag.Title = "Delete Person";
 }
 
-<h2>Delete Person</h2>
-<h3>Are you sure to delete this person?</h3>
+<section class="page-header card-panel danger">
+    <div>
+        <h1 class="page-title">Delete person</h1>
+        <p class="subtitle">This action cannot be undone. Please confirm the record you want to remove.</p>
+    </div>
+</section>
 
-<div class="w-50">
-    <form asp-controller="Persons" asp-action="Delete" method="post">
+<div class="form-card card-panel">
+    <form asp-controller="Persons" asp-action="Delete" method="post" class="responsive-form">
+        <input type="hidden" asp-for="PersonID" />
 
-		<input type="hidden" asp-for="PersonID" />
-
-        @* PersonName *@
-        <div class="form-field flex">
-            <div class="w-25">
-                <label asp-for="Name" class="form-label pt"></label>
-            </div>
-            <div class="flex-1">
-                <input asp-for="Name" class="form-input" disabled/>
-                <span asp-validation-for="Name" class="text-red"></span>
-            </div>
-        </div>
-
-        @* Submit *@
-        <div class="form-field flex">
-            <div class="w-25"></div>
-            <div class="flex-1">
-                <button class="button button-red-back">Delete</button>
+        <div class="form-field">
+            <label asp-for="Name" class="form-label"></label>
+            <div>
+                <input asp-for="Name" class="form-input" disabled />
             </div>
         </div>
 
+        <div class="form-actions">
+            <button class="btn danger" type="submit">Yes, delete</button>
+            <a asp-controller="Persons" asp-action="Index" class="btn ghost">Cancel</a>
+        </div>
     </form>
 </div>

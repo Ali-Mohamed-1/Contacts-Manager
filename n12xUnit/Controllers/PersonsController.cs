@@ -38,11 +38,8 @@ namespace n12xUnit.Controllers
             {
                 { nameof(PersonResponse.Name), "Name" },
                 { nameof(PersonResponse.Email), "Email" },
-                { nameof(PersonResponse.DateOfBirth), "Date Of Birth" },
                 { nameof(PersonResponse.CountryName), "Country Name" },
-                { nameof(PersonResponse.Gender), "Gender" },
-                { nameof(PersonResponse.Address), "Address" },
-                { nameof(PersonResponse.ReceiveNewsLetters), "Receive Newsletters" }
+                { nameof(PersonResponse.Address), "Address" }
             };
             List<PersonResponse> persons = await _personsService.GetFilteredPersons(searchBy, searchString);
 
