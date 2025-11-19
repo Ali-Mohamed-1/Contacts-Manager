@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using n12xUnit.Filters.ActionFilters;
+using n12xUnit.Filters.AuthorizationFilter;
+using n12xUnit.Filters.ResultFilters;
 using ServiceContracts;
 using ServiceContracts.DTOs.CountryDTOs;
 using ServiceContracts.DTOs.PersonDTOs;
@@ -113,9 +115,11 @@ namespace n12xUnit.Controllers
         [HttpPost]
         [Route("[action]/{personID}")]
         [TypeFilter(typeof(PersonCreateEditPOST))]
+        [TypeFilter(typeof(TokenAuthFilter))]
+        [TypeFilter(typeof(TokenResultFilter))]
         public async Task<IActionResult> Edit(PersonUpdateRequest personRequest)
         {
-            _logger.LogInformation($"Edit (POST) action method of PersonsController called for PersonID: {personUpdateRequest.PersonID}");
+            _logger.LogInformation($"Edit (POST) action method of PersonsController called for PersonID: {personRequest.PersonID}");
 
             PersonResponse? personResponse = await _personsService.GetPersonByID(personRequest.PersonID);
             if (personResponse == null)
