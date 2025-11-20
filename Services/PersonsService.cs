@@ -58,7 +58,12 @@ namespace Services
 
             var persons = await _personRepo.GetAllPersons();
 
-            return persons.Select(person => person.ToPersonResponse()).ToList();
+            return persons.Select(person =>
+            {
+                var response = person.ToPersonResponse();
+                response.CountryName = person.Country?.CountryName;
+                return response;
+            }).ToList();
         }
 
         public async Task<PersonResponse?> GetPersonByID(Guid? personID)
@@ -105,7 +110,12 @@ namespace Services
                 _ => await _personRepo.GetAllPersons()
             };
 
-            return persons.Select(person => person.ToPersonResponse()).ToList();
+            return persons.Select(person =>
+            {
+                var response = person.ToPersonResponse();
+                response.CountryName = person.Country?.CountryName;
+                return response;
+            }).ToList();
         }
 
         public Task<List<PersonResponse>> GetSortedPersons(List<PersonResponse> allPersons, string sortBy, bool isAscending)

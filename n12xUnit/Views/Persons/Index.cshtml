@@ -1,94 +1,136 @@
 ﻿@model IEnumerable<PersonResponse>
 @{
-	ViewBag.Title = "Persons";
+    ViewBag.Title = "Persons";
+    var persons = Model ?? Array.Empty<PersonResponse>();
+    bool hasRecords = persons.Any();
+    var searchFields = ViewBag.SearchFields as IEnumerable<KeyValuePair<string, string>> ?? Array.Empty<KeyValuePair<string, string>>();
+    string searchBy = ViewBag.SearchBy ?? string.Empty;
+    string searchString = ViewBag.SearchString ?? string.Empty;
+    string sortBy = ViewBag.SortBy ?? string.Empty;
+    bool isAscending = ViewBag.IsAscending is bool asc && asc;
 }
 
-<form asp-controller="Persons" asp-action="Index" method="get">
+<section class="page-header card-panel">
+    <div>
+            <h1 class="page-title">People overview</h1>
+        <p class="subtitle">Search, sort and maintain everyone in a single clean workspace.</p>
+    </div>
+    <div class="header-actions">
+        <a asp-controller="Persons" asp-action="Add" class="btn primary">
+            <span>＋</span> New person
+        </a>
+    </div>
+</section>
 
-<h1>Persons</h1>
+<form asp-controller="Persons" asp-action="Index" method="get" class="card-panel filter-form">
+    <div class="filter-grid">
+        <div class="filter-field">
+            <label class="input-label" for="searchBy">Filter by</label>
+            <select class="form-input" id="searchBy" name="searchBy" value="@searchBy">
+                @foreach (var field in searchFields)
+                {
+                    if (field.Key == searchBy)
+                    {
+                        <option value="@field.Key" selected="selected">@field.Value</option>
+                        continue;
+                    }
+                    <option value="@field.Key">@field.Value</option>
+                }
+            </select>
+        </div>
 
-<div class="box flex">
-	<div class="flex-1">
-		<select class="form-input" name="searchBy" value="@ViewBag.SearchBy">
-			@foreach (var field in ViewBag.SearchFields)
-			{
-					if (field.Key == ViewBag.SearchBy)
-					{
-						<option value="@field.Key" selected="selected">@field.Value</option>
-						continue;
-					}
-				<option value="@field.Key">@field.Value</option>
-			}
-			@* searchBy = field.Key *@
-		</select>
-	</div>
-
-	<div class="flex-1">
-		<input name="searchString" type="search" id="Search" class="form-input" placeholder="Search" value="@ViewBag.SearchString"/>
-	</div>
-
-	<div class="flex-1">
-		<button class="button button-blue-back" type="submit">Search</button>
-			<a asp-controller="Persons" asp-action="Index" class="button button-red-back">Clear all</a>
-	</div>
-</div>
-
-<table class="table w-100 mt persons">
-
-		<thead>
-			<tr>
-				<th>
-					<a href="~/persons/index?searchBy=@ViewBag.SearchBy&searchString=@ViewBag.SearchString&sortBy=Name&isAscending=@((ViewBag.SortBy == "Name" ? !ViewBag.IsAscending : true))">Name</a>
-				</th>
-				<th>
-					<a href="~/persons/index?searchBy=@ViewBag.SearchBy&searchString=@ViewBag.SearchString&sortBy=Email&isAscending=@((ViewBag.SortBy == "Email" ? !ViewBag.IsAscending : true))">Email</a>
-				</th>
-				<th>
-					<a href="~/persons/index?searchBy=@ViewBag.SearchBy&searchString=@ViewBag.SearchString&sortBy=DateOfBirth&isAscending=@((ViewBag.SortBy == "DateOfBirth" ? !ViewBag.IsAscending : true))">Date of Birth</a>
-				</th>
-				<th>
-					<a href="~/persons/index?searchBy=@ViewBag.SearchBy&searchString=@ViewBag.SearchString&sortBy=Gender&isAscending=@((ViewBag.SortBy == "Gender" ? !ViewBag.IsAscending : true))">Gender</a>
-				</th>
-				<th>
-					<a href="~/persons/index?searchBy=@ViewBag.SearchBy&searchString=@ViewBag.SearchString&sortBy=Address&isAscending=@((ViewBag.SortBy == "Address" ? !ViewBag.IsAscending : true))">Address</a>
-				</th>
-				<th>
-					<a href="~/persons/index?searchBy=@ViewBag.SearchBy&searchString=@ViewBag.SearchString&sortBy=CountryName&isAscending=@((ViewBag.SortBy == "CountryName" ? !ViewBag.IsAscending : true))">Country</a>
-				</th>
-				<th>
-					<a href="~/persons/index?searchBy=@ViewBag.SearchBy&searchString=@ViewBag.SearchString&sortBy=ReceiveNewsLetters&isAscending=@((ViewBag.SortBy == "ReceiveNewsLetters" ? !ViewBag.IsAscending : true))">Receive Newsletters</a>
-				</th>
-				<th> Options </th>
-			</tr>
-		</thead>
-
-
-
-	<tbody>
-		@foreach (PersonResponse person in Model)
-		{
-			<tr>
-				<td style="width:15%">@person.Name</td>
-				<td style="width:20%">@person.Email</td>
-				<td style="width:13%">@person.DateOfBirth.ToString("dd MMM yyyy")</td>
-				<td style="width:9%">@person.Gender</td>
-				<td style="width:15%">@person.Address</td>
-				<td style="width:10%">@person.CountryName</td>
-				@if (person.ReceiveNewsLetters)
-				{
-					<td  style="width:20%">Yes</td>
-				}
-				else
-				{
-					<td style="width:20%">No</td>
-				}
-				<td  style="width:20%">
-					<a asp-controller="Persons" asp-action="Edit" asp-route-personID="@person.PersonID">Edit</a>
-					<a asp-controller="Persons" asp-action="Delete" asp-route-personID="@person.PersonID">Delete</a>
-				</td>
-			</tr>
-		}
-	</tbody>
-
-</table>
+        <div class="filter-field search-field">
+            <label class="input-label" for="Search">Search text</label>
+            <div class="search-input-row">
+                <input name="searchString"
+                       type="search"
+                       id="Search"
+                       class="form-input"
+                       placeholder="Type a name, email, address…"
+                       value="@searchString" />
+                <button class="btn secondary" type="submit">Search</button>
+                <a asp-controller="Persons" asp-action="Index" class="btn ghost">Clear</a>
+            </div>
+        </div>
+    </div>
 </form>
+
+@if (!hasRecords)
+{
+    <div class="card-panel empty-state">
+        <h3>No people found</h3>
+        <p>Try adjusting your filters or add a new person to get started.</p>
+        <a asp-controller="Persons" asp-action="Add" class="btn primary">Create the first person</a>
+    </div>
+}
+else
+{
+    <div class="table-wrapper card-panel">
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>
+                        <a class="sort-link" href="~/persons/index?searchBy=@searchBy&searchString=@searchString&sortBy=Name&isAscending=@((sortBy == "Name" ? !isAscending : true))">
+                            Name
+                        </a>
+                    </th>
+                    <th>
+                        <a class="sort-link" href="~/persons/index?searchBy=@searchBy&searchString=@searchString&sortBy=Email&isAscending=@((sortBy == "Email" ? !isAscending : true))">
+                            Email
+                        </a>
+                    </th>
+                    <th>
+                        <a class="sort-link" href="~/persons/index?searchBy=@searchBy&searchString=@searchString&sortBy=DateOfBirth&isAscending=@((sortBy == "DateOfBirth" ? !isAscending : true))">
+                            Date of birth
+                        </a>
+                    </th>
+                    <th>
+                        <a class="sort-link" href="~/persons/index?searchBy=@searchBy&searchString=@searchString&sortBy=Gender&isAscending=@((sortBy == "Gender" ? !isAscending : true))">
+                            Gender
+                        </a>
+                    </th>
+                    <th>
+                        <a class="sort-link" href="~/persons/index?searchBy=@searchBy&searchString=@searchString&sortBy=Address&isAscending=@((sortBy == "Address" ? !isAscending : true))">
+                            Address
+                        </a>
+                    </th>
+                    <th>
+                        <a class="sort-link" href="~/persons/index?searchBy=@searchBy&searchString=@searchString&sortBy=CountryName&isAscending=@((sortBy == "CountryName" ? !isAscending : true))">
+                            Country
+                        </a>
+                    </th>
+                    <th>
+                        <a class="sort-link" href="~/persons/index?searchBy=@searchBy&searchString=@searchString&sortBy=ReceiveNewsLetters&isAscending=@((sortBy == "ReceiveNewsLetters" ? !isAscending : true))">
+                            Newsletters
+                        </a>
+                    </th>
+                    <th>Options</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (PersonResponse person in persons)
+                {
+                    <tr>
+                        <td>@person.Name</td>
+                        <td>@person.Email</td>
+                        <td>@person.DateOfBirth.ToString("dd MMM yyyy")</td>
+                        <td>@person.Gender</td>
+                        <td>@person.Address</td>
+                        <td>@person.CountryName</td>
+                        <td>
+                            <span class="badge @(person.ReceiveNewsLetters ? "badge-success" : "badge-muted")">
+                                @(person.ReceiveNewsLetters ? "Subscribed" : "No")
+                            </span>
+                        </td>
+                        <td>
+                            <div class="table-actions">
+                                <a asp-controller="Persons" asp-action="Edit" asp-route-personID="@person.PersonID" class="action-link">Edit</a>
+                                <a asp-controller="Persons" asp-action="Delete" asp-route-personID="@person.PersonID" class="action-link danger">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}

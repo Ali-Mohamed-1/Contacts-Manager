@@ -14,8 +14,14 @@ namespace Services
 	{
 		private readonly ICountriesRepository _countriesRepo;
 		private readonly ILogger<CountriesService> _logger;
+        private ICountriesRepository countriesRepo;
 
-		public CountriesService(ICountriesRepository countriesRepo, ILogger<CountriesService> logger)
+        public CountriesService(ICountriesRepository countriesRepo)
+        {
+            this.countriesRepo = countriesRepo;
+        }
+
+        public CountriesService(ICountriesRepository countriesRepo, ILogger<CountriesService> logger)
 		{
 			_countriesRepo = countriesRepo;
 			_logger = logger;

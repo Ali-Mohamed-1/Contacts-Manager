@@ -1,0 +1,1789 @@
+2025-11-14 10:27:59.924 +02:00 [INF] User profile is available. Using 'C:\Users\CM\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-14 10:28:00.641 +02:00 [INF] Now listening on: http://localhost:5022
+2025-11-14 10:28:00.707 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-14 10:28:00.709 +02:00 [INF] Hosting environment: Development
+2025-11-14 10:28:00.710 +02:00 [INF] Content root path: H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit
+2025-11-14 10:28:01.150 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/ - null null
+2025-11-14 10:28:01.316 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5022
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-11-14 10:28:01.339 +02:00 [INF] Executing endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 10:28:01.351 +02:00 [INF] Executed endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 10:28:01.355 +02:00 [INF] Response:
+StatusCode: 200
+2025-11-14 10:28:01.360 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: A suitable constructor for type 'n12xUnit.Filters.ActionFilters.PersonsListActionFilter' could not be located. Ensure the type is concrete and all parameters of a public constructor are either registered as services or passed as arguments. Also ensure no extraneous arguments are provided.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.FindApplicableConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfoEx[] constructors, ConstructorInfo& matchingConstructor, Nullable`1[]& matchingParameterMap)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactoryInternal(Type instanceType, Type[] argumentTypes, ParameterExpression& provider, ParameterExpression& argumentArray, Expression& factoryExpressionBody)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)
+   at Microsoft.AspNetCore.Mvc.TypeFilterAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerRequestDelegateFactory.<>c__DisplayClass12_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-14 10:28:01.416 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/ - 500 null text/html; charset=utf-8 275.5911ms
+2025-11-14 10:28:01.463 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-14 10:28:01.463 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_vs/browserLink - null null
+2025-11-14 10:28:01.470 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 7.3785ms
+2025-11-14 10:28:01.524 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_vs/browserLink - 200 null text/javascript; charset=UTF-8 61.6445ms
+2025-11-14 10:28:01.674 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/favicon.ico - null null
+2025-11-14 10:28:01.679 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /favicon.ico
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5022
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-11-14 10:28:01.683 +02:00 [INF] Response:
+StatusCode: 404
+2025-11-14 10:28:01.685 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/favicon.ico - 404 0 null 10.3438ms
+2025-11-14 10:28:01.690 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5022/favicon.ico, Response status code: 404
+2025-11-14 10:28:43.855 +02:00 [INF] User profile is available. Using 'C:\Users\CM\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-14 10:28:44.151 +02:00 [INF] Now listening on: http://localhost:5022
+2025-11-14 10:28:44.229 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-14 10:28:44.230 +02:00 [INF] Hosting environment: Development
+2025-11-14 10:28:44.232 +02:00 [INF] Content root path: H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit
+2025-11-14 10:28:44.511 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/ - null null
+2025-11-14 10:28:44.643 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5022
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-11-14 10:28:44.662 +02:00 [INF] Executing endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 10:28:44.732 +02:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, Boolean) on controller n12xUnit.Controllers.PersonsController (n12xUnit).
+2025-11-14 10:28:45.768 +02:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2025-11-14 10:28:45.784 +02:00 [INF] Index action method of PersonsController called
+2025-11-14 10:28:45.840 +02:00 [INF] GetFilteredPersons method called in PersonsService
+2025-11-14 10:28:45.842 +02:00 [INF] GetAllPersons method called in PersonsRepo
+2025-11-14 10:28:47.429 +02:00 [INF] Executed DbCommand (109ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[Name], [p].[ReceiveNewsLetters], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-11-14 10:28:47.591 +02:00 [INF] GetSortedPersons method called in PersonsService
+2025-11-14 10:28:47.612 +02:00 [INF] PersonsListActionFilter.OnActionExecutied method
+2025-11-14 10:28:47.625 +02:00 [INF] Executing ViewResult, running view Index.
+2025-11-14 10:28:47.855 +02:00 [INF] Executed ViewResult - view Index executed in 232.8775ms.
+2025-11-14 10:28:47.861 +02:00 [INF] Executed action n12xUnit.Controllers.PersonsController.Index (n12xUnit) in 3125.3313ms
+2025-11-14 10:28:47.864 +02:00 [INF] Executed endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 10:28:47.868 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Fri, 14 Nov 2025 08:28:47 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+2025-11-14 10:28:47.881 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/ - 200 null text/html; charset=utf-8 3381.9921ms
+2025-11-14 10:28:47.886 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-14 10:28:47.886 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_vs/browserLink - null null
+2025-11-14 10:28:47.887 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/StyleSheet.css - null null
+2025-11-14 10:28:47.893 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 7.973ms
+2025-11-14 10:28:47.899 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /StyleSheet.css
+Accept: text/css,*/*;q=0.1
+Connection: keep-alive
+Host: localhost:5022
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-11-14 10:28:47.927 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_vs/browserLink - 200 null text/javascript; charset=UTF-8 41.7136ms
+2025-11-14 10:28:48.007 +02:00 [INF] Sending file. Request path: '/StyleSheet.css'. Physical path: 'H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit\wwwroot\StyleSheet.css'
+2025-11-14 10:28:48.009 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/css
+Date: Fri, 14 Nov 2025 08:28:47 GMT
+Server: Kestrel
+Accept-Ranges: bytes
+ETag: [Redacted]
+Last-Modified: Sun, 21 Sep 2025 05:50:59 GMT
+Content-Length: 5061
+2025-11-14 10:28:48.011 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/StyleSheet.css - 200 5061 text/css 123.9367ms
+2025-11-14 10:56:32.416 +02:00 [INF] User profile is available. Using 'C:\Users\CM\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-14 10:56:32.771 +02:00 [INF] Now listening on: http://localhost:5022
+2025-11-14 10:56:32.827 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-14 10:56:32.829 +02:00 [INF] Hosting environment: Development
+2025-11-14 10:56:32.830 +02:00 [INF] Content root path: H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit
+2025-11-14 10:56:33.367 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/ - null null
+2025-11-14 10:56:33.538 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5022
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-11-14 10:56:33.555 +02:00 [INF] Executing endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 10:56:33.611 +02:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, Boolean) on controller n12xUnit.Controllers.PersonsController (n12xUnit).
+2025-11-14 10:56:34.088 +02:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2025-11-14 10:56:34.100 +02:00 [INF] Index action method of PersonsController called
+2025-11-14 10:56:34.138 +02:00 [INF] GetFilteredPersons method called in PersonsService
+2025-11-14 10:56:34.140 +02:00 [INF] GetAllPersons method called in PersonsRepo
+2025-11-14 10:56:35.079 +02:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[Name], [p].[ReceiveNewsLetters], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-11-14 10:56:35.158 +02:00 [INF] GetSortedPersons method called in PersonsService
+2025-11-14 10:56:35.169 +02:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2025-11-14 10:56:35.180 +02:00 [INF] Executing ViewResult, running view Index.
+2025-11-14 10:56:35.352 +02:00 [INF] Executed ViewResult - view Index executed in 174.0282ms.
+2025-11-14 10:56:35.357 +02:00 [INF] Executed action n12xUnit.Controllers.PersonsController.Index (n12xUnit) in 1743.467ms
+2025-11-14 10:56:35.360 +02:00 [INF] Executed endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 10:56:35.363 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Fri, 14 Nov 2025 08:56:34 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+2025-11-14 10:56:35.377 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/ - 200 null text/html; charset=utf-8 2020.2463ms
+2025-11-14 10:56:35.385 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-14 10:56:35.385 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_vs/browserLink - null null
+2025-11-14 10:56:35.392 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 7.8569ms
+2025-11-14 10:56:35.453 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_vs/browserLink - 200 null text/javascript; charset=UTF-8 68.61ms
+2025-11-14 10:56:37.680 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/persons/Index?searchBy=Name&searchString= - null null
+2025-11-14 10:56:37.688 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /persons/Index
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5022
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-11-14 10:56:37.692 +02:00 [INF] Executing endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 10:56:37.698 +02:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, Boolean) on controller n12xUnit.Controllers.PersonsController (n12xUnit).
+2025-11-14 10:56:37.707 +02:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2025-11-14 10:56:37.709 +02:00 [INF] Index action method of PersonsController called
+2025-11-14 10:56:37.710 +02:00 [INF] GetFilteredPersons method called in PersonsService
+2025-11-14 10:56:37.712 +02:00 [INF] GetFilteredPersons method called in PersonsRepo
+2025-11-14 10:56:37.752 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[Name], [p].[ReceiveNewsLetters], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+WHERE 0 = 1
+2025-11-14 10:56:37.756 +02:00 [INF] GetSortedPersons method called in PersonsService
+2025-11-14 10:56:37.759 +02:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2025-11-14 10:56:37.762 +02:00 [INF] Executing ViewResult, running view Index.
+2025-11-14 10:56:37.776 +02:00 [INF] Executed ViewResult - view Index executed in 15.0897ms.
+2025-11-14 10:56:37.779 +02:00 [INF] Executed action n12xUnit.Controllers.PersonsController.Index (n12xUnit) in 77.1626ms
+2025-11-14 10:56:37.780 +02:00 [INF] Executed endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 10:56:37.782 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Fri, 14 Nov 2025 08:56:37 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+2025-11-14 10:56:37.784 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/persons/Index?searchBy=Name&searchString= - 200 null text/html; charset=utf-8 103.5932ms
+2025-11-14 10:56:37.837 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_vs/browserLink - null null
+2025-11-14 10:56:37.837 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-14 10:56:37.849 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 11.5589ms
+2025-11-14 10:56:37.849 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_vs/browserLink - 200 null text/javascript; charset=UTF-8 11.8168ms
+2025-11-14 10:56:48.043 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/persons/Index?searchBy=asdasd&searchString= - null null
+2025-11-14 10:56:48.050 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /persons/Index
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5022
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-11-14 10:56:48.052 +02:00 [INF] Executing endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 10:56:48.054 +02:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, Boolean) on controller n12xUnit.Controllers.PersonsController (n12xUnit).
+2025-11-14 10:56:48.060 +02:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2025-11-14 10:56:48.061 +02:00 [INF] searchBy actual value is asdasd
+2025-11-14 10:56:48.062 +02:00 [INF] searchBy updated value is asdasd
+2025-11-14 10:56:48.063 +02:00 [INF] Index action method of PersonsController called
+2025-11-14 10:56:48.064 +02:00 [INF] GetFilteredPersons method called in PersonsService
+2025-11-14 10:56:48.065 +02:00 [INF] GetFilteredPersons method called in PersonsRepo
+2025-11-14 10:56:48.110 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[Name], [p].[ReceiveNewsLetters], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+WHERE 0 = 1
+2025-11-14 10:56:48.113 +02:00 [INF] GetSortedPersons method called in PersonsService
+2025-11-14 10:56:48.114 +02:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2025-11-14 10:56:48.115 +02:00 [INF] Executing ViewResult, running view Index.
+2025-11-14 10:56:48.118 +02:00 [INF] Executed ViewResult - view Index executed in 2.9836ms.
+2025-11-14 10:56:48.120 +02:00 [INF] Executed action n12xUnit.Controllers.PersonsController.Index (n12xUnit) in 63.8297ms
+2025-11-14 10:56:48.121 +02:00 [INF] Executed endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 10:56:48.123 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Fri, 14 Nov 2025 08:56:47 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+2025-11-14 10:56:48.124 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/persons/Index?searchBy=asdasd&searchString= - 200 null text/html; charset=utf-8 81.1089ms
+2025-11-14 10:56:48.154 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_vs/browserLink - null null
+2025-11-14 10:56:48.154 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-14 10:56:48.161 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 7.2129ms
+2025-11-14 10:56:48.162 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_vs/browserLink - 200 null text/javascript; charset=UTF-8 7.7857ms
+2025-11-14 10:56:54.802 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/persons/Index?searchBy=Email&searchString= - null null
+2025-11-14 10:56:54.807 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /persons/Index
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5022
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-11-14 10:56:54.808 +02:00 [INF] Executing endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 10:56:54.810 +02:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, Boolean) on controller n12xUnit.Controllers.PersonsController (n12xUnit).
+2025-11-14 10:56:54.813 +02:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2025-11-14 10:56:54.814 +02:00 [INF] Index action method of PersonsController called
+2025-11-14 10:56:54.815 +02:00 [INF] GetFilteredPersons method called in PersonsService
+2025-11-14 10:56:54.816 +02:00 [INF] GetFilteredPersons method called in PersonsRepo
+2025-11-14 10:56:54.825 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[Name], [p].[ReceiveNewsLetters], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+WHERE 0 = 1
+2025-11-14 10:56:54.828 +02:00 [INF] GetSortedPersons method called in PersonsService
+2025-11-14 10:56:54.829 +02:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2025-11-14 10:56:54.830 +02:00 [INF] Executing ViewResult, running view Index.
+2025-11-14 10:56:54.833 +02:00 [INF] Executed ViewResult - view Index executed in 2.2233ms.
+2025-11-14 10:56:54.834 +02:00 [INF] Executed action n12xUnit.Controllers.PersonsController.Index (n12xUnit) in 21.99ms
+2025-11-14 10:56:54.836 +02:00 [INF] Executed endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 10:56:54.838 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Fri, 14 Nov 2025 08:56:53 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+2025-11-14 10:56:54.839 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/persons/Index?searchBy=Email&searchString= - 200 null text/html; charset=utf-8 37.2865ms
+2025-11-14 10:56:54.868 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_vs/browserLink - null null
+2025-11-14 10:56:54.869 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-14 10:56:54.878 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 9.4147ms
+2025-11-14 10:56:54.879 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_vs/browserLink - 200 null text/javascript; charset=UTF-8 11.1676ms
+2025-11-14 10:57:02.438 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/persons/Index?searchBy=asdasd&searchString= - null null
+2025-11-14 10:57:02.443 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /persons/Index
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5022
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-11-14 10:57:02.444 +02:00 [INF] Executing endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 10:57:02.446 +02:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, Boolean) on controller n12xUnit.Controllers.PersonsController (n12xUnit).
+2025-11-14 10:57:02.449 +02:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2025-11-14 10:57:02.449 +02:00 [INF] searchBy actual value is asdasd
+2025-11-14 10:57:02.451 +02:00 [INF] searchBy updated value is asdasd
+2025-11-14 10:57:02.452 +02:00 [INF] Index action method of PersonsController called
+2025-11-14 10:57:02.453 +02:00 [INF] GetFilteredPersons method called in PersonsService
+2025-11-14 10:57:02.455 +02:00 [INF] GetFilteredPersons method called in PersonsRepo
+2025-11-14 10:57:02.458 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[Name], [p].[ReceiveNewsLetters], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+WHERE 0 = 1
+2025-11-14 10:57:02.461 +02:00 [INF] GetSortedPersons method called in PersonsService
+2025-11-14 10:57:02.462 +02:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2025-11-14 10:57:02.463 +02:00 [INF] Executing ViewResult, running view Index.
+2025-11-14 10:57:02.465 +02:00 [INF] Executed ViewResult - view Index executed in 1.8636ms.
+2025-11-14 10:57:02.467 +02:00 [INF] Executed action n12xUnit.Controllers.PersonsController.Index (n12xUnit) in 18.6354ms
+2025-11-14 10:57:02.469 +02:00 [INF] Executed endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 10:57:02.470 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Fri, 14 Nov 2025 08:57:01 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+2025-11-14 10:57:02.472 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/persons/Index?searchBy=asdasd&searchString= - 200 null text/html; charset=utf-8 34.3813ms
+2025-11-14 10:57:02.507 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_vs/browserLink - null null
+2025-11-14 10:57:02.507 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-14 10:57:02.516 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 8.779ms
+2025-11-14 10:57:02.516 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_vs/browserLink - 200 null text/javascript; charset=UTF-8 9.2864ms
+2025-11-14 14:31:55.247 +02:00 [INF] User profile is available. Using 'C:\Users\CM\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-14 14:31:55.573 +02:00 [INF] Now listening on: http://localhost:5022
+2025-11-14 14:31:55.623 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-14 14:31:55.624 +02:00 [INF] Hosting environment: Development
+2025-11-14 14:31:55.625 +02:00 [INF] Content root path: H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit
+2025-11-14 14:31:55.989 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/ - null null
+2025-11-14 14:31:56.130 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5022
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-11-14 14:31:56.146 +02:00 [INF] Executing endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 14:31:56.207 +02:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, Boolean) on controller n12xUnit.Controllers.PersonsController (n12xUnit).
+2025-11-14 14:31:57.215 +02:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2025-11-14 14:31:57.226 +02:00 [INF] Index action method of PersonsController called
+2025-11-14 14:31:57.266 +02:00 [INF] GetFilteredPersons method called in PersonsService
+2025-11-14 14:31:57.267 +02:00 [INF] GetAllPersons method called in PersonsRepo
+2025-11-14 14:31:58.296 +02:00 [INF] Executed DbCommand (52ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[Name], [p].[ReceiveNewsLetters], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-11-14 14:31:58.371 +02:00 [INF] GetSortedPersons method called in PersonsService
+2025-11-14 14:31:58.381 +02:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2025-11-14 14:31:58.391 +02:00 [INF] Executing ViewResult, running view Index.
+2025-11-14 14:31:58.530 +02:00 [INF] Executed ViewResult - view Index executed in 141.6508ms.
+2025-11-14 14:31:58.535 +02:00 [INF] Executed action n12xUnit.Controllers.PersonsController.Index (n12xUnit) in 2324.8787ms
+2025-11-14 14:31:58.536 +02:00 [INF] Executed endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 14:31:58.538 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Fri, 14 Nov 2025 12:31:57 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+2025-11-14 14:31:58.546 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/ - 200 null text/html; charset=utf-8 2565.7039ms
+2025-11-14 14:31:58.559 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-14 14:31:58.563 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - 200 16500 application/javascript; charset=utf-8 4.6043ms
+2025-11-14 14:31:58.571 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_vs/browserLink - null null
+2025-11-14 14:31:58.611 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_vs/browserLink - 200 null text/javascript; charset=UTF-8 40.0707ms
+2025-11-14 14:31:58.826 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/favicon.ico - null null
+2025-11-14 14:31:58.829 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /favicon.ico
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5022
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-11-14 14:31:58.832 +02:00 [INF] Response:
+StatusCode: 404
+2025-11-14 14:31:58.833 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/favicon.ico - 404 0 null 7.3412ms
+2025-11-14 14:31:58.836 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5022/favicon.ico, Response status code: 404
+2025-11-14 14:32:32.516 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/persons/Index?searchBy=Name&searchString=ali - null null
+2025-11-14 14:32:32.522 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /persons/Index
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5022
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-11-14 14:32:32.525 +02:00 [INF] Executing endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 14:32:32.595 +02:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, Boolean) on controller n12xUnit.Controllers.PersonsController (n12xUnit).
+2025-11-14 14:32:32.647 +02:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2025-11-14 14:32:32.648 +02:00 [INF] Index action method of PersonsController called
+2025-11-14 14:32:32.649 +02:00 [INF] GetFilteredPersons method called in PersonsService
+2025-11-14 14:32:32.650 +02:00 [INF] GetFilteredPersons method called in PersonsRepo
+2025-11-14 14:32:32.731 +02:00 [INF] Executed DbCommand (12ms) [Parameters=[@__searchString_0_contains='?' (Size = 40)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[Name], [p].[ReceiveNewsLetters], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+WHERE [p].[Name] LIKE @__searchString_0_contains ESCAPE N'\'
+2025-11-14 14:32:32.734 +02:00 [INF] GetSortedPersons method called in PersonsService
+2025-11-14 14:32:32.735 +02:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2025-11-14 14:32:32.736 +02:00 [INF] Executing ViewResult, running view Index.
+2025-11-14 14:32:32.755 +02:00 [INF] Executed ViewResult - view Index executed in 19.2054ms.
+2025-11-14 14:32:32.756 +02:00 [INF] Executed action n12xUnit.Controllers.PersonsController.Index (n12xUnit) in 159.5373ms
+2025-11-14 14:32:32.757 +02:00 [INF] Executed endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 14:32:32.758 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Fri, 14 Nov 2025 12:32:31 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+2025-11-14 14:32:32.759 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/persons/Index?searchBy=Name&searchString=ali - 200 null text/html; charset=utf-8 267.5997ms
+2025-11-14 14:32:32.797 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-14 14:32:32.798 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_vs/browserLink - null null
+2025-11-14 14:32:32.801 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - 200 16500 application/javascript; charset=utf-8 3.8361ms
+2025-11-14 14:32:32.819 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_vs/browserLink - 200 null text/javascript; charset=UTF-8 20.9827ms
+2025-11-14 14:32:35.965 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/persons/Index?searchBy=Name&searchString=omar - null null
+2025-11-14 14:32:35.968 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /persons/Index
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5022
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-11-14 14:32:35.970 +02:00 [INF] Executing endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 14:32:35.971 +02:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, Boolean) on controller n12xUnit.Controllers.PersonsController (n12xUnit).
+2025-11-14 14:32:35.975 +02:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2025-11-14 14:32:35.976 +02:00 [INF] Index action method of PersonsController called
+2025-11-14 14:32:35.977 +02:00 [INF] GetFilteredPersons method called in PersonsService
+2025-11-14 14:32:35.977 +02:00 [INF] GetFilteredPersons method called in PersonsRepo
+2025-11-14 14:32:36.053 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__searchString_0_contains='?' (Size = 40)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[Name], [p].[ReceiveNewsLetters], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+WHERE [p].[Name] LIKE @__searchString_0_contains ESCAPE N'\'
+2025-11-14 14:32:36.056 +02:00 [INF] GetSortedPersons method called in PersonsService
+2025-11-14 14:32:36.056 +02:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2025-11-14 14:32:36.057 +02:00 [INF] Executing ViewResult, running view Index.
+2025-11-14 14:32:36.060 +02:00 [INF] Executed ViewResult - view Index executed in 2.3605ms.
+2025-11-14 14:32:36.061 +02:00 [INF] Executed action n12xUnit.Controllers.PersonsController.Index (n12xUnit) in 88.6738ms
+2025-11-14 14:32:36.062 +02:00 [INF] Executed endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 14:32:36.063 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Fri, 14 Nov 2025 12:32:35 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+2025-11-14 14:32:36.064 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/persons/Index?searchBy=Name&searchString=omar - 200 null text/html; charset=utf-8 98.8368ms
+2025-11-14 14:32:36.098 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-14 14:32:36.098 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_vs/browserLink - null null
+2025-11-14 14:32:36.100 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - 200 16500 application/javascript; charset=utf-8 2.0275ms
+2025-11-14 14:32:36.116 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_vs/browserLink - 200 null text/javascript; charset=UTF-8 17.9044ms
+2025-11-14 14:32:41.952 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/persons/Index?searchBy=DateOfBirth&searchString=omar - null null
+2025-11-14 14:32:41.955 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /persons/Index
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5022
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-11-14 14:32:41.956 +02:00 [INF] Executing endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 14:32:41.957 +02:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, Boolean) on controller n12xUnit.Controllers.PersonsController (n12xUnit).
+2025-11-14 14:32:41.959 +02:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2025-11-14 14:32:41.960 +02:00 [INF] Index action method of PersonsController called
+2025-11-14 14:32:41.961 +02:00 [INF] GetFilteredPersons method called in PersonsService
+2025-11-14 14:32:41.961 +02:00 [INF] GetAllPersons method called in PersonsRepo
+2025-11-14 14:32:41.964 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[Name], [p].[ReceiveNewsLetters], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-11-14 14:32:41.967 +02:00 [INF] GetSortedPersons method called in PersonsService
+2025-11-14 14:32:41.968 +02:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2025-11-14 14:32:41.969 +02:00 [INF] Executing ViewResult, running view Index.
+2025-11-14 14:32:41.972 +02:00 [INF] Executed ViewResult - view Index executed in 3.2108ms.
+2025-11-14 14:32:41.973 +02:00 [INF] Executed action n12xUnit.Controllers.PersonsController.Index (n12xUnit) in 14.741ms
+2025-11-14 14:32:41.975 +02:00 [INF] Executed endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 14:32:41.976 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Fri, 14 Nov 2025 12:32:41 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+2025-11-14 14:32:41.977 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/persons/Index?searchBy=DateOfBirth&searchString=omar - 200 null text/html; charset=utf-8 24.8559ms
+2025-11-14 14:32:42.005 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-14 14:32:42.005 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_vs/browserLink - null null
+2025-11-14 14:32:42.007 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - 200 16500 application/javascript; charset=utf-8 1.8544ms
+2025-11-14 14:32:42.011 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_vs/browserLink - 200 null text/javascript; charset=UTF-8 6.2165ms
+2025-11-14 14:32:43.073 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/persons/Index?searchBy=DateOfBirth&searchString=omar - null null
+2025-11-14 14:32:43.076 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /persons/Index
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5022
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-11-14 14:32:43.077 +02:00 [INF] Executing endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 14:32:43.077 +02:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, Boolean) on controller n12xUnit.Controllers.PersonsController (n12xUnit).
+2025-11-14 14:32:43.079 +02:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2025-11-14 14:32:43.080 +02:00 [INF] Index action method of PersonsController called
+2025-11-14 14:32:43.080 +02:00 [INF] GetFilteredPersons method called in PersonsService
+2025-11-14 14:32:43.081 +02:00 [INF] GetAllPersons method called in PersonsRepo
+2025-11-14 14:32:43.082 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[Name], [p].[ReceiveNewsLetters], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-11-14 14:32:43.085 +02:00 [INF] GetSortedPersons method called in PersonsService
+2025-11-14 14:32:43.085 +02:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2025-11-14 14:32:43.086 +02:00 [INF] Executing ViewResult, running view Index.
+2025-11-14 14:32:43.089 +02:00 [INF] Executed ViewResult - view Index executed in 2.7226ms.
+2025-11-14 14:32:43.090 +02:00 [INF] Executed action n12xUnit.Controllers.PersonsController.Index (n12xUnit) in 11.2498ms
+2025-11-14 14:32:43.091 +02:00 [INF] Executed endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 14:32:43.092 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Fri, 14 Nov 2025 12:32:43 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+2025-11-14 14:32:43.093 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/persons/Index?searchBy=DateOfBirth&searchString=omar - 200 null text/html; charset=utf-8 20.4463ms
+2025-11-14 14:32:43.118 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_vs/browserLink - null null
+2025-11-14 14:32:43.118 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-14 14:32:43.122 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - 200 16500 application/javascript; charset=utf-8 3.4683ms
+2025-11-14 14:32:43.123 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_vs/browserLink - 200 null text/javascript; charset=UTF-8 5.7545ms
+2025-11-14 14:32:45.386 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/persons/Index?searchBy=DateOfBirth&searchString=omar - null null
+2025-11-14 14:32:45.389 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /persons/Index
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5022
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-11-14 14:32:45.390 +02:00 [INF] Executing endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 14:32:45.391 +02:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, Boolean) on controller n12xUnit.Controllers.PersonsController (n12xUnit).
+2025-11-14 14:32:45.393 +02:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2025-11-14 14:32:45.393 +02:00 [INF] Index action method of PersonsController called
+2025-11-14 14:32:45.394 +02:00 [INF] GetFilteredPersons method called in PersonsService
+2025-11-14 14:32:45.394 +02:00 [INF] GetAllPersons method called in PersonsRepo
+2025-11-14 14:32:45.397 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[Name], [p].[ReceiveNewsLetters], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-11-14 14:32:45.399 +02:00 [INF] GetSortedPersons method called in PersonsService
+2025-11-14 14:32:45.400 +02:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2025-11-14 14:32:45.401 +02:00 [INF] Executing ViewResult, running view Index.
+2025-11-14 14:32:45.402 +02:00 [INF] Executed ViewResult - view Index executed in 1.7588ms.
+2025-11-14 14:32:45.403 +02:00 [INF] Executed action n12xUnit.Controllers.PersonsController.Index (n12xUnit) in 10.8944ms
+2025-11-14 14:32:45.404 +02:00 [INF] Executed endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 14:32:45.405 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Fri, 14 Nov 2025 12:32:45 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+2025-11-14 14:32:45.406 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/persons/Index?searchBy=DateOfBirth&searchString=omar - 200 null text/html; charset=utf-8 19.8114ms
+2025-11-14 14:32:45.429 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_vs/browserLink - null null
+2025-11-14 14:32:45.429 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-14 14:32:45.433 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - 200 16500 application/javascript; charset=utf-8 3.9005ms
+2025-11-14 14:32:45.434 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_vs/browserLink - 200 null text/javascript; charset=UTF-8 5.1553ms
+2025-11-14 14:32:47.641 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/persons/index?searchBy=DateOfBirth&searchString=omar&sortBy=Gender&isAscending=True - null null
+2025-11-14 14:32:47.644 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /persons/index
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5022
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-11-14 14:32:47.645 +02:00 [INF] Executing endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 14:32:47.646 +02:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, Boolean) on controller n12xUnit.Controllers.PersonsController (n12xUnit).
+2025-11-14 14:32:47.648 +02:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2025-11-14 14:32:47.648 +02:00 [INF] Index action method of PersonsController called
+2025-11-14 14:32:47.649 +02:00 [INF] GetFilteredPersons method called in PersonsService
+2025-11-14 14:32:47.649 +02:00 [INF] GetAllPersons method called in PersonsRepo
+2025-11-14 14:32:47.651 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[Name], [p].[ReceiveNewsLetters], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-11-14 14:32:47.653 +02:00 [INF] GetSortedPersons method called in PersonsService
+2025-11-14 14:32:47.654 +02:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2025-11-14 14:32:47.654 +02:00 [INF] Executing ViewResult, running view Index.
+2025-11-14 14:35:03.393 +02:00 [INF] User profile is available. Using 'C:\Users\CM\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-14 14:35:03.609 +02:00 [INF] Now listening on: http://localhost:5022
+2025-11-14 14:35:03.659 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-14 14:35:03.659 +02:00 [INF] Hosting environment: Development
+2025-11-14 14:35:03.660 +02:00 [INF] Content root path: H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit
+2025-11-14 14:35:04.135 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/ - null null
+2025-11-14 14:35:04.239 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5022
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-11-14 14:35:04.252 +02:00 [INF] Executing endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 14:35:04.290 +02:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, Boolean) on controller n12xUnit.Controllers.PersonsController (n12xUnit).
+2025-11-14 14:35:04.410 +02:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2025-11-14 14:35:04.417 +02:00 [INF] Index action method of PersonsController called
+2025-11-14 14:35:04.444 +02:00 [INF] GetFilteredPersons method called in PersonsService
+2025-11-14 14:35:04.445 +02:00 [INF] GetAllPersons method called in PersonsRepo
+2025-11-14 14:35:05.229 +02:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[Name], [p].[ReceiveNewsLetters], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-11-14 14:35:05.293 +02:00 [INF] GetSortedPersons method called in PersonsService
+2025-11-14 14:35:05.296 +02:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2025-11-14 14:35:05.309 +02:00 [INF] Executing ViewResult, running view Index.
+2025-11-14 14:35:05.446 +02:00 [INF] Executed ViewResult - view Index executed in 139.2136ms.
+2025-11-14 14:35:05.450 +02:00 [INF] Executed action n12xUnit.Controllers.PersonsController.Index (n12xUnit) in 1157.7377ms
+2025-11-14 14:35:05.451 +02:00 [INF] Executed endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 14:35:05.453 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Fri, 14 Nov 2025 12:35:04 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+2025-11-14 14:35:05.463 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/ - 200 null text/html; charset=utf-8 1334.2582ms
+2025-11-14 14:35:05.467 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_vs/browserLink - null null
+2025-11-14 14:35:05.467 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-14 14:35:05.474 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - 200 16500 application/javascript; charset=utf-8 6.9305ms
+2025-11-14 14:35:05.500 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_vs/browserLink - 200 null text/javascript; charset=UTF-8 32.9218ms
+2025-11-14 14:35:09.976 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/persons/Index?searchBy=Name&searchString=omar - null null
+2025-11-14 14:35:09.982 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /persons/Index
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5022
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-11-14 14:35:09.985 +02:00 [INF] Executing endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 14:35:09.990 +02:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, Boolean) on controller n12xUnit.Controllers.PersonsController (n12xUnit).
+2025-11-14 14:35:09.997 +02:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2025-11-14 14:35:09.998 +02:00 [INF] Index action method of PersonsController called
+2025-11-14 14:35:09.999 +02:00 [INF] GetFilteredPersons method called in PersonsService
+2025-11-14 14:35:10.000 +02:00 [INF] GetFilteredPersons method called in PersonsRepo
+2025-11-14 14:35:10.040 +02:00 [INF] Executed DbCommand (10ms) [Parameters=[@__searchString_0_contains='?' (Size = 40)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[Name], [p].[ReceiveNewsLetters], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+WHERE [p].[Name] LIKE @__searchString_0_contains ESCAPE N'\'
+2025-11-14 14:35:10.043 +02:00 [INF] GetSortedPersons method called in PersonsService
+2025-11-14 14:35:10.044 +02:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2025-11-14 14:35:10.045 +02:00 [INF] Executing ViewResult, running view Index.
+2025-11-14 14:35:10.068 +02:00 [INF] Executed ViewResult - view Index executed in 23.7318ms.
+2025-11-14 14:35:10.070 +02:00 [INF] Executed action n12xUnit.Controllers.PersonsController.Index (n12xUnit) in 78.1897ms
+2025-11-14 14:35:10.071 +02:00 [INF] Executed endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 14:35:10.072 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Fri, 14 Nov 2025 12:35:09 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+2025-11-14 14:35:10.073 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/persons/Index?searchBy=Name&searchString=omar - 200 null text/html; charset=utf-8 96.632ms
+2025-11-14 14:35:10.101 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_vs/browserLink - null null
+2025-11-14 14:35:10.101 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-14 14:35:10.108 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - 200 16500 application/javascript; charset=utf-8 6.43ms
+2025-11-14 14:35:10.119 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_vs/browserLink - 200 null text/javascript; charset=UTF-8 17.3179ms
+2025-11-14 14:35:16.333 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/persons/Index?searchBy=Email&searchString=k - null null
+2025-11-14 14:35:16.337 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /persons/Index
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5022
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-11-14 14:35:16.339 +02:00 [INF] Executing endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 14:35:16.340 +02:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, Boolean) on controller n12xUnit.Controllers.PersonsController (n12xUnit).
+2025-11-14 14:35:16.346 +02:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2025-11-14 14:35:16.346 +02:00 [INF] Index action method of PersonsController called
+2025-11-14 14:35:16.347 +02:00 [INF] GetFilteredPersons method called in PersonsService
+2025-11-14 14:35:16.348 +02:00 [INF] GetFilteredPersons method called in PersonsRepo
+2025-11-14 14:35:16.396 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__searchString_0_contains='?' (Size = 40)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[Name], [p].[ReceiveNewsLetters], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+WHERE [p].[Email] LIKE @__searchString_0_contains ESCAPE N'\'
+2025-11-14 14:35:16.398 +02:00 [INF] GetSortedPersons method called in PersonsService
+2025-11-14 14:35:16.398 +02:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2025-11-14 14:35:16.399 +02:00 [INF] Executing ViewResult, running view Index.
+2025-11-14 14:35:16.401 +02:00 [INF] Executed ViewResult - view Index executed in 2.1789ms.
+2025-11-14 14:35:16.402 +02:00 [INF] Executed action n12xUnit.Controllers.PersonsController.Index (n12xUnit) in 60.5898ms
+2025-11-14 14:35:16.403 +02:00 [INF] Executed endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 14:35:16.404 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Fri, 14 Nov 2025 12:35:15 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+2025-11-14 14:35:16.405 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/persons/Index?searchBy=Email&searchString=k - 200 null text/html; charset=utf-8 72.3416ms
+2025-11-14 14:35:16.433 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-14 14:35:16.433 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_vs/browserLink - null null
+2025-11-14 14:35:16.435 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - 200 16500 application/javascript; charset=utf-8 2.8042ms
+2025-11-14 14:35:16.444 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_vs/browserLink - 200 null text/javascript; charset=UTF-8 11.9298ms
+2025-11-14 14:35:30.856 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/persons/Index?searchBy=CountryName&searchString=egypt - null null
+2025-11-14 14:35:30.860 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /persons/Index
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5022
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-11-14 14:35:30.861 +02:00 [INF] Executing endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 14:35:30.862 +02:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, Boolean) on controller n12xUnit.Controllers.PersonsController (n12xUnit).
+2025-11-14 14:35:30.863 +02:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2025-11-14 14:35:30.864 +02:00 [INF] searchBy actual value is CountryName
+2025-11-14 14:35:30.865 +02:00 [INF] searchBy updated value is CountryName
+2025-11-14 14:35:30.865 +02:00 [INF] Index action method of PersonsController called
+2025-11-14 14:35:30.866 +02:00 [INF] GetFilteredPersons method called in PersonsService
+2025-11-14 14:35:30.867 +02:00 [INF] GetFilteredPersons method called in PersonsRepo
+2025-11-14 14:35:30.871 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__searchString_0_contains='?' (Size = 40)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[Name], [p].[ReceiveNewsLetters], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+WHERE [p].[Name] LIKE @__searchString_0_contains ESCAPE N'\'
+2025-11-14 14:35:30.873 +02:00 [INF] GetSortedPersons method called in PersonsService
+2025-11-14 14:35:30.874 +02:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2025-11-14 14:35:30.874 +02:00 [INF] Executing ViewResult, running view Index.
+2025-11-14 14:35:30.876 +02:00 [INF] Executed ViewResult - view Index executed in 1.5992ms.
+2025-11-14 14:35:30.877 +02:00 [INF] Executed action n12xUnit.Controllers.PersonsController.Index (n12xUnit) in 14.1712ms
+2025-11-14 14:35:30.878 +02:00 [INF] Executed endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 14:35:30.879 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Fri, 14 Nov 2025 12:35:29 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+2025-11-14 14:35:30.881 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/persons/Index?searchBy=CountryName&searchString=egypt - 200 null text/html; charset=utf-8 24.3742ms
+2025-11-14 14:35:30.911 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_vs/browserLink - null null
+2025-11-14 14:35:30.911 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-14 14:35:30.915 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - 200 16500 application/javascript; charset=utf-8 4.0758ms
+2025-11-14 14:35:30.916 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_vs/browserLink - 200 null text/javascript; charset=UTF-8 5.8256ms
+2025-11-14 14:35:36.034 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/persons/Index?searchBy=Name&searchString=cairo - null null
+2025-11-14 14:35:36.037 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /persons/Index
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5022
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-11-14 14:35:36.039 +02:00 [INF] Executing endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 14:35:36.039 +02:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, Boolean) on controller n12xUnit.Controllers.PersonsController (n12xUnit).
+2025-11-14 14:35:36.041 +02:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2025-11-14 14:35:36.042 +02:00 [INF] Index action method of PersonsController called
+2025-11-14 14:35:36.043 +02:00 [INF] GetFilteredPersons method called in PersonsService
+2025-11-14 14:35:36.043 +02:00 [INF] GetFilteredPersons method called in PersonsRepo
+2025-11-14 14:35:36.045 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__searchString_0_contains='?' (Size = 40)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[Name], [p].[ReceiveNewsLetters], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+WHERE [p].[Name] LIKE @__searchString_0_contains ESCAPE N'\'
+2025-11-14 14:35:36.047 +02:00 [INF] GetSortedPersons method called in PersonsService
+2025-11-14 14:35:36.048 +02:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2025-11-14 14:35:36.049 +02:00 [INF] Executing ViewResult, running view Index.
+2025-11-14 14:35:36.050 +02:00 [INF] Executed ViewResult - view Index executed in 1.6249ms.
+2025-11-14 14:35:36.051 +02:00 [INF] Executed action n12xUnit.Controllers.PersonsController.Index (n12xUnit) in 10.3841ms
+2025-11-14 14:35:36.052 +02:00 [INF] Executed endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 14:35:36.053 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Fri, 14 Nov 2025 12:35:35 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+2025-11-14 14:35:36.054 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/persons/Index?searchBy=Name&searchString=cairo - 200 null text/html; charset=utf-8 20.6868ms
+2025-11-14 14:35:36.088 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_vs/browserLink - null null
+2025-11-14 14:35:36.088 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-14 14:35:36.092 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - 200 16500 application/javascript; charset=utf-8 4.3787ms
+2025-11-14 14:35:36.093 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_vs/browserLink - 200 null text/javascript; charset=UTF-8 5.5639ms
+2025-11-14 14:35:37.572 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/persons/Index - null null
+2025-11-14 14:35:37.575 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /persons/Index
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5022
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-11-14 14:35:37.576 +02:00 [INF] Executing endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 14:35:37.577 +02:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, Boolean) on controller n12xUnit.Controllers.PersonsController (n12xUnit).
+2025-11-14 14:35:37.580 +02:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2025-11-14 14:35:37.581 +02:00 [INF] Index action method of PersonsController called
+2025-11-14 14:35:37.581 +02:00 [INF] GetFilteredPersons method called in PersonsService
+2025-11-14 14:35:37.582 +02:00 [INF] GetAllPersons method called in PersonsRepo
+2025-11-14 14:35:37.585 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[Name], [p].[ReceiveNewsLetters], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-11-14 14:35:37.590 +02:00 [INF] GetSortedPersons method called in PersonsService
+2025-11-14 14:35:37.591 +02:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2025-11-14 14:35:37.592 +02:00 [INF] Executing ViewResult, running view Index.
+2025-11-14 14:35:37.594 +02:00 [INF] Executed ViewResult - view Index executed in 2.0922ms.
+2025-11-14 14:35:37.595 +02:00 [INF] Executed action n12xUnit.Controllers.PersonsController.Index (n12xUnit) in 15.7458ms
+2025-11-14 14:35:37.596 +02:00 [INF] Executed endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 14:35:37.597 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Fri, 14 Nov 2025 12:35:36 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+2025-11-14 14:35:37.598 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/persons/Index - 200 null text/html; charset=utf-8 26.3203ms
+2025-11-14 14:35:37.625 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_vs/browserLink - null null
+2025-11-14 14:35:37.625 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-14 14:35:37.629 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - 200 16500 application/javascript; charset=utf-8 3.9772ms
+2025-11-14 14:35:37.633 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_vs/browserLink - 200 null text/javascript; charset=UTF-8 7.8223ms
+2025-11-14 14:35:40.770 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/persons/index?searchBy=&searchString=&sortBy=CountryName&isAscending=True - null null
+2025-11-14 14:35:40.773 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /persons/index
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5022
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-11-14 14:35:40.774 +02:00 [INF] Executing endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 14:35:40.775 +02:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, Boolean) on controller n12xUnit.Controllers.PersonsController (n12xUnit).
+2025-11-14 14:35:40.776 +02:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2025-11-14 14:35:40.777 +02:00 [INF] Index action method of PersonsController called
+2025-11-14 14:35:40.777 +02:00 [INF] GetFilteredPersons method called in PersonsService
+2025-11-14 14:35:40.778 +02:00 [INF] GetAllPersons method called in PersonsRepo
+2025-11-14 14:35:40.780 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[Name], [p].[ReceiveNewsLetters], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-11-14 14:35:40.782 +02:00 [INF] GetSortedPersons method called in PersonsService
+2025-11-14 14:35:40.783 +02:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2025-11-14 14:36:22.626 +02:00 [INF] User profile is available. Using 'C:\Users\CM\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-14 14:36:22.839 +02:00 [INF] Now listening on: http://localhost:5022
+2025-11-14 14:36:22.885 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-14 14:36:22.886 +02:00 [INF] Hosting environment: Development
+2025-11-14 14:36:22.887 +02:00 [INF] Content root path: H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit
+2025-11-14 14:36:23.104 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/ - null null
+2025-11-14 14:36:23.204 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5022
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-11-14 14:36:23.221 +02:00 [INF] Executing endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 14:36:23.263 +02:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, Boolean) on controller n12xUnit.Controllers.PersonsController (n12xUnit).
+2025-11-14 14:36:23.384 +02:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2025-11-14 14:36:23.392 +02:00 [INF] Index action method of PersonsController called
+2025-11-14 14:36:23.423 +02:00 [INF] GetFilteredPersons method called in PersonsService
+2025-11-14 14:36:23.425 +02:00 [INF] GetAllPersons method called in PersonsRepo
+2025-11-14 14:36:24.305 +02:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[Name], [p].[ReceiveNewsLetters], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-11-14 14:36:24.375 +02:00 [INF] GetSortedPersons method called in PersonsService
+2025-11-14 14:36:24.379 +02:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2025-11-14 14:36:24.393 +02:00 [INF] Executing ViewResult, running view Index.
+2025-11-14 14:36:24.520 +02:00 [INF] Executed ViewResult - view Index executed in 129.6548ms.
+2025-11-14 14:36:24.525 +02:00 [INF] Executed action n12xUnit.Controllers.PersonsController.Index (n12xUnit) in 1259.1532ms
+2025-11-14 14:36:24.526 +02:00 [INF] Executed endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 14:36:24.528 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Fri, 14 Nov 2025 12:36:23 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+2025-11-14 14:36:24.537 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/ - 200 null text/html; charset=utf-8 1440.1713ms
+2025-11-14 14:36:24.549 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-14 14:36:24.553 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_vs/browserLink - null null
+2025-11-14 14:36:24.553 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - 200 16500 application/javascript; charset=utf-8 5.5943ms
+2025-11-14 14:36:24.581 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_vs/browserLink - 200 null text/javascript; charset=UTF-8 28.1925ms
+2025-11-14 14:36:29.256 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/persons/index?searchBy=&searchString=&sortBy=Address&isAscending=True - null null
+2025-11-14 14:36:29.263 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /persons/index
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5022
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-11-14 14:36:29.266 +02:00 [INF] Executing endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 14:36:29.273 +02:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, Boolean) on controller n12xUnit.Controllers.PersonsController (n12xUnit).
+2025-11-14 14:36:29.280 +02:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2025-11-14 14:36:29.282 +02:00 [INF] Index action method of PersonsController called
+2025-11-14 14:36:29.282 +02:00 [INF] GetFilteredPersons method called in PersonsService
+2025-11-14 14:36:29.283 +02:00 [INF] GetAllPersons method called in PersonsRepo
+2025-11-14 14:36:29.293 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[Name], [p].[ReceiveNewsLetters], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-11-14 14:36:29.297 +02:00 [INF] GetSortedPersons method called in PersonsService
+2025-11-14 14:36:29.298 +02:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2025-11-14 14:36:29.299 +02:00 [INF] Executing ViewResult, running view Index.
+2025-11-14 14:37:54.738 +02:00 [INF] User profile is available. Using 'C:\Users\CM\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-14 14:37:54.916 +02:00 [INF] Now listening on: http://localhost:5022
+2025-11-14 14:37:54.964 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-14 14:37:54.965 +02:00 [INF] Hosting environment: Development
+2025-11-14 14:37:54.966 +02:00 [INF] Content root path: H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit
+2025-11-14 14:37:55.477 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/ - null null
+2025-11-14 14:37:55.594 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5022
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-11-14 14:37:55.607 +02:00 [INF] Executing endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 14:37:55.641 +02:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, Boolean) on controller n12xUnit.Controllers.PersonsController (n12xUnit).
+2025-11-14 14:37:55.748 +02:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2025-11-14 14:37:55.756 +02:00 [INF] Index action method of PersonsController called
+2025-11-14 14:37:55.781 +02:00 [INF] GetFilteredPersons method called in PersonsService
+2025-11-14 14:37:55.782 +02:00 [INF] GetAllPersons method called in PersonsRepo
+2025-11-14 14:37:56.555 +02:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[Name], [p].[ReceiveNewsLetters], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-11-14 14:37:56.622 +02:00 [INF] GetSortedPersons method called in PersonsService
+2025-11-14 14:37:56.625 +02:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2025-11-14 14:37:56.637 +02:00 [INF] Executing ViewResult, running view Index.
+2025-11-14 14:37:56.758 +02:00 [INF] Executed ViewResult - view Index executed in 122.6696ms.
+2025-11-14 14:37:56.762 +02:00 [INF] Executed action n12xUnit.Controllers.PersonsController.Index (n12xUnit) in 1119.1931ms
+2025-11-14 14:37:56.764 +02:00 [INF] Executed endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 14:37:56.766 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Fri, 14 Nov 2025 12:37:55 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+2025-11-14 14:37:56.777 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/ - 200 null text/html; charset=utf-8 1308.8169ms
+2025-11-14 14:37:56.784 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-14 14:37:56.784 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_vs/browserLink - null null
+2025-11-14 14:37:56.789 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - 200 16500 application/javascript; charset=utf-8 6.0611ms
+2025-11-14 14:37:56.817 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_vs/browserLink - 200 null text/javascript; charset=UTF-8 33.6406ms
+2025-11-14 14:38:36.364 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/persons/index?searchBy=&searchString=&sortBy=Gender&isAscending=True - null null
+2025-11-14 14:38:36.371 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /persons/index
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5022
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-11-14 14:38:36.375 +02:00 [INF] Executing endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 14:38:36.416 +02:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, Boolean) on controller n12xUnit.Controllers.PersonsController (n12xUnit).
+2025-11-14 14:38:36.462 +02:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2025-11-14 14:38:36.463 +02:00 [INF] Index action method of PersonsController called
+2025-11-14 14:38:36.463 +02:00 [INF] GetFilteredPersons method called in PersonsService
+2025-11-14 14:38:36.464 +02:00 [INF] GetAllPersons method called in PersonsRepo
+2025-11-14 14:38:36.478 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[Name], [p].[ReceiveNewsLetters], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-11-14 14:38:36.482 +02:00 [INF] GetSortedPersons method called in PersonsService
+2025-11-14 14:38:36.484 +02:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2025-11-14 14:38:36.485 +02:00 [INF] Executing ViewResult, running view Index.
+2025-11-14 14:38:36.520 +02:00 [INF] Executed ViewResult - view Index executed in 34.8189ms.
+2025-11-14 14:38:36.521 +02:00 [INF] Executed action n12xUnit.Controllers.PersonsController.Index (n12xUnit) in 103.3151ms
+2025-11-14 14:38:36.522 +02:00 [INF] Executed endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 14:38:36.523 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Fri, 14 Nov 2025 12:38:36 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+2025-11-14 14:38:36.525 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/persons/index?searchBy=&searchString=&sortBy=Gender&isAscending=True - 200 null text/html; charset=utf-8 196.8388ms
+2025-11-14 14:38:36.559 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-14 14:38:36.561 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_vs/browserLink - null null
+2025-11-14 14:38:36.561 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - 200 16500 application/javascript; charset=utf-8 2.94ms
+2025-11-14 14:38:36.583 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_vs/browserLink - 200 null text/javascript; charset=UTF-8 22.3591ms
+2025-11-14 14:38:38.123 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/persons/index?searchBy=&searchString=&sortBy=Gender&isAscending=False - null null
+2025-11-14 14:38:38.126 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /persons/index
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5022
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-11-14 14:38:38.128 +02:00 [INF] Executing endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 14:38:38.129 +02:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, Boolean) on controller n12xUnit.Controllers.PersonsController (n12xUnit).
+2025-11-14 14:38:38.133 +02:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2025-11-14 14:38:38.134 +02:00 [INF] Index action method of PersonsController called
+2025-11-14 14:38:38.135 +02:00 [INF] GetFilteredPersons method called in PersonsService
+2025-11-14 14:38:38.135 +02:00 [INF] GetAllPersons method called in PersonsRepo
+2025-11-14 14:38:38.174 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[Name], [p].[ReceiveNewsLetters], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-11-14 14:38:38.176 +02:00 [INF] GetSortedPersons method called in PersonsService
+2025-11-14 14:38:38.177 +02:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2025-11-14 14:38:38.178 +02:00 [INF] Executing ViewResult, running view Index.
+2025-11-14 14:38:38.180 +02:00 [INF] Executed ViewResult - view Index executed in 2.6997ms.
+2025-11-14 14:38:38.182 +02:00 [INF] Executed action n12xUnit.Controllers.PersonsController.Index (n12xUnit) in 51.7972ms
+2025-11-14 14:38:38.182 +02:00 [INF] Executed endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 14:38:38.183 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Fri, 14 Nov 2025 12:38:37 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+2025-11-14 14:38:38.184 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/persons/index?searchBy=&searchString=&sortBy=Gender&isAscending=False - 200 null text/html; charset=utf-8 61.6715ms
+2025-11-14 14:38:38.208 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-14 14:38:38.208 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_vs/browserLink - null null
+2025-11-14 14:38:38.210 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - 200 16500 application/javascript; charset=utf-8 1.8873ms
+2025-11-14 14:38:38.220 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_vs/browserLink - 200 null text/javascript; charset=UTF-8 12.1963ms
+2025-11-14 14:38:39.534 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/persons/index?searchBy=&searchString=&sortBy=DateOfBirth&isAscending=True - null null
+2025-11-14 14:38:39.538 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /persons/index
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5022
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-11-14 14:38:39.539 +02:00 [INF] Executing endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 14:38:39.540 +02:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, Boolean) on controller n12xUnit.Controllers.PersonsController (n12xUnit).
+2025-11-14 14:38:39.542 +02:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2025-11-14 14:38:39.542 +02:00 [INF] Index action method of PersonsController called
+2025-11-14 14:38:39.543 +02:00 [INF] GetFilteredPersons method called in PersonsService
+2025-11-14 14:38:39.543 +02:00 [INF] GetAllPersons method called in PersonsRepo
+2025-11-14 14:38:39.546 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[Name], [p].[ReceiveNewsLetters], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-11-14 14:38:39.560 +02:00 [INF] GetSortedPersons method called in PersonsService
+2025-11-14 14:38:39.562 +02:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2025-11-14 14:38:39.563 +02:00 [INF] Executing ViewResult, running view Index.
+2025-11-14 14:38:39.565 +02:00 [INF] Executed ViewResult - view Index executed in 2.5625ms.
+2025-11-14 14:38:39.567 +02:00 [INF] Executed action n12xUnit.Controllers.PersonsController.Index (n12xUnit) in 25.7595ms
+2025-11-14 14:38:39.568 +02:00 [INF] Executed endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 14:38:39.569 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Fri, 14 Nov 2025 12:38:39 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+2025-11-14 14:38:39.571 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/persons/index?searchBy=&searchString=&sortBy=DateOfBirth&isAscending=True - 200 null text/html; charset=utf-8 36.3437ms
+2025-11-14 14:38:39.598 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_vs/browserLink - null null
+2025-11-14 14:38:39.598 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-14 14:38:39.602 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - 200 16500 application/javascript; charset=utf-8 4.4067ms
+2025-11-14 14:38:39.604 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_vs/browserLink - 200 null text/javascript; charset=UTF-8 6.0778ms
+2025-11-14 14:38:42.665 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/persons/index?searchBy=&searchString=&sortBy=ReceiveNewsLetters&isAscending=True - null null
+2025-11-14 14:38:42.669 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /persons/index
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5022
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-11-14 14:38:42.669 +02:00 [INF] Executing endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 14:38:42.670 +02:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, Boolean) on controller n12xUnit.Controllers.PersonsController (n12xUnit).
+2025-11-14 14:38:42.672 +02:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2025-11-14 14:38:42.673 +02:00 [INF] Index action method of PersonsController called
+2025-11-14 14:38:42.673 +02:00 [INF] GetFilteredPersons method called in PersonsService
+2025-11-14 14:38:42.674 +02:00 [INF] GetAllPersons method called in PersonsRepo
+2025-11-14 14:38:42.676 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[Name], [p].[ReceiveNewsLetters], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-11-14 14:38:42.678 +02:00 [INF] GetSortedPersons method called in PersonsService
+2025-11-14 14:38:42.680 +02:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2025-11-14 14:38:42.680 +02:00 [INF] Executing ViewResult, running view Index.
+2025-11-14 14:38:42.682 +02:00 [INF] Executed ViewResult - view Index executed in 1.4837ms.
+2025-11-14 14:38:42.683 +02:00 [INF] Executed action n12xUnit.Controllers.PersonsController.Index (n12xUnit) in 11.4127ms
+2025-11-14 14:38:42.684 +02:00 [INF] Executed endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 14:38:42.684 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Fri, 14 Nov 2025 12:38:42 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+2025-11-14 14:38:42.685 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/persons/index?searchBy=&searchString=&sortBy=ReceiveNewsLetters&isAscending=True - 200 null text/html; charset=utf-8 19.9619ms
+2025-11-14 14:38:42.712 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_vs/browserLink - null null
+2025-11-14 14:38:42.712 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-14 14:38:42.718 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - 200 16500 application/javascript; charset=utf-8 6.0681ms
+2025-11-14 14:38:42.719 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_vs/browserLink - 200 null text/javascript; charset=UTF-8 7.4962ms
+2025-11-14 14:38:45.424 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/persons/index?searchBy=&searchString=&sortBy=Name&isAscending=True - null null
+2025-11-14 14:38:45.427 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /persons/index
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5022
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-11-14 14:38:45.428 +02:00 [INF] Executing endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 14:38:45.428 +02:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, Boolean) on controller n12xUnit.Controllers.PersonsController (n12xUnit).
+2025-11-14 14:38:45.430 +02:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2025-11-14 14:38:45.431 +02:00 [INF] Index action method of PersonsController called
+2025-11-14 14:38:45.431 +02:00 [INF] GetFilteredPersons method called in PersonsService
+2025-11-14 14:38:45.432 +02:00 [INF] GetAllPersons method called in PersonsRepo
+2025-11-14 14:38:45.434 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[Name], [p].[ReceiveNewsLetters], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-11-14 14:38:45.436 +02:00 [INF] GetSortedPersons method called in PersonsService
+2025-11-14 14:38:45.436 +02:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2025-11-14 14:38:45.437 +02:00 [INF] Executing ViewResult, running view Index.
+2025-11-14 14:38:45.438 +02:00 [INF] Executed ViewResult - view Index executed in 1.239ms.
+2025-11-14 14:38:45.439 +02:00 [INF] Executed action n12xUnit.Controllers.PersonsController.Index (n12xUnit) in 9.5672ms
+2025-11-14 14:38:45.440 +02:00 [INF] Executed endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 14:38:45.441 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Fri, 14 Nov 2025 12:38:45 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+2025-11-14 14:38:45.442 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/persons/index?searchBy=&searchString=&sortBy=Name&isAscending=True - 200 null text/html; charset=utf-8 18.3897ms
+2025-11-14 14:38:45.469 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_vs/browserLink - null null
+2025-11-14 14:38:45.469 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-14 14:38:45.473 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - 200 16500 application/javascript; charset=utf-8 3.7855ms
+2025-11-14 14:38:45.474 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_vs/browserLink - 200 null text/javascript; charset=UTF-8 5.0212ms
+2025-11-14 15:54:06.640 +02:00 [INF] User profile is available. Using 'C:\Users\CM\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-14 15:54:06.831 +02:00 [INF] Now listening on: http://localhost:5022
+2025-11-14 15:54:06.882 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-14 15:54:06.882 +02:00 [INF] Hosting environment: Development
+2025-11-14 15:54:06.883 +02:00 [INF] Content root path: H:\.NET\4. ASP.NET Core\n12xUnit\n12xUnit
+2025-11-14 15:54:07.447 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/ - null null
+2025-11-14 15:54:07.527 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5022
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-11-14 15:54:07.567 +02:00 [INF] Executing endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 15:54:07.595 +02:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, Boolean) on controller n12xUnit.Controllers.PersonsController (n12xUnit).
+2025-11-14 15:54:08.341 +02:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2025-11-14 15:54:08.350 +02:00 [INF] Index action method of PersonsController called
+2025-11-14 15:54:08.426 +02:00 [INF] GetFilteredPersons method called in PersonsService
+2025-11-14 15:54:08.431 +02:00 [INF] GetAllPersons method called in PersonsRepo
+2025-11-14 15:54:09.423 +02:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[Name], [p].[ReceiveNewsLetters], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-11-14 15:54:09.514 +02:00 [INF] GetSortedPersons method called in PersonsService
+2025-11-14 15:54:09.517 +02:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2025-11-14 15:54:09.528 +02:00 [INF] Executing ViewResult, running view Index.
+2025-11-14 15:54:09.655 +02:00 [INF] Executed ViewResult - view Index executed in 131.0095ms.
+2025-11-14 15:54:09.660 +02:00 [INF] Executed action n12xUnit.Controllers.PersonsController.Index (n12xUnit) in 2062.8358ms
+2025-11-14 15:54:09.661 +02:00 [INF] Executed endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 15:54:09.663 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Fri, 14 Nov 2025 13:54:08 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+2025-11-14 15:54:09.672 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/ - 200 null text/html; charset=utf-8 2226.6371ms
+2025-11-14 15:54:09.684 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_vs/browserLink - null null
+2025-11-14 15:54:09.684 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-14 15:54:09.690 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - 200 16500 application/javascript; charset=utf-8 6.1779ms
+2025-11-14 15:54:09.708 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_vs/browserLink - 200 null text/javascript; charset=UTF-8 23.8079ms
+2025-11-14 15:54:17.610 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/persons/Edit/42cf5d4c-6d3e-42fd-b18d-62e3884d1cdc - null null
+2025-11-14 15:54:17.616 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /persons/Edit/42cf5d4c-6d3e-42fd-b18d-62e3884d1cdc
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5022
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-11-14 15:54:17.618 +02:00 [INF] Executing endpoint 'n12xUnit.Controllers.PersonsController.Edit (n12xUnit)'
+2025-11-14 15:54:17.623 +02:00 [INF] Route matched with {action = "Edit", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(System.Guid) on controller n12xUnit.Controllers.PersonsController (n12xUnit).
+2025-11-14 15:54:17.629 +02:00 [INF] Edit (GET) action method of PersonsController called for PersonID: 42cf5d4c-6d3e-42fd-b18d-62e3884d1cdc
+2025-11-14 15:54:17.630 +02:00 [INF] GetPersonByID method called in PersonsService
+2025-11-14 15:54:17.631 +02:00 [INF] GetPersonById method called in PersonsRepo
+2025-11-14 15:54:17.722 +02:00 [INF] Executed DbCommand (11ms) [Parameters=[@__PersonId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[Name], [p].[ReceiveNewsLetters], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+WHERE [p].[PersonID] = @__PersonId_0
+2025-11-14 15:54:17.726 +02:00 [INF] PersonToPersonResponseAsync method called in PersonsService
+2025-11-14 15:54:17.728 +02:00 [INF] GetAllCountries method called in CountriesService
+2025-11-14 15:54:17.729 +02:00 [INF] GetAllCountries method called in CountriesRepo
+2025-11-14 15:54:17.735 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CountryID], [c].[CountryName]
+FROM [Countries] AS [c]
+2025-11-14 15:54:17.741 +02:00 [INF] Executing ViewResult, running view Edit.
+2025-11-14 15:54:17.813 +02:00 [INF] Executed ViewResult - view Edit executed in 73.3377ms.
+2025-11-14 15:54:17.815 +02:00 [INF] Executed action n12xUnit.Controllers.PersonsController.Edit (n12xUnit) in 189.2614ms
+2025-11-14 15:54:17.816 +02:00 [INF] Executed endpoint 'n12xUnit.Controllers.PersonsController.Edit (n12xUnit)'
+2025-11-14 15:54:17.817 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Fri, 14 Nov 2025 13:54:16 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+Set-Cookie: [Redacted]
+Transfer-Encoding: chunked
+X-Frame-Options: [Redacted]
+2025-11-14 15:54:17.818 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/persons/Edit/42cf5d4c-6d3e-42fd-b18d-62e3884d1cdc - 200 null text/html; charset=utf-8 207.442ms
+2025-11-14 15:54:17.846 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_vs/browserLink - null null
+2025-11-14 15:54:17.846 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-14 15:54:17.850 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - 200 16500 application/javascript; charset=utf-8 4.5001ms
+2025-11-14 15:54:17.855 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_vs/browserLink - 200 null text/javascript; charset=UTF-8 9.519ms
+2025-11-14 15:54:18.134 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/persons/Edit/~/jquery.validate.unobtrusive.min.js - null null
+2025-11-14 15:54:18.137 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /persons/Edit/~/jquery.validate.unobtrusive.min.js
+Accept: */*
+Connection: keep-alive
+Host: localhost:5022
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-11-14 15:54:18.141 +02:00 [INF] Response:
+StatusCode: 404
+2025-11-14 15:54:18.142 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/persons/Edit/~/jquery.validate.unobtrusive.min.js - 404 0 null 8.7211ms
+2025-11-14 15:54:18.145 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5022/persons/Edit/~/jquery.validate.unobtrusive.min.js, Response status code: 404
+2025-11-14 15:54:23.414 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5022/persons/Edit/42cf5d4c-6d3e-42fd-b18d-62e3884d1cdc - application/x-www-form-urlencoded 437
+2025-11-14 15:54:23.418 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /persons/Edit/42cf5d4c-6d3e-42fd-b18d-62e3884d1cdc
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5022
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cache-Control: max-age=0
+Content-Type: application/x-www-form-urlencoded
+Cookie: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+Content-Length: 437
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-11-14 15:54:23.419 +02:00 [INF] Executing endpoint 'n12xUnit.Controllers.PersonsController.Edit (n12xUnit)'
+2025-11-14 15:54:23.425 +02:00 [INF] Route matched with {action = "Edit", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(ServiceContracts.DTOs.PersonDTOs.PersonUpdateRequest) on controller n12xUnit.Controllers.PersonsController (n12xUnit).
+2025-11-14 15:54:23.441 +02:00 [INF] Edit (POST) action method of PersonsController called for PersonID: 42cf5d4c-6d3e-42fd-b18d-62e3884d1cdc
+2025-11-14 15:54:23.441 +02:00 [INF] GetPersonByID method called in PersonsService
+2025-11-14 15:54:23.442 +02:00 [INF] GetPersonById method called in PersonsRepo
+2025-11-14 15:54:23.493 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__PersonId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[Name], [p].[ReceiveNewsLetters], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+WHERE [p].[PersonID] = @__PersonId_0
+2025-11-14 15:54:23.495 +02:00 [INF] PersonToPersonResponseAsync method called in PersonsService
+2025-11-14 15:54:23.497 +02:00 [INF] UpdatePerson method called in PersonsService
+2025-11-14 15:54:23.500 +02:00 [INF] GetPersonById method called in PersonsRepo
+2025-11-14 15:54:23.502 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__PersonId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[Name], [p].[ReceiveNewsLetters], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+WHERE [p].[PersonID] = @__PersonId_0
+2025-11-14 15:54:23.505 +02:00 [INF] UpdatePerson method called in PersonsRepo
+2025-11-14 15:54:23.513 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__person_PersonID_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[Name], [p].[ReceiveNewsLetters]
+FROM [Persons] AS [p]
+WHERE [p].[PersonID] = @__person_PersonID_0
+2025-11-14 15:54:23.623 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@p1='?' (DbType = Guid), @p0='?' (Size = 200)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Persons] SET [Address] = @p0
+OUTPUT 1
+WHERE [PersonID] = @p1;
+2025-11-14 15:54:23.635 +02:00 [INF] PersonToPersonResponseAsync method called in PersonsService
+2025-11-14 15:54:23.637 +02:00 [INF] Executing RedirectResult, redirecting to /persons/Index.
+2025-11-14 15:54:23.638 +02:00 [INF] Executed action n12xUnit.Controllers.PersonsController.Edit (n12xUnit) in 211.9814ms
+2025-11-14 15:54:23.639 +02:00 [INF] Executed endpoint 'n12xUnit.Controllers.PersonsController.Edit (n12xUnit)'
+2025-11-14 15:54:23.640 +02:00 [INF] Response:
+StatusCode: 302
+Location: /persons/Index
+2025-11-14 15:54:23.641 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5022/persons/Edit/42cf5d4c-6d3e-42fd-b18d-62e3884d1cdc - 302 0 null 226.7963ms
+2025-11-14 15:54:23.645 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/persons/Index - null null
+2025-11-14 15:54:23.648 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /persons/Index
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5022
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cache-Control: max-age=0
+Cookie: [Redacted]
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+2025-11-14 15:54:23.649 +02:00 [INF] Executing endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 15:54:23.652 +02:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, Boolean) on controller n12xUnit.Controllers.PersonsController (n12xUnit).
+2025-11-14 15:54:23.654 +02:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2025-11-14 15:54:23.655 +02:00 [INF] Index action method of PersonsController called
+2025-11-14 15:54:23.656 +02:00 [INF] GetFilteredPersons method called in PersonsService
+2025-11-14 15:54:23.656 +02:00 [INF] GetAllPersons method called in PersonsRepo
+2025-11-14 15:54:23.658 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[Name], [p].[ReceiveNewsLetters], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-11-14 15:54:23.661 +02:00 [INF] GetSortedPersons method called in PersonsService
+2025-11-14 15:54:23.662 +02:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2025-11-14 15:54:23.663 +02:00 [INF] Executing ViewResult, running view Index.
+2025-11-14 15:54:23.665 +02:00 [INF] Executed ViewResult - view Index executed in 2.6695ms.
+2025-11-14 15:54:23.666 +02:00 [INF] Executed action n12xUnit.Controllers.PersonsController.Index (n12xUnit) in 12.2298ms
+2025-11-14 15:54:23.667 +02:00 [INF] Executed endpoint 'n12xUnit.Controllers.PersonsController.Index (n12xUnit)'
+2025-11-14 15:54:23.668 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Fri, 14 Nov 2025 13:54:22 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+2025-11-14 15:54:23.669 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/persons/Index - 200 null text/html; charset=utf-8 23.5851ms
+2025-11-14 15:54:23.697 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_vs/browserLink - null null
+2025-11-14 15:54:23.697 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-14 15:54:23.701 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - 200 16500 application/javascript; charset=utf-8 4.0869ms
+2025-11-14 15:54:23.706 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_vs/browserLink - 200 null text/javascript; charset=UTF-8 9.2436ms
+2025-11-14 15:55:45.000 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-14 15:55:45.003 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - 200 16500 application/javascript; charset=utf-8 2.7581ms

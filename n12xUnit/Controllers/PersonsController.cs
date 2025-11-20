@@ -1,4 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using n12xUnit.Filters.ActionFilters;
+using n12xUnit.Filters.AuthorizationFilter;
+using n12xUnit.Filters.ResultFilters;
 using ServiceContracts;
 using ServiceContracts.DTOs.CountryDTOs;
 using ServiceContracts.DTOs.PersonDTOs;
@@ -20,8 +23,10 @@ namespace n12xUnit.Controllers
         }
 
         [Route("/")]
-        // [Route("index")]
-        [Route("[action]")]
+        [Route("[action]")] // [Route("index")]
+        [TypeFilter(typeof(PersonsListActionFilter))]
+        [TypeFilter(typeof(ResponseHeaderActionFilter), 
+            Arguments = new object[] { "X-Custome-Key", "Custome-Value" })]
         public async Task<IActionResult> Index(string searchBy, string? searchString, 
             string sortBy = nameof(PersonResponse.Name), bool isAscending = true)
         {
@@ -33,29 +38,23 @@ namespace n12xUnit.Controllers
             {
                 { nameof(PersonResponse.Name), "Name" },
                 { nameof(PersonResponse.Email), "Email" },
-                { nameof(PersonResponse.DateOfBirth), "Date Of Birth" },
                 { nameof(PersonResponse.CountryName), "Country Name" },
-                { nameof(PersonResponse.Gender), "Gender" },
-                { nameof(PersonResponse.Address), "Address" },
-                { nameof(PersonResponse.ReceiveNewsLetters), "Receive Newsletters" }
+                { nameof(PersonResponse.Address), "Address" }
             };
             List<PersonResponse> persons = await _personsService.GetFilteredPersons(searchBy, searchString);
 
-
-
             // sorting
             List<PersonResponse> sortedPersons = await _personsService.GetSortedPersons(persons, sortBy, isAscending);
-            ViewBag.SortBy = sortBy;
-            ViewBag.IsAscending = isAscending;
-
-            ViewBag.SearchBy = searchBy;
-            ViewBag.SearchString = searchString;
+            
+            // ViewBag parameters are moved to ActionFilter
 
             return View(sortedPersons);
         }
 
         [Route("add")]
         [HttpGet]
+        [TypeFilter(typeof(ResponseHeaderActionFilter),
+            Arguments = new object[] { "my-key", "my-value" })]
         public async Task<IActionResult> Add()
         {
             _logger.LogInformation("Add (GET) action method of PersonsController called");
@@ -68,7 +67,8 @@ namespace n12xUnit.Controllers
 
         [Route("add")]
         [HttpPost]
-        public async Task<IActionResult> Add(PersonAddRequest personAddRequest)
+        [TypeFilter(typeof(PersonCreateEditPOST))]
+        public async Task<IActionResult> Add(PersonAddRequest personRequest)
         {
             _logger.LogInformation("Add (POST) action method of PersonsController called");
 
@@ -81,10 +81,10 @@ namespace n12xUnit.Controllers
 
                 ViewBag.Errors = ModelState.Values.SelectMany(v => v.Errors).Select(msg => msg.ErrorMessage).ToList();
 
-                return View(personAddRequest);
+                return View(personRequest);
             }
 
-            await _personsService.AddPerson(personAddRequest);
+            await _personsService.AddPerson(personRequest);
             return RedirectToAction("Index", "Persons");
         }
 
@@ -111,14 +111,17 @@ namespace n12xUnit.Controllers
 
         [HttpPost]
         [Route("[action]/{personID}")]
-        public async Task<IActionResult> Edit(PersonUpdateRequest personUpdateRequest)
+        [TypeFilter(typeof(PersonCreateEditPOST))]
+        // [TypeFilter(typeof(TokenAuthFilter))]
+        // [TypeFilter(typeof(TokenResultFilter))]
+        public async Task<IActionResult> Edit(PersonUpdateRequest personRequest)
         {
-            _logger.LogInformation($"Edit (POST) action method of PersonsController called for PersonID: {personUpdateRequest.PersonID}");
+            _logger.LogInformation($"Edit (POST) action method of PersonsController called for PersonID: {personRequest.PersonID}");
 
-            PersonResponse? personResponse = await _personsService.GetPersonByID(personUpdateRequest.PersonID);
+            PersonResponse? personResponse = await _personsService.GetPersonByID(personRequest.PersonID);
             if (personResponse == null)
             {
-                _logger.LogWarning($"Person with ID {personUpdateRequest.PersonID} not found in Edit (POST)");
+                _logger.LogWarning($"Person with ID {personRequest.PersonID} not found in Edit (POST)");
                 return RedirectToAction("Index");
             }
 
@@ -133,7 +136,7 @@ namespace n12xUnit.Controllers
                 return View(personResponse.ToUpdateRequest());
             }
 
-            await _personsService.UpdatePerson(personUpdateRequest);
+            await _personsService.UpdatePerson(personRequest);
 
             return RedirectToAction("Index");
         }
