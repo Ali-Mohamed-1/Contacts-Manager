@@ -32,16 +32,14 @@
                    class="nav-link @((actionName == "Add") ? "nav-link-active" : string.Empty)">
                     Add person
                 </a>
+                <a asp-controller="Account" asp-action="Register" class="nav-link">Register</a>
+                <a asp-controller="Account" asp-action="Login" class="nav-link">Login</a>
             </nav>
         </header>
 
         <main class="page-content">
             @RenderBody()
         </main>
-
-        <footer class="app-footer">
-            <p>n12xUnit • crafted for demos • @DateTime.UtcNow.ToString("yyyy")</p>
-        </footer>
     </div>
     @RenderSection("Scripts", required: false)
 </body>

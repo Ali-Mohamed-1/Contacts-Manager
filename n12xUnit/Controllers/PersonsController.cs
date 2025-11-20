@@ -112,8 +112,8 @@ namespace n12xUnit.Controllers
         [HttpPost]
         [Route("[action]/{personID}")]
         [TypeFilter(typeof(PersonCreateEditPOST))]
-        [TypeFilter(typeof(TokenAuthFilter))]
-        [TypeFilter(typeof(TokenResultFilter))]
+        // [TypeFilter(typeof(TokenAuthFilter))]
+        // [TypeFilter(typeof(TokenResultFilter))]
         public async Task<IActionResult> Edit(PersonUpdateRequest personRequest)
         {
             _logger.LogInformation($"Edit (POST) action method of PersonsController called for PersonID: {personRequest.PersonID}");
