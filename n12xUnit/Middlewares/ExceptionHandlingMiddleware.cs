@@ -9,14 +9,12 @@ namespace CRUDExample.Middleware
     {
         private readonly RequestDelegate _next;
         private readonly ILogger<ExceptionHandlingMiddleware> _logger;
-        private readonly IDiagnosticContext _diagnosticContext;
 
 
-        public ExceptionHandlingMiddleware(RequestDelegate next, ILogger<ExceptionHandlingMiddleware> logger, IDiagnosticContext diagnosticContext)
+        public ExceptionHandlingMiddleware(RequestDelegate next, ILogger<ExceptionHandlingMiddleware> logger)
         {
             _next = next; //represents the subsequent middleware
             _logger = logger;
-            _diagnosticContext = diagnosticContext;
         }
 
         public async Task Invoke(HttpContext httpContext)
