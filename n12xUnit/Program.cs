@@ -5,6 +5,7 @@ using Entities.Data;
 using RepositoryContracts;
 using Repositories;
 using Serilog;
+using CRUDExample.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -43,6 +44,15 @@ else
 }
 
 var app = builder.Build();
+
+if (builder.Environment.IsDevelopment())
+{
+    app.UseDeveloperExceptionPage();
+}
+else
+{
+    app.UseExceptionHandlingMiddleware();
+}
 
 app.UseHttpLogging();
 
