@@ -8,10 +8,10 @@ namespace n12xUnit.Filters.ActionFilters
 {
     public class PersonCreateEditPOST : IAsyncActionFilter
     {
-        private readonly ICountryService _countryService;
-        public PersonCreateEditPOST(ICountryService countryService)
+        private readonly ICountriesGetterService _countriesGetterService;
+        public PersonCreateEditPOST(ICountriesGetterService countriesGetterService)
         {
-            _countryService = countryService;
+            _countriesGetterService = countriesGetterService;
         }
 
         public async Task OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
@@ -20,7 +20,7 @@ namespace n12xUnit.Filters.ActionFilters
             {
                 if (!personsController.ModelState.IsValid)
                 {
-                    List<CountryResponse> countries = await _countryService.GetAllCountries();
+                    List<CountryResponse> countries = await _countriesGetterService.GetAllCountries();
                     personsController.ViewBag.Countries = countries;
 
                     personsController.ViewBag.Errors = personsController.ModelState.Values.SelectMany(v => v.Errors).Select(msg => msg.ErrorMessage).ToList();
