@@ -19,9 +19,9 @@ builder.Host.UseSerilog((HostBuilderContext context, IServiceProvider services, 
 
 builder.Services.AddControllersWithViews();
 
-// This scans the assembly where 'CountriesService' exists
+// This scans the assembly where 'CountriesAdderService' exists
 builder.Services.Scan(scan => scan
-    .FromAssemblyOf<CountriesService>() // Target the assembly containing your services
+    .FromAssemblyOf<CountriesAdderService>() // Target the assembly containing your services
     .AddClasses(classes => classes.Where(type => type.Name.EndsWith("Service"))) // Select classes ending in "Service"
     .AsImplementedInterfaces() // Automatically pairs Service -> IService
     .WithScopedLifetime()); // Registers them all as Scoped

@@ -19,9 +19,9 @@ namespace n12xUnit.Controllers
         private readonly IPersonsDeleterService _personsDeleterService;
 
 
-        private readonly ICountryService _countryService;
+        private readonly ICountriesGetterService _countriesGetterService;
         private readonly ILogger<PersonsController> _logger;
-        public PersonsController(IPersonsGetterService personsGetterService, IPersonsAdderService personsAdderService, IPersonsUpdaterService personsUpdaterService, IPersonsSorterService personsSorterService, IPersonsDeleterService personsDeleterService, ICountryService countryService, ILogger<PersonsController> logger)
+        public PersonsController(IPersonsGetterService personsGetterService, IPersonsAdderService personsAdderService, IPersonsUpdaterService personsUpdaterService, IPersonsSorterService personsSorterService, IPersonsDeleterService personsDeleterService, ICountriesGetterService countriesGetterService, ILogger<PersonsController> logger)
         {
             _personsGetterService = personsGetterService;
             _personsAdderService = personsAdderService;
@@ -29,7 +29,7 @@ namespace n12xUnit.Controllers
             _personsSorterService = personsSorterService;
             _personsDeleterService = personsDeleterService;
 
-            _countryService = countryService;
+            _countriesGetterService = countriesGetterService;
             _logger = logger;
         }
 
@@ -70,7 +70,7 @@ namespace n12xUnit.Controllers
         {
             _logger.LogInformation("Add (GET) action method of PersonsController called");
 
-            List<CountryResponse> countries = await _countryService.GetAllCountries();
+            List<CountryResponse> countries = await _countriesGetterService.GetAllCountries();
             ViewBag.Countries = countries;
 
             return View();
@@ -87,7 +87,7 @@ namespace n12xUnit.Controllers
             {
                 _logger.LogWarning($"ModelState is invalid in Add (POST). Errors: {string.Join(", ", ModelState.Values.SelectMany(v => v.Errors).Select(msg => msg.ErrorMessage))}");
 
-                List<CountryResponse> countries = await _countryService.GetAllCountries();
+                List<CountryResponse> countries = await _countriesGetterService.GetAllCountries();
                 ViewBag.Countries = countries;
 
                 ViewBag.Errors = ModelState.Values.SelectMany(v => v.Errors).Select(msg => msg.ErrorMessage).ToList();
@@ -114,7 +114,7 @@ namespace n12xUnit.Controllers
 
             PersonUpdateRequest personUpdateRequest = personResponse.ToUpdateRequest();
             
-            List<CountryResponse> countries = await _countryService.GetAllCountries();
+            List<CountryResponse> countries = await _countriesGetterService.GetAllCountries();
             ViewBag.Countries = countries;
 
             return View(personUpdateRequest);
@@ -140,7 +140,7 @@ namespace n12xUnit.Controllers
             {
                 _logger.LogWarning($"ModelState is invalid in Edit (POST). Errors: {string.Join(", ", ModelState.Values.SelectMany(v => v.Errors).Select(msg => msg.ErrorMessage))}");
 
-                List<CountryResponse> countries = await _countryService.GetAllCountries();
+                List<CountryResponse> countries = await _countriesGetterService.GetAllCountries();
                 ViewBag.Countries = countries;
 
                 ViewBag.Errors = ModelState.Values.SelectMany(v => v.Errors).Select(msg => msg.ErrorMessage).ToList();

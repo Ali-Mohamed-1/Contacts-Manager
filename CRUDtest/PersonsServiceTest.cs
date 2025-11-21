@@ -19,10 +19,8 @@ namespace CRUDtest
     {
         private readonly IPersonsRepository _personRepo;
         private readonly Mock<IPersonsRepository> _personRepoMock;
-        private readonly Mock<ICountriesRepository> _countriesRepoMock;
 
         private readonly IPersonsGetterService _personService;
-        private readonly ICountryService _countryService;
         private readonly ITestOutputHelper _testOutputHelper;
         private readonly IFixture _fixture;
 
@@ -31,9 +29,6 @@ namespace CRUDtest
             _fixture = new Fixture();
             _personRepoMock = new Mock<IPersonsRepository>();
             _personRepo = _personRepoMock.Object;
-
-            _countriesRepoMock = new Mock<ICountriesRepository>();
-            _countryService = new CountriesService(_countriesRepoMock.Object);
             
             _personService = new PersonsService(_personRepo);
             _testOutputHelper = testOutputHelper;

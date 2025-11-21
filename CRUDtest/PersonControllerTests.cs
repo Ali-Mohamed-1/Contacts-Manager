@@ -2,6 +2,7 @@
 using Entities;
 using FluentAssertions;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using Microsoft.Identity.Client;
 using Moq;
 using n12xUnit.Controllers;
@@ -18,11 +19,21 @@ namespace CRUDtest
 {
     public class PersonControllerTests
     {
-        private readonly IPersonsGetterService _personsService;
-        private readonly ICountryService _countryService; 
+        private readonly IPersonsGetterService _personsGetterService;
+        private readonly IPersonsAdderService _personsAdderService;
+        private readonly IPersonsUpdaterService _personsUpdaterService;
+        private readonly IPersonsSorterService _personsSorterService;
+        private readonly IPersonsDeleterService _personsDeleterService;
+        private readonly ICountriesGetterService _countriesGetterService;
+        private readonly ILogger<PersonsController> _logger;
 
-        private readonly Mock<IPersonsGetterService> _personsServiceMock;
-        private readonly Mock<ICountryService> _countryServiceMock;
+        private readonly Mock<IPersonsGetterService> _personsGetterServiceMock;
+        private readonly Mock<IPersonsAdderService> _personsAdderServiceMock;
+        private readonly Mock<IPersonsUpdaterService> _personsUpdaterServiceMock;
+        private readonly Mock<IPersonsSorterService> _personsSorterServiceMock;
+        private readonly Mock<IPersonsDeleterService> _personsDeleterServiceMock;
+        private readonly Mock<ICountriesGetterService> _countriesGetterServiceMock;
+        private readonly Mock<ILogger<PersonsController>> _loggerMock;
 
         private readonly IFixture _fixture;
 
@@ -30,11 +41,26 @@ namespace CRUDtest
         {
             _fixture = new Fixture();
 
-            _personsServiceMock = new Mock<IPersonsGetterService>();
-            _personsService = _personsServiceMock.Object;
+            _personsGetterServiceMock = new Mock<IPersonsGetterService>();
+            _personsGetterService = _personsGetterServiceMock.Object;
 
-            _countryServiceMock = new Mock<ICountryService>();
-            _countryService = _countryServiceMock.Object;
+            _personsAdderServiceMock = new Mock<IPersonsAdderService>();
+            _personsAdderService = _personsAdderServiceMock.Object;
+
+            _personsUpdaterServiceMock = new Mock<IPersonsUpdaterService>();
+            _personsUpdaterService = _personsUpdaterServiceMock.Object;
+
+            _personsSorterServiceMock = new Mock<IPersonsSorterService>();
+            _personsSorterService = _personsSorterServiceMock.Object;
+
+            _personsDeleterServiceMock = new Mock<IPersonsDeleterService>();
+            _personsDeleterService = _personsDeleterServiceMock.Object;
+
+            _countriesGetterServiceMock = new Mock<ICountriesGetterService>();
+            _countriesGetterService = _countriesGetterServiceMock.Object;
+
+            _loggerMock = new Mock<ILogger<PersonsController>>();
+            _logger = _loggerMock.Object;
         }
 
         #region Index
@@ -45,12 +71,12 @@ namespace CRUDtest
             // Arrange
             List<PersonResponse> personResponse_list = _fixture.Create<List<PersonResponse>>();
             
-            PersonsController controller = new PersonsController(_personsService, _countryService);
+            PersonsController controller = new PersonsController(_personsGetterService, _personsAdderService, _personsUpdaterService, _personsSorterService, _personsDeleterService, _countriesGetterService, _logger);
 
-            _personsServiceMock.Setup(temp => temp.GetFilteredPersons(It.IsAny<string>(), It.IsAny<string>()))
+            _personsGetterServiceMock.Setup(temp => temp.GetFilteredPersons(It.IsAny<string>(), It.IsAny<string>()))
                 .ReturnsAsync(personResponse_list);
 
-            _personsServiceMock.Setup(temp => temp.GetSortedPersons(It.IsAny<List<PersonResponse>>(), It.IsAny<string>(), It.IsAny<bool>()))
+            _personsSorterServiceMock.Setup(temp => temp.GetSortedPersons(It.IsAny<List<PersonResponse>>(), It.IsAny<string>(), It.IsAny<bool>()))
                 .ReturnsAsync(personResponse_list);
 
             // Act
@@ -74,12 +100,12 @@ namespace CRUDtest
             PersonResponse personResponse = _fixture.Create<PersonResponse>();
             List<CountryResponse> countries = _fixture.Create<List<CountryResponse>>();
 
-            PersonsController controller = new PersonsController(_personsService, _countryService);
+            PersonsController controller = new PersonsController(_personsGetterService, _personsAdderService, _personsUpdaterService, _personsSorterService, _personsDeleterService, _countriesGetterService, _logger);
 
-            _countryServiceMock.Setup(temp => temp.GetAllCountries())
+            _countriesGetterServiceMock.Setup(temp => temp.GetAllCountries())
                 .ReturnsAsync(countries);
 
-            _personsServiceMock.Setup(temp => temp.AddPerson(It.IsAny<PersonAddRequest>()))
+            _personsAdderServiceMock.Setup(temp => temp.AddPerson(It.IsAny<PersonAddRequest>()))
                 .ReturnsAsync(personResponse);
 
             // Act
@@ -101,12 +127,12 @@ namespace CRUDtest
             PersonResponse personResponse = _fixture.Create<PersonResponse>();
             List<CountryResponse> countries = _fixture.Create<List<CountryResponse>>();
 
-            PersonsController controller = new PersonsController(_personsService, _countryService);
+            PersonsController controller = new PersonsController(_personsGetterService, _personsAdderService, _personsUpdaterService, _personsSorterService, _personsDeleterService, _countriesGetterService, _logger);
 
-            _countryServiceMock.Setup(temp => temp.GetAllCountries())
+            _countriesGetterServiceMock.Setup(temp => temp.GetAllCountries())
                 .ReturnsAsync(countries);
 
-            _personsServiceMock.Setup(temp => temp.AddPerson(It.IsAny<PersonAddRequest>()))
+            _personsAdderServiceMock.Setup(temp => temp.AddPerson(It.IsAny<PersonAddRequest>()))
                 .ReturnsAsync(personResponse);
 
             // Act

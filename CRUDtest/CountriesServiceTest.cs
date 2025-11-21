@@ -12,23 +12,31 @@ using RepositoryContracts;
 using AutoFixture;
 using Azure.Core;
 using FluentAssertions;
+using Microsoft.Extensions.Logging;
 
 
 namespace CRUDtest
 {
     public class CountriesServiceTests
     {
-        private readonly ICountryService _countryService;
+        private readonly ICountriesAdderService _countriesAdderService;
+        private readonly ICountriesGetterService _countriesGetterService;
         private readonly Mock<ICountriesRepository> _countriesRepoMock;
         private readonly ICountriesRepository _countriesRepo;
         private readonly IFixture _fixture;
+        private readonly Mock<ILogger<CountriesAdderService>> _adderLoggerMock;
+        private readonly Mock<ILogger<CountriesGetterService>> _getterLoggerMock;
 
         public CountriesServiceTests()
         {
             _countriesRepoMock = new Mock<ICountriesRepository>();
             _countriesRepo = _countriesRepoMock.Object;
 
-            _countryService = new CountriesService(_countriesRepo);
+            _adderLoggerMock = new Mock<ILogger<CountriesAdderService>>();
+            _getterLoggerMock = new Mock<ILogger<CountriesGetterService>>();
+
+            _countriesAdderService = new CountriesAdderService(_countriesRepo, _adderLoggerMock.Object);
+            _countriesGetterService = new CountriesGetterService(_countriesRepo, _getterLoggerMock.Object);
 
             _fixture = new Fixture();
         }
@@ -46,7 +54,7 @@ namespace CRUDtest
             await Assert.ThrowsAsync<ArgumentNullException>(async () =>
             {
                 // act
-                await Task.Run(() => _countryService.AddCountry(request));
+                await Task.Run(() => _countriesAdderService.AddCountry(request));
             });
         }
 
@@ -64,7 +72,7 @@ namespace CRUDtest
             await Assert.ThrowsAsync<ArgumentException>(async () =>
             {
                 // act
-                await Task.Run(() => _countryService.AddCountry(request));
+                await Task.Run(() => _countriesAdderService.AddCountry(request));
             });
         }
 
@@ -89,7 +97,7 @@ namespace CRUDtest
             await Assert.ThrowsAsync<ArgumentException>(async () =>
             {
                 // act
-                await Task.Run(() => _countryService.AddCountry(countryToAdd));
+                await Task.Run(() => _countriesAdderService.AddCountry(countryToAdd));
             });
         }
 
@@ -113,7 +121,7 @@ namespace CRUDtest
                 .ReturnsAsync(new Country());
 
             // act
-            var response = await _countryService.AddCountry(request);
+            var response = await _countriesAdderService.AddCountry(request);
 
             // assert
             response.Should().NotBeNull();
@@ -134,7 +142,7 @@ namespace CRUDtest
                 .ReturnsAsync(new List<Country>());
 
             // act
-            List<CountryResponse> countries = await Task.Run(() => _countryService.GetAllCountries());
+            List<CountryResponse> countries = await Task.Run(() => _countriesGetterService.GetAllCountries());
             // assert
             Assert.Empty(countries);
         }
@@ -172,7 +180,7 @@ namespace CRUDtest
             // arrange
             Guid? countryID = null;
             // act
-            CountryResponse? country = await Task.Run(() => _countryService.GetCountryByID(countryID));
+            CountryResponse? country = await Task.Run(() => _countriesGetterService.GetCountryByID(countryID));
             // assert
             Assert.Null(country);
         }
