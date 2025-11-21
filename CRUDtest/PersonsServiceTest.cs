@@ -21,7 +21,7 @@ namespace CRUDtest
         private readonly Mock<IPersonsRepository> _personRepoMock;
         private readonly Mock<ICountriesRepository> _countriesRepoMock;
 
-        private readonly IPersonsService _personService;
+        private readonly IPersonsGetterService _personService;
         private readonly ICountryService _countryService;
         private readonly ITestOutputHelper _testOutputHelper;
         private readonly IFixture _fixture;
