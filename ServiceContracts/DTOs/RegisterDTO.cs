@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -22,6 +22,7 @@ namespace ServiceContracts.DTOs
         
         [Required(ErrorMessage = "Confirm Password can't be blank")]
         [DataType(DataType.Password)]
+        [Compare("Password", ErrorMessage = "Password and Confirm Password must match")]
         public string? ConfirmPassword { get; set; }
     }
 }

@@ -496,3 +496,4 @@ H:\.NET\4. ASP.NET Core\n12xUnit\CRUDtest\bin\Debug\net9.0\zh-Hant\Microsoft.Dat
 H:\.NET\4. ASP.NET Core\n12xUnit\CRUDtest\bin\Debug\net9.0\runtimes\unix\lib\net9.0\Microsoft.Data.SqlClient.dll
 H:\.NET\4. ASP.NET Core\n12xUnit\CRUDtest\bin\Debug\net9.0\runtimes\win\lib\net9.0\Microsoft.Data.SqlClient.dll
 H:\.NET\4. ASP.NET Core\n12xUnit\CRUDtest\bin\Debug\net9.0\runtimes\win\lib\net9.0\System.Security.Cryptography.Pkcs.dll
+H:\.NET\4. ASP.NET Core\n12xUnit\CRUDtest\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll

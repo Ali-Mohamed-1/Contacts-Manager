@@ -8,6 +8,7 @@ using Serilog;
 using CRUDExample.Middleware;
 using Entities.IdentityEntities;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -38,7 +39,9 @@ builder.Services
     .AddEntityFrameworkStores<AppDbContext>()
     // repository level
     .AddUserStore<UserStore<ApplicationUser, ApplicationRole, AppDbContext, Guid>>()
-    .AddRoleStore<RoleStore<ApplicationRole, AppDbContext, Guid>>();
+    .AddRoleStore<RoleStore<ApplicationRole, AppDbContext, Guid>>()
+    // tokens
+    .AddDefaultTokenProviders();
 
 builder.Services.AddHttpLogging();
 
