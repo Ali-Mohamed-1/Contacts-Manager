@@ -6,6 +6,8 @@ using RepositoryContracts;
 using Repositories;
 using Serilog;
 using CRUDExample.Middleware;
+using Entities.IdentityEntities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -28,6 +30,15 @@ builder.Services.Scan(scan => scan
 
 builder.Services.AddScoped<ICountriesRepository, CountriesRepo>();
 builder.Services.AddScoped<IPersonsRepository, PersonsRepo>();
+
+// identity
+builder.Services
+    // entire app level
+    .AddIdentity<ApplicationUser, ApplicationRole>()
+    .AddEntityFrameworkStores<AppDbContext>()
+    // repository level
+    .AddUserStore<UserStore<ApplicationUser, ApplicationRole, AppDbContext, Guid>>()
+    .AddRoleStore<RoleStore<ApplicationRole, AppDbContext, Guid>>();
 
 builder.Services.AddHttpLogging();
 
