@@ -75,8 +75,11 @@ else
 app.UseHttpLogging();
 
 app.UseStaticFiles();
-app.UseRouting();
-app.MapControllers();
+
+app.UseAuthentication(); // reading identity cookies
+
+app.UseRouting(); // identufy action method to be executed
+app.MapControllers(); // execute the filter pipeline (action + filters)
 
 app.Run();
 

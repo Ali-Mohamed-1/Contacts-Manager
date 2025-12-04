@@ -9,10 +9,12 @@ namespace n12xUnit.Controllers
     public class AccountController : Controller
     {
         private readonly UserManager<ApplicationUser> _userManager;
+        private readonly SignInManager<ApplicationUser> _signInManager;
 
-        public AccountController(UserManager<ApplicationUser> userManager)
+        public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager)
         {
             _userManager = userManager;
+            _signInManager = signInManager;
         }
 
         [HttpGet]
@@ -42,7 +44,10 @@ namespace n12xUnit.Controllers
 
             IdentityResult result = await _userManager.CreateAsync(newUser, registerDTO.Password!);
             if (result.Succeeded)
+            {
                 return RedirectToAction(nameof(PersonsController.Index), "Persons");
+                await _signInManager.SignInAsync(newUser, isPersistent: false); // false: each time browser is closed, sign out 
+            }
             else
             {
                 foreach(IdentityError error in result.Errors)
