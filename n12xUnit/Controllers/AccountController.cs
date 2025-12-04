@@ -45,8 +45,8 @@ namespace n12xUnit.Controllers
             IdentityResult result = await _userManager.CreateAsync(newUser, registerDTO.Password!);
             if (result.Succeeded)
             {
-                return RedirectToAction(nameof(PersonsController.Index), "Persons");
                 await _signInManager.SignInAsync(newUser, isPersistent: false); // false: each time browser is closed, sign out 
+                return RedirectToAction(nameof(PersonsController.Index), "Persons");
             }
             else
             {
