@@ -26,7 +26,7 @@ namespace n12xUnit.Controllers
         [HttpPost]
         public async Task<IActionResult> Register(RegisterDTO registerDTO)
         {
-            if(ModelState.IsValid == false)
+            if (ModelState.IsValid == false)
             {
                 ViewBag.Errors = ModelState.Values
                     .SelectMany(v => v.Errors)
@@ -50,7 +50,7 @@ namespace n12xUnit.Controllers
             }
             else
             {
-                foreach(IdentityError error in result.Errors)
+                foreach (IdentityError error in result.Errors)
                 {
                     ModelState.AddModelError("Register", error.Description);
                 }
@@ -58,6 +58,34 @@ namespace n12xUnit.Controllers
                 return View(registerDTO);
             }
 
+        }
+
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Logout(LoginDTO dto)
+        {
+            if(ModelState.IsValid == false)
+            {
+                ViewBag.Errors = ModelState.Values
+                    .SelectMany(v => v.Errors)
+                    .Select(e => e.ErrorMessage);
+                return View(dto);
+            }
+
+            var result = await _signInManager.PasswordSignInAsync(dto.Email, dto.Password!, isPersistent: false, lockoutOnFailure: false);
+            if (result.Succeeded)
+            {
+                return RedirectToAction(nameof(PersonsController.Index), "Persons");
+            }
+            else
+            {
+                ModelState.AddModelError("Login", "Invalid email or password.");
+                return View(dto);
+            }
         }
     }
 }

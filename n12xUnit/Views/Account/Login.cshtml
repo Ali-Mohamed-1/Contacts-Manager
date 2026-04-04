@@ -1,0 +1,64 @@
+﻿@model LoginDTO
+@{
+    ViewData["Title"] = "Login";
+}
+
+<section class="page-header card-panel">
+    <div>
+        <h1 class="page-title">Login to your account</h1>
+    </div>
+    <div class="header-actions">
+        <a asp-controller="Account" asp-action="Register" class="btn primary">Don't have an account? Register</a>
+    </div>
+</section>
+
+<div class="card-panel form-card">
+    <form asp-controller="Account" asp-action="Register" method="post" class="responsive-form">
+
+
+        <div class="form-field">
+            <label asp-for="Email" class="form-label"></label>
+            <div>
+                <input asp-for="Email" type="email" class="form-input" />
+                <span asp-validation-for="Email" class="validation-message"></span>
+            </div>
+        </div>
+
+        <div class="form-field">
+            <label asp-for="Password" class="form-label"></label>
+            <div>
+                <input asp-for="Password" type="password" class="form-input" />
+                <span asp-validation-for="Password" class="validation-message"></span>
+            </div>
+        </div>
+
+        <div class="form-actions">
+            <button type="submit" class="btn primary">Login</button>
+        </div>
+
+        <div asp-validation-summary="All" class="form-errors" style="@(ViewData.ModelState.IsValid ? "display:none;" : "")"></div>
+        @if (ViewBag.Errors != null && ((System.Collections.IEnumerable)ViewBag.Errors).GetEnumerator().MoveNext())
+        {
+            <div class="form-errors">
+                <ul>
+                    @foreach (var error in ViewBag.Errors)
+                    {
+                        <li>@error</li>
+                    }
+                </ul>
+            </div>
+        }
+    </form>
+</div>
+
+@section Scripts
+{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            asp-fallback-test="window.jQuery" asp-fallback-src="~\jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.21.0/jquery.validate.min.js"
+            asp-fallback-test="window.jQuery.validator" asp-fallback-src="~\jquery.validate.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/4.0.0/jquery.validate.unobtrusive.min.js"
+            asp-fallback-test="window.jQuery.validator.unobstrusive" asp-fallback-src="~\jquery.validate.unobtrusive.min.js"></script>
+}
