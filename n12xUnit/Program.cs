@@ -9,6 +9,7 @@ using CRUDExample.Middleware;
 using Entities.IdentityEntities;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authorization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -50,6 +51,18 @@ builder.Services
     // tokens
     .AddDefaultTokenProviders();
 
+builder.Services.AddAuthorization(options =>
+{
+    options.FallbackPolicy = new AuthorizationPolicyBuilder()
+        .RequireAuthenticatedUser()
+        .Build();
+});
+
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.LoginPath = "~/Account/Login";
+});
+
 builder.Services.AddHttpLogging();
 
 // Conditionally register database provider based on environment
@@ -83,9 +96,12 @@ app.UseHttpLogging();
 
 app.UseStaticFiles();
 
-app.UseAuthentication(); // reading identity cookies
 
 app.UseRouting(); // identufy action method to be executed
+
+app.UseAuthentication(); // reading identity cookies
+app.UseAuthorization(); // check if user is authorized to execute the identified action method
+
 app.MapControllers(); // execute the filter pipeline (action + filters)
 
 app.Run();
