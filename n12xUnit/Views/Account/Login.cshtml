@@ -13,7 +13,7 @@
 </section>
 
 <div class="card-panel form-card">
-    <form asp-controller="Account" asp-action="Register" method="post" class="responsive-form">
+    <form asp-controller="Account" asp-action="Login" asp-route-ReturnUrl="@Context.Request.Query["ReturnUrl"]" method="post" class="responsive-form">
 
 
         <div class="form-field">

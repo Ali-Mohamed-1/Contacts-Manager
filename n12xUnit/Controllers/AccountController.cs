@@ -68,7 +68,7 @@ namespace n12xUnit.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Logout(LoginDTO dto)
+        public async Task<IActionResult> Login(LoginDTO dto, string? ReturnUrl)
         {
             if(ModelState.IsValid == false)
             {
@@ -81,13 +81,29 @@ namespace n12xUnit.Controllers
             var result = await _signInManager.PasswordSignInAsync(dto.Email, dto.Password!, isPersistent: false, lockoutOnFailure: false);
             if (result.Succeeded)
             {
+                if(!string.IsNullOrEmpty(ReturnUrl) && Url.IsLocalUrl(ReturnUrl))
+                {
+                    // Redirect(ReturnUrl); => Can cause open redirect attack
+                    return LocalRedirect(ReturnUrl);
+                }
+
                 return RedirectToAction(nameof(PersonsController.Index), "Persons");
             }
             else
             {
                 ModelState.AddModelError("Login", "Invalid email or password.");
+                dto.Password = string.Empty;
+
                 return View(dto);
             }
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Logout()
+        {
+            await _signInManager.SignOutAsync();
+            return RedirectToAction(nameof(Login));
         }
     }
 }

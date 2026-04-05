@@ -11,7 +11,7 @@ using Services;
 namespace n12xUnit.Controllers
 {
     [Route("persons")]
-    [AllowAnonymous]
+    //[AllowAnonymous]
     public class PersonsController : Controller
     {
         private readonly IPersonsGetterService _personsGetterService;
