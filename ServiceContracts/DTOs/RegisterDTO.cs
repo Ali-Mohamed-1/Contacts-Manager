@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -14,6 +15,7 @@ namespace ServiceContracts.DTOs
 
         [Required(ErrorMessage = "Email can't be blank")]
         [EmailAddress(ErrorMessage = "Invalid Email Address")]
+        [Remote(action: "IsEmailExists", controller: "Account", ErrorMessage = "Email is already in use")]
         public string? Email { get; set; }
         
         [Required(ErrorMessage = "Password can't be blank")]
