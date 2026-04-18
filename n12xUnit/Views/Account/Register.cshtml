@@ -46,6 +46,16 @@
             </div>
         </div>
 
+        <div class="form-field">
+            <label asp-for="UserType" class="form-label">User Type</label>
+            <div>
+                <input type="radio" id="User" asp-for="UserType" value="User" checked/>
+                <label for="User">User</label>
+                <input type="radio" id="Admin" asp-for="UserType" value="Admin"/>
+				<label for="Admin">Admin</label>
+            </div>
+        </div>
+
         <div class="form-actions">
             <button type="submit" class="btn primary">Create account</button>
         </div>

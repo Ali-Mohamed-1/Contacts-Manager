@@ -1,3 +1,4 @@
+using Entities;
 using Entities.IdentityEntities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -12,11 +13,13 @@ namespace n12xUnit.Controllers
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
+        private readonly RoleManager<ApplicationRole> _roleManager;
 
-        public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager)
+        public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, RoleManager<ApplicationRole> roleManager)
         {
             _userManager = userManager;
             _signInManager = signInManager;
+            _roleManager = roleManager;
         }
 
         [HttpGet]
@@ -47,6 +50,33 @@ namespace n12xUnit.Controllers
             IdentityResult result = await _userManager.CreateAsync(newUser, registerDTO.Password!);
             if (result.Succeeded)
             {
+                if(registerDTO.UserType == UserTypeOptions.Admin)
+                {
+                    if(await _roleManager.FindByNameAsync("Admin") is null)
+                    {
+                        ApplicationRole adminRole = new ApplicationRole()
+                        {
+                            Name = UserTypeOptions.Admin.ToString()
+                        }; 
+                        await _roleManager.CreateAsync(adminRole);
+                    }
+
+                    await _userManager.AddToRoleAsync(newUser, UserTypeOptions.Admin.ToString());
+                }
+                else
+                {
+                    if (await _roleManager.FindByNameAsync("User") is null)
+                    {
+                        ApplicationRole userRole = new ApplicationRole()
+                        {
+                            Name = UserTypeOptions.User.ToString()
+                        };
+                        await _roleManager.CreateAsync(userRole);
+                    }
+
+                    await _userManager.AddToRoleAsync(newUser, UserTypeOptions.Admin.ToString());
+                }
+
                 await _signInManager.SignInAsync(newUser, isPersistent: false); // false: each time browser is closed, sign out 
                 return RedirectToAction(nameof(PersonsController.Index), "Persons");
             }

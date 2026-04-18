@@ -1,3 +1,4 @@
+using Entities;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -15,7 +16,7 @@ namespace ServiceContracts.DTOs
 
         [Required(ErrorMessage = "Email can't be blank")]
         [EmailAddress(ErrorMessage = "Invalid Email Address")]
-        [Remote(action: "IsEmailExists", controller: "Account", ErrorMessage = "Email is already in use")]
+        [Remote(action: "IsEmailExists", controller: "Account", ErrorMessage = "Email already in use")]
         public string? Email { get; set; }
         
         [Required(ErrorMessage = "Password can't be blank")]
@@ -26,5 +27,7 @@ namespace ServiceContracts.DTOs
         [DataType(DataType.Password)]
         [Compare("Password", ErrorMessage = "Password and Confirm Password must match")]
         public string? ConfirmPassword { get; set; }
+
+        public UserTypeOptions UserType { get; set; } = UserTypeOptions.User;
     }
 }
