@@ -29,6 +29,7 @@ namespace n12xUnit.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Register(RegisterDTO registerDTO)
         {
             if (ModelState.IsValid == false)
@@ -136,6 +137,7 @@ namespace n12xUnit.Controllers
             return RedirectToAction(nameof(Login));
         }
 
+        [AllowAnonymous]
         public async Task<IActionResult> IsEmailExists(string email)
         {
             ApplicationUser user = await _userManager.FindByEmailAsync(email);

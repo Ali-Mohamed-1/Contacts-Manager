@@ -169,6 +169,10 @@
               "target": "Package",
               "version": "[9.0.9, )"
             },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
             "Scrutor": {
               "target": "Package",
               "version": "[6.1.0, )"
