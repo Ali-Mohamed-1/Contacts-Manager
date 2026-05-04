@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using n12xUnit.Filters.ActionFilters;
 using n12xUnit.Filters.AuthorizationFilter;
 using n12xUnit.Filters.ResultFilters;
@@ -10,6 +11,7 @@ using Services;
 namespace n12xUnit.Controllers
 {
     [Route("persons")]
+    //[AllowAnonymous]
     public class PersonsController : Controller
     {
         private readonly IPersonsGetterService _personsGetterService;

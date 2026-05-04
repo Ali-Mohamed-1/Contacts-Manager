@@ -6,6 +6,10 @@ using RepositoryContracts;
 using Repositories;
 using Serilog;
 using CRUDExample.Middleware;
+using Entities.IdentityEntities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authorization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -28,6 +32,36 @@ builder.Services.Scan(scan => scan
 
 builder.Services.AddScoped<ICountriesRepository, CountriesRepo>();
 builder.Services.AddScoped<IPersonsRepository, PersonsRepo>();
+
+// identity
+builder.Services
+    // entire app level
+    .AddIdentity<ApplicationUser, ApplicationRole>( (options) => {
+        options.Password.RequiredLength = 5;
+        options.Password.RequireUppercase = false;
+        options.Password.RequireNonAlphanumeric = false;
+        options.Password.RequireLowercase = true;
+        options.Password.RequireDigit = false;
+        options.Password.RequiredUniqueChars = 3;
+    })
+    .AddEntityFrameworkStores<AppDbContext>()
+    // repository level
+    .AddUserStore<UserStore<ApplicationUser, ApplicationRole, AppDbContext, Guid>>()
+    .AddRoleStore<RoleStore<ApplicationRole, AppDbContext, Guid>>()
+    // tokens
+    .AddDefaultTokenProviders();
+
+builder.Services.AddAuthorization(options =>
+{
+    options.FallbackPolicy = new AuthorizationPolicyBuilder()
+        .RequireAuthenticatedUser()
+        .Build();
+});
+
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.LoginPath = "/Account/Login";
+});
 
 builder.Services.AddHttpLogging();
 
@@ -61,8 +95,14 @@ else
 app.UseHttpLogging();
 
 app.UseStaticFiles();
-app.UseRouting();
-app.MapControllers();
+
+
+app.UseRouting(); // identufy action method to be executed
+
+app.UseAuthentication(); // reading identity cookies
+app.UseAuthorization(); // check if user is authorized to execute the identified action method
+
+app.MapControllers(); // execute the filter pipeline (action + filters)
 
 app.Run();
 

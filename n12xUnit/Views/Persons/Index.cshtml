@@ -10,18 +10,6 @@
     bool isAscending = ViewBag.IsAscending is bool asc && asc;
 }
 
-<section class="page-header card-panel">
-    <div>
-            <h1 class="page-title">People overview</h1>
-        <p class="subtitle">Search, sort and maintain everyone in a single clean workspace.</p>
-    </div>
-    <div class="header-actions">
-        <a asp-controller="Persons" asp-action="Add" class="btn primary">
-            <span>＋</span> New person
-        </a>
-    </div>
-</section>
-
 <form asp-controller="Persons" asp-action="Index" method="get" class="card-panel filter-form">
     <div class="filter-grid">
         <div class="filter-field">

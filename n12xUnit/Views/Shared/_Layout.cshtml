@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -23,17 +23,28 @@
             </div>
             <nav class="nav-links">
                 <a asp-controller="Persons"
-                   asp-action="Index"
-                   class="nav-link @(actionName == "Index" ? "nav-link-active" : string.Empty)">
+                asp-action="Index"
+                class="nav-link @(actionName == "Index" ? "nav-link-active" : string.Empty)">
                     Persons
                 </a>
                 <a asp-controller="Persons"
-                   asp-action="Add"
-                   class="nav-link @((actionName == "Add") ? "nav-link-active" : string.Empty)">
+                asp-action="Add"
+                class="nav-link @((actionName == "Add") ? "nav-link-active" : string.Empty)">
                     Add person
                 </a>
-                <a asp-controller="Account" asp-action="Register" class="nav-link">Register</a>
-                <a asp-controller="Account" asp-action="Login" class="nav-link">Login</a>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <form asp-controller="Account" asp-action="Logout" method="post" style="display:inline;">
+                        @Html.AntiForgeryToken()
+                        <button type="submit" class="btn btn-link">Logout</button>
+                    </form>
+
+                }
+                else
+                {
+                    <a asp-controller="Account" asp-action="Register" class="nav-link">Register</a>
+                    <a asp-controller="Account" asp-action="Login" class="nav-link">Login</a>
+                }
             </nav>
         </header>
 
