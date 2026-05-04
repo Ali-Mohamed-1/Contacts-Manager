@@ -28,3 +28,7 @@ bld/
 project.lock.json
 project.fragment.lock.json
 artifacts/
+
+# Ignore build artifacts
+[Bb]in/
+[Oo]bj/
